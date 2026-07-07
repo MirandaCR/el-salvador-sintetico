@@ -1,0 +1,387 @@
+{
+  "meta": {
+    "nota": "Educación superior sobre datos SINTÉTICOS. Retorno monetario (Mincer) requiere ingresos → v2 con EHPM.",
+    "nAdults": 148000,
+    "totPosgrado": 1077
+  },
+  "funnel": [
+    {
+      "level": "ninguno",
+      "label": "Ninguno",
+      "count": 17363,
+      "pctOfAdults": 11.7,
+      "pctFemale": 58
+    },
+    {
+      "level": "primaria",
+      "label": "Primaria",
+      "count": 36437,
+      "pctOfAdults": 24.6,
+      "pctFemale": 55.5
+    },
+    {
+      "level": "secundaria",
+      "label": "Secundaria",
+      "count": 26057,
+      "pctOfAdults": 17.6,
+      "pctFemale": 50.6
+    },
+    {
+      "level": "bachillerato",
+      "label": "Bachillerato",
+      "count": 45436,
+      "pctOfAdults": 30.7,
+      "pctFemale": 52.2
+    },
+    {
+      "level": "tecnico",
+      "label": "Técnico",
+      "count": 3864,
+      "pctOfAdults": 2.6,
+      "pctFemale": 51.1
+    },
+    {
+      "level": "universitario",
+      "label": "Universitario",
+      "count": 17766,
+      "pctOfAdults": 12,
+      "pctFemale": 56.1
+    },
+    {
+      "level": "posgrado",
+      "label": "Posgrado",
+      "count": 1077,
+      "pctOfAdults": 0.7,
+      "pctFemale": 46.8
+    }
+  ],
+  "glassCeiling": {
+    "pctFemaleBachillerato": 52.2,
+    "pctFemaleUniversitario": 56.1,
+    "pctFemalePosgrado": 46.8
+  },
+  "overeducation": {
+    "rateOverall": 87.5,
+    "nUniv": 18843,
+    "bySex": {
+      "Femenino": 83.2,
+      "Masculino": 92.8
+    },
+    "byArea": {
+      "urbano": 87.5,
+      "rural": 87.6
+    },
+    "nota": "Aproximación: el dato de ocupación es por actividad económica (no cargo), así que mide \"trabaja en actividad no intensiva en conocimiento\"."
+  },
+  "spatial": {
+    "muniTertiaryRate": [
+      {
+        "name": "La Libertad Sur",
+        "department": "La Libertad",
+        "tertiaryRate": 38.8
+      },
+      {
+        "name": "La Libertad Este",
+        "department": "La Libertad",
+        "tertiaryRate": 32
+      },
+      {
+        "name": "San Salvador Centro",
+        "department": "San Salvador",
+        "tertiaryRate": 29.8
+      },
+      {
+        "name": "Santa Ana Centro",
+        "department": "Santa Ana",
+        "tertiaryRate": 21
+      },
+      {
+        "name": "San Salvador Este",
+        "department": "San Salvador",
+        "tertiaryRate": 19
+      },
+      {
+        "name": "San Miguel Centro",
+        "department": "San Miguel",
+        "tertiaryRate": 19
+      },
+      {
+        "name": "La Libertad Oeste",
+        "department": "La Libertad",
+        "tertiaryRate": 16.4
+      },
+      {
+        "name": "San Salvador Sur",
+        "department": "San Salvador",
+        "tertiaryRate": 16.2
+      },
+      {
+        "name": "Sonsonate Centro",
+        "department": "Sonsonate",
+        "tertiaryRate": 15.9
+      },
+      {
+        "name": "Chalatenango Sur",
+        "department": "Chalatenango",
+        "tertiaryRate": 15
+      },
+      {
+        "name": "Ahuachapán Norte",
+        "department": "Ahuachapán",
+        "tertiaryRate": 14.8
+      },
+      {
+        "name": "La Paz Este",
+        "department": "La Paz",
+        "tertiaryRate": 13.6
+      },
+      {
+        "name": "San Miguel Oeste",
+        "department": "San Miguel",
+        "tertiaryRate": 13.4
+      },
+      {
+        "name": "San Salvador Oeste",
+        "department": "San Salvador",
+        "tertiaryRate": 13.1
+      },
+      {
+        "name": "Santa Ana Oeste",
+        "department": "Santa Ana",
+        "tertiaryRate": 12.8
+      },
+      {
+        "name": "San Vicente Sur",
+        "department": "San Vicente",
+        "tertiaryRate": 12.7
+      },
+      {
+        "name": "San Vicente Norte",
+        "department": "San Vicente",
+        "tertiaryRate": 12.5
+      },
+      {
+        "name": "La Libertad Centro",
+        "department": "La Libertad",
+        "tertiaryRate": 11.8
+      },
+      {
+        "name": "Morazán Sur",
+        "department": "Morazán",
+        "tertiaryRate": 11.8
+      },
+      {
+        "name": "La Libertad Norte",
+        "department": "La Libertad",
+        "tertiaryRate": 11.6
+      },
+      {
+        "name": "Usulután Este",
+        "department": "Usulután",
+        "tertiaryRate": 11.5
+      },
+      {
+        "name": "Cuscatlán Sur",
+        "department": "Cuscatlán",
+        "tertiaryRate": 10.8
+      },
+      {
+        "name": "Usulután Norte",
+        "department": "Usulután",
+        "tertiaryRate": 10.4
+      },
+      {
+        "name": "Cabañas Oeste",
+        "department": "Cabañas",
+        "tertiaryRate": 10.2
+      },
+      {
+        "name": "Chalatenango Norte",
+        "department": "Chalatenango",
+        "tertiaryRate": 9.6
+      },
+      {
+        "name": "Ahuachapán Centro",
+        "department": "Ahuachapán",
+        "tertiaryRate": 9.5
+      },
+      {
+        "name": "San Salvador Norte",
+        "department": "San Salvador",
+        "tertiaryRate": 9.2
+      },
+      {
+        "name": "Morazán Norte",
+        "department": "Morazán",
+        "tertiaryRate": 8.8
+      },
+      {
+        "name": "Cabañas Este",
+        "department": "Cabañas",
+        "tertiaryRate": 8.7
+      },
+      {
+        "name": "Sonsonate Norte",
+        "department": "Sonsonate",
+        "tertiaryRate": 8.4
+      },
+      {
+        "name": "Chalatenango Centro",
+        "department": "Chalatenango",
+        "tertiaryRate": 8.3
+      },
+      {
+        "name": "La Paz Oeste",
+        "department": "La Paz",
+        "tertiaryRate": 8.2
+      },
+      {
+        "name": "La Unión Sur",
+        "department": "La Unión",
+        "tertiaryRate": 8
+      },
+      {
+        "name": "Santa Ana Este",
+        "department": "Santa Ana",
+        "tertiaryRate": 7.4
+      },
+      {
+        "name": "Sonsonate Este",
+        "department": "Sonsonate",
+        "tertiaryRate": 7.2
+      },
+      {
+        "name": "Cuscatlán Norte",
+        "department": "Cuscatlán",
+        "tertiaryRate": 6.7
+      },
+      {
+        "name": "Usulután Oeste",
+        "department": "Usulután",
+        "tertiaryRate": 6.5
+      },
+      {
+        "name": "La Paz Centro",
+        "department": "La Paz",
+        "tertiaryRate": 6.3
+      },
+      {
+        "name": "La Unión Norte",
+        "department": "La Unión",
+        "tertiaryRate": 6
+      },
+      {
+        "name": "San Miguel Norte",
+        "department": "San Miguel",
+        "tertiaryRate": 5.8
+      },
+      {
+        "name": "Santa Ana Norte",
+        "department": "Santa Ana",
+        "tertiaryRate": 5.5
+      },
+      {
+        "name": "Sonsonate Oeste",
+        "department": "Sonsonate",
+        "tertiaryRate": 5.3
+      },
+      {
+        "name": "La Libertad Costa",
+        "department": "La Libertad",
+        "tertiaryRate": 4.7
+      },
+      {
+        "name": "Ahuachapán Sur",
+        "department": "Ahuachapán",
+        "tertiaryRate": 2.7
+      }
+    ],
+    "deptTertiaryRate": [
+      {
+        "name": "San Salvador",
+        "tertiaryRate": 22.3,
+        "shareOfPosgrado": 47.3
+      },
+      {
+        "name": "La Libertad",
+        "tertiaryRate": 19.9,
+        "shareOfPosgrado": 28.6
+      },
+      {
+        "name": "Santa Ana",
+        "tertiaryRate": 14.9,
+        "shareOfPosgrado": 6
+      },
+      {
+        "name": "San Miguel",
+        "tertiaryRate": 15.9,
+        "shareOfPosgrado": 6
+      },
+      {
+        "name": "Sonsonate",
+        "tertiaryRate": 10,
+        "shareOfPosgrado": 2.7
+      },
+      {
+        "name": "Usulután",
+        "tertiaryRate": 10.1,
+        "shareOfPosgrado": 2
+      },
+      {
+        "name": "Morazán",
+        "tertiaryRate": 10.8,
+        "shareOfPosgrado": 1.2
+      },
+      {
+        "name": "Ahuachapán",
+        "tertiaryRate": 8.6,
+        "shareOfPosgrado": 1.1
+      },
+      {
+        "name": "La Unión",
+        "tertiaryRate": 7,
+        "shareOfPosgrado": 1
+      },
+      {
+        "name": "Cabañas",
+        "tertiaryRate": 9.5,
+        "shareOfPosgrado": 1
+      },
+      {
+        "name": "Cuscatlán",
+        "tertiaryRate": 9.2,
+        "shareOfPosgrado": 0.8
+      },
+      {
+        "name": "La Paz",
+        "tertiaryRate": 9.1,
+        "shareOfPosgrado": 0.8
+      },
+      {
+        "name": "Chalatenango",
+        "tertiaryRate": 11,
+        "shareOfPosgrado": 0.7
+      },
+      {
+        "name": "San Vicente",
+        "tertiaryRate": 12.6,
+        "shareOfPosgrado": 0.6
+      }
+    ],
+    "concentration": {
+      "pctPosgradoTop3Dept": 81.9,
+      "pctPosgradoSanSalvador": 47.3,
+      "hhiDept": 3145,
+      "topMuni": {
+        "name": "La Libertad Sur",
+        "department": "La Libertad",
+        "tertiaryRate": 38.8
+      },
+      "bottomMuni": {
+        "name": "Ahuachapán Sur",
+        "department": "Ahuachapán",
+        "tertiaryRate": 2.7
+      }
+    }
+  }
+}

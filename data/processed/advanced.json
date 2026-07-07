@@ -1,0 +1,1337 @@
+{
+  "meta": {
+    "n": 148000,
+    "nota": "Modelos avanzados sobre datos SINTÉTICOS: ilustran método, no efectos reales."
+  },
+  "orderedLogit": {
+    "ll": -227252,
+    "cutpoints": [
+      -2.916,
+      -1.169,
+      -0.294,
+      1.428,
+      1.652,
+      4.683
+    ],
+    "coef": [
+      {
+        "name": "edad",
+        "beta": -0.7531,
+        "oddsRatio": 0.471
+      },
+      {
+        "name": "edad²",
+        "beta": -0.0764,
+        "oddsRatio": 0.926
+      },
+      {
+        "name": "mujer",
+        "beta": -0.0845,
+        "oddsRatio": 0.919
+      },
+      {
+        "name": "urbano",
+        "beta": 0.2146,
+        "oddsRatio": 1.239
+      },
+      {
+        "name": "dep:La Libertad",
+        "beta": -0.3641,
+        "oddsRatio": 0.695
+      },
+      {
+        "name": "dep:Santa Ana",
+        "beta": -0.7146,
+        "oddsRatio": 0.489
+      },
+      {
+        "name": "dep:Sonsonate",
+        "beta": -0.9618,
+        "oddsRatio": 0.382
+      },
+      {
+        "name": "dep:San Miguel",
+        "beta": -0.7905,
+        "oddsRatio": 0.454
+      },
+      {
+        "name": "dep:Ahuachapán",
+        "beta": -1.1192,
+        "oddsRatio": 0.327
+      },
+      {
+        "name": "dep:Usulután",
+        "beta": -0.9918,
+        "oddsRatio": 0.371
+      },
+      {
+        "name": "dep:La Paz",
+        "beta": -0.8619,
+        "oddsRatio": 0.422
+      },
+      {
+        "name": "dep:Cuscatlán",
+        "beta": -0.7836,
+        "oddsRatio": 0.457
+      },
+      {
+        "name": "dep:La Unión",
+        "beta": -1.3466,
+        "oddsRatio": 0.26
+      },
+      {
+        "name": "dep:Chalatenango",
+        "beta": -1.0649,
+        "oddsRatio": 0.345
+      },
+      {
+        "name": "dep:Morazán",
+        "beta": -1.1721,
+        "oddsRatio": 0.31
+      },
+      {
+        "name": "dep:San Vicente",
+        "beta": -0.8923,
+        "oddsRatio": 0.41
+      },
+      {
+        "name": "dep:Cabañas",
+        "beta": -1.2171,
+        "oddsRatio": 0.296
+      }
+    ],
+    "key": {
+      "urbano": 0.215,
+      "mujer": -0.085
+    }
+  },
+  "multinomial": {
+    "sectors": [
+      "Agro",
+      "Comercio",
+      "Comida y hogar",
+      "Industria y construcción",
+      "Transporte",
+      "Servicios y Estado"
+    ],
+    "baseProb": [
+      11,
+      9.1,
+      25.1,
+      22.8,
+      4.8,
+      27.3
+    ],
+    "urbanEffect": [
+      -1.2,
+      -1.8,
+      -2,
+      3.3,
+      -1.8,
+      3.6
+    ],
+    "femaleEffect": [
+      -9.2,
+      -1.5,
+      19.1,
+      -7.9,
+      -3.1,
+      2.6
+    ]
+  },
+  "tree": {
+    "accuracy": 0.845,
+    "baseRate": 0.153,
+    "importances": [
+      {
+        "name": "depSanSalvador",
+        "importance": 0.461
+      },
+      {
+        "name": "edad",
+        "importance": 0.29
+      },
+      {
+        "name": "depLaLibertad",
+        "importance": 0.215
+      },
+      {
+        "name": "urbano",
+        "importance": 0.024
+      },
+      {
+        "name": "mujer",
+        "importance": 0.01
+      }
+    ],
+    "tree": {
+      "n": 118400,
+      "p": 0.153,
+      "feature": "depSanSalvador",
+      "threshold": 0.5,
+      "gain": 0.0035,
+      "left": {
+        "n": 86642,
+        "p": 0.128,
+        "feature": "depLaLibertad",
+        "threshold": 0.5,
+        "gain": 0.0022,
+        "left": {
+          "n": 71028,
+          "p": 0.112,
+          "feature": "edad",
+          "threshold": 40,
+          "gain": 0.0017,
+          "left": {
+            "n": 37042,
+            "p": 0.14,
+            "leaf": true,
+            "pred": 0
+          },
+          "right": {
+            "n": 33986,
+            "p": 0.082,
+            "leaf": true,
+            "pred": 0
+          }
+        },
+        "right": {
+          "n": 15614,
+          "p": 0.199,
+          "feature": "urbano",
+          "threshold": 0.5,
+          "gain": 0.0014,
+          "left": {
+            "n": 2793,
+            "p": 0.142,
+            "leaf": true,
+            "pred": 0
+          },
+          "right": {
+            "n": 12821,
+            "p": 0.211,
+            "leaf": true,
+            "pred": 0
+          }
+        }
+      },
+      "right": {
+        "n": 31758,
+        "p": 0.222,
+        "feature": "edad",
+        "threshold": 50,
+        "gain": 0.0031,
+        "left": {
+          "n": 21026,
+          "p": 0.25,
+          "feature": "edad",
+          "threshold": 25,
+          "gain": 0.0019,
+          "left": {
+            "n": 5367,
+            "p": 0.197,
+            "leaf": true,
+            "pred": 0
+          },
+          "right": {
+            "n": 15659,
+            "p": 0.268,
+            "leaf": true,
+            "pred": 0
+          }
+        },
+        "right": {
+          "n": 10732,
+          "p": 0.167,
+          "feature": "mujer",
+          "threshold": 0.5,
+          "gain": 0.0009,
+          "left": {
+            "n": 4400,
+            "p": 0.192,
+            "leaf": true,
+            "pred": 0
+          },
+          "right": {
+            "n": 6332,
+            "p": 0.15,
+            "leaf": true,
+            "pred": 0
+          }
+        }
+      }
+    }
+  },
+  "sar": {
+    "rho": 0.11,
+    "beta": [
+      -9.461,
+      0.364,
+      1.77
+    ],
+    "vars": [
+      "const",
+      "pctUrban",
+      "pctHigher"
+    ],
+    "interpret": "positivo: el nivel de un municipio es \"arrastrado\" por sus vecinos (derrames)"
+  },
+  "gwr": {
+    "variable": "pendiente local escolaridad~%urbano",
+    "local": [
+      {
+        "name": "San Salvador Centro",
+        "slope": 0.0405
+      },
+      {
+        "name": "San Salvador Este",
+        "slope": 0.0397
+      },
+      {
+        "name": "San Miguel Centro",
+        "slope": 0.0352
+      },
+      {
+        "name": "Santa Ana Centro",
+        "slope": 0.0414
+      },
+      {
+        "name": "La Libertad Oeste",
+        "slope": 0.042
+      },
+      {
+        "name": "Ahuachapán Centro",
+        "slope": 0.0436
+      },
+      {
+        "name": "Sonsonate Este",
+        "slope": 0.043
+      },
+      {
+        "name": "San Salvador Sur",
+        "slope": 0.0409
+      },
+      {
+        "name": "La Libertad Centro",
+        "slope": 0.041
+      },
+      {
+        "name": "San Salvador Oeste",
+        "slope": 0.04
+      },
+      {
+        "name": "Sonsonate Centro",
+        "slope": 0.0438
+      },
+      {
+        "name": "Usulután Este",
+        "slope": 0.0368
+      },
+      {
+        "name": "Cuscatlán Sur",
+        "slope": 0.0387
+      },
+      {
+        "name": "Santa Ana Oeste",
+        "slope": 0.0416
+      },
+      {
+        "name": "La Libertad Sur",
+        "slope": 0.0416
+      },
+      {
+        "name": "La Paz Centro",
+        "slope": 0.04
+      },
+      {
+        "name": "La Unión Sur",
+        "slope": 0.0339
+      },
+      {
+        "name": "La Libertad Este",
+        "slope": 0.0413
+      },
+      {
+        "name": "Usulután Norte",
+        "slope": 0.037
+      },
+      {
+        "name": "Morazán Sur",
+        "slope": 0.0343
+      },
+      {
+        "name": "La Paz Oeste",
+        "slope": 0.0406
+      },
+      {
+        "name": "Sonsonate Norte",
+        "slope": 0.043
+      },
+      {
+        "name": "La Unión Norte",
+        "slope": 0.0329
+      },
+      {
+        "name": "Cuscatlán Norte",
+        "slope": 0.0391
+      },
+      {
+        "name": "Ahuachapán Sur",
+        "slope": 0.0452
+      },
+      {
+        "name": "San Vicente Sur",
+        "slope": 0.0386
+      },
+      {
+        "name": "La Paz Este",
+        "slope": 0.0395
+      },
+      {
+        "name": "San Miguel Oeste",
+        "slope": 0.0361
+      },
+      {
+        "name": "La Libertad Norte",
+        "slope": 0.0402
+      },
+      {
+        "name": "Santa Ana Norte",
+        "slope": 0.0392
+      },
+      {
+        "name": "La Libertad Costa",
+        "slope": 0.0429
+      },
+      {
+        "name": "Chalatenango Centro",
+        "slope": 0.0384
+      },
+      {
+        "name": "Cabañas Oeste",
+        "slope": 0.0381
+      },
+      {
+        "name": "San Miguel Norte",
+        "slope": 0.0358
+      },
+      {
+        "name": "Ahuachapán Norte",
+        "slope": 0.0423
+      },
+      {
+        "name": "Usulután Oeste",
+        "slope": 0.0382
+      },
+      {
+        "name": "Chalatenango Sur",
+        "slope": 0.0375
+      },
+      {
+        "name": "Santa Ana Este",
+        "slope": 0.0414
+      },
+      {
+        "name": "Cabañas Este",
+        "slope": 0.0367
+      },
+      {
+        "name": "San Salvador Norte",
+        "slope": 0.0396
+      },
+      {
+        "name": "San Vicente Norte",
+        "slope": 0.0376
+      },
+      {
+        "name": "Sonsonate Oeste",
+        "slope": 0.0447
+      },
+      {
+        "name": "Morazán Norte",
+        "slope": 0.0339
+      },
+      {
+        "name": "Chalatenango Norte",
+        "slope": 0.038
+      }
+    ],
+    "range": [
+      0.033,
+      0.045
+    ]
+  },
+  "clusters": {
+    "k": 4,
+    "assignment": [
+      {
+        "name": "San Salvador Centro",
+        "cluster": "Núcleo desarrollado",
+        "ich": 87.1
+      },
+      {
+        "name": "San Salvador Este",
+        "cluster": "Núcleo desarrollado",
+        "ich": 69.9
+      },
+      {
+        "name": "San Miguel Centro",
+        "cluster": "Emergente urbano",
+        "ich": 54.8
+      },
+      {
+        "name": "Santa Ana Centro",
+        "cluster": "Núcleo desarrollado",
+        "ich": 63.3
+      },
+      {
+        "name": "La Libertad Oeste",
+        "cluster": "Emergente urbano",
+        "ich": 59.5
+      },
+      {
+        "name": "Ahuachapán Centro",
+        "cluster": "Emergente urbano",
+        "ich": 38.8
+      },
+      {
+        "name": "Sonsonate Este",
+        "cluster": "En desarrollo",
+        "ich": 33.2
+      },
+      {
+        "name": "San Salvador Sur",
+        "cluster": "Emergente urbano",
+        "ich": 60.8
+      },
+      {
+        "name": "La Libertad Centro",
+        "cluster": "Emergente urbano",
+        "ich": 47.3
+      },
+      {
+        "name": "San Salvador Oeste",
+        "cluster": "Emergente urbano",
+        "ich": 56.9
+      },
+      {
+        "name": "Sonsonate Centro",
+        "cluster": "Emergente urbano",
+        "ich": 53.7
+      },
+      {
+        "name": "Usulután Este",
+        "cluster": "Emergente urbano",
+        "ich": 36.7
+      },
+      {
+        "name": "Cuscatlán Sur",
+        "cluster": "Emergente urbano",
+        "ich": 48.8
+      },
+      {
+        "name": "Santa Ana Oeste",
+        "cluster": "Emergente urbano",
+        "ich": 43.9
+      },
+      {
+        "name": "La Libertad Sur",
+        "cluster": "Núcleo desarrollado",
+        "ich": 97.3
+      },
+      {
+        "name": "La Paz Centro",
+        "cluster": "En desarrollo",
+        "ich": 32.3
+      },
+      {
+        "name": "La Unión Sur",
+        "cluster": "Rezago rural",
+        "ich": 19.6
+      },
+      {
+        "name": "La Libertad Este",
+        "cluster": "Núcleo desarrollado",
+        "ich": 85.6
+      },
+      {
+        "name": "Usulután Norte",
+        "cluster": "Rezago rural",
+        "ich": 34
+      },
+      {
+        "name": "Morazán Sur",
+        "cluster": "En desarrollo",
+        "ich": 27.2
+      },
+      {
+        "name": "La Paz Oeste",
+        "cluster": "En desarrollo",
+        "ich": 38.3
+      },
+      {
+        "name": "Sonsonate Norte",
+        "cluster": "Emergente urbano",
+        "ich": 37
+      },
+      {
+        "name": "La Unión Norte",
+        "cluster": "Rezago rural",
+        "ich": 10.1
+      },
+      {
+        "name": "Cuscatlán Norte",
+        "cluster": "En desarrollo",
+        "ich": 36.7
+      },
+      {
+        "name": "Ahuachapán Sur",
+        "cluster": "En desarrollo",
+        "ich": 12.3
+      },
+      {
+        "name": "San Vicente Sur",
+        "cluster": "Emergente urbano",
+        "ich": 42.4
+      },
+      {
+        "name": "La Paz Este",
+        "cluster": "Emergente urbano",
+        "ich": 47.4
+      },
+      {
+        "name": "San Miguel Oeste",
+        "cluster": "Emergente urbano",
+        "ich": 39.9
+      },
+      {
+        "name": "La Libertad Norte",
+        "cluster": "Emergente urbano",
+        "ich": 43.7
+      },
+      {
+        "name": "Santa Ana Norte",
+        "cluster": "Rezago rural",
+        "ich": 13.1
+      },
+      {
+        "name": "La Libertad Costa",
+        "cluster": "En desarrollo",
+        "ich": 20.2
+      },
+      {
+        "name": "Chalatenango Centro",
+        "cluster": "Rezago rural",
+        "ich": 19.8
+      },
+      {
+        "name": "Cabañas Oeste",
+        "cluster": "Rezago rural",
+        "ich": 29.2
+      },
+      {
+        "name": "San Miguel Norte",
+        "cluster": "Rezago rural",
+        "ich": 6.6
+      },
+      {
+        "name": "Ahuachapán Norte",
+        "cluster": "Emergente urbano",
+        "ich": 50.4
+      },
+      {
+        "name": "Usulután Oeste",
+        "cluster": "Rezago rural",
+        "ich": 20.2
+      },
+      {
+        "name": "Chalatenango Sur",
+        "cluster": "Rezago rural",
+        "ich": 35.9
+      },
+      {
+        "name": "Santa Ana Este",
+        "cluster": "En desarrollo",
+        "ich": 33.6
+      },
+      {
+        "name": "Cabañas Este",
+        "cluster": "Rezago rural",
+        "ich": 18.7
+      },
+      {
+        "name": "San Salvador Norte",
+        "cluster": "Emergente urbano",
+        "ich": 37.3
+      },
+      {
+        "name": "San Vicente Norte",
+        "cluster": "Rezago rural",
+        "ich": 33.7
+      },
+      {
+        "name": "Sonsonate Oeste",
+        "cluster": "En desarrollo",
+        "ich": 28.2
+      },
+      {
+        "name": "Morazán Norte",
+        "cluster": "En desarrollo",
+        "ich": 15.9
+      },
+      {
+        "name": "Chalatenango Norte",
+        "cluster": "En desarrollo",
+        "ich": 20.7
+      }
+    ],
+    "summary": [
+      {
+        "label": "Rezago rural",
+        "nMunis": 11,
+        "ichMedio": 21.9
+      },
+      {
+        "label": "En desarrollo",
+        "nMunis": 11,
+        "ichMedio": 27.1
+      },
+      {
+        "label": "Emergente urbano",
+        "nMunis": 17,
+        "ichMedio": 47
+      },
+      {
+        "label": "Núcleo desarrollado",
+        "nMunis": 5,
+        "ichMedio": 80.6
+      }
+    ]
+  },
+  "monteCarlo": {
+    "T": 1000,
+    "ranking": [
+      {
+        "name": "La Libertad Sur",
+        "eduYears": 11.85,
+        "rankProm": 1,
+        "probTop5": 100
+      },
+      {
+        "name": "San Salvador Centro",
+        "eduYears": 11.27,
+        "rankProm": 2,
+        "probTop5": 100
+      },
+      {
+        "name": "La Libertad Este",
+        "eduYears": 11.06,
+        "rankProm": 3,
+        "probTop5": 100
+      },
+      {
+        "name": "San Salvador Este",
+        "eduYears": 10.42,
+        "rankProm": 4,
+        "probTop5": 100
+      },
+      {
+        "name": "San Salvador Sur",
+        "eduYears": 9.8,
+        "rankProm": 5.4,
+        "probTop5": 67
+      },
+      {
+        "name": "Santa Ana Centro",
+        "eduYears": 9.75,
+        "rankProm": 6.1,
+        "probTop5": 26
+      },
+      {
+        "name": "La Libertad Oeste",
+        "eduYears": 9.69,
+        "rankProm": 6.9,
+        "probTop5": 6
+      },
+      {
+        "name": "San Salvador Oeste",
+        "eduYears": 9.63,
+        "rankProm": 7.6,
+        "probTop5": 1
+      },
+      {
+        "name": "San Miguel Centro",
+        "eduYears": 9.29,
+        "rankProm": 9.6,
+        "probTop5": 0
+      },
+      {
+        "name": "Sonsonate Centro",
+        "eduYears": 9.3,
+        "rankProm": 9.6,
+        "probTop5": 0
+      },
+      {
+        "name": "Cuscatlán Sur",
+        "eduYears": 9.16,
+        "rankProm": 11.3,
+        "probTop5": 0
+      },
+      {
+        "name": "Ahuachapán Norte",
+        "eduYears": 9.09,
+        "rankProm": 12,
+        "probTop5": 0
+      },
+      {
+        "name": "La Paz Este",
+        "eduYears": 8.98,
+        "rankProm": 13.3,
+        "probTop5": 0
+      },
+      {
+        "name": "La Libertad Centro",
+        "eduYears": 8.95,
+        "rankProm": 13.8,
+        "probTop5": 0
+      },
+      {
+        "name": "La Libertad Norte",
+        "eduYears": 8.86,
+        "rankProm": 15.2,
+        "probTop5": 0
+      },
+      {
+        "name": "Santa Ana Oeste",
+        "eduYears": 8.79,
+        "rankProm": 16.2,
+        "probTop5": 0
+      },
+      {
+        "name": "La Paz Oeste",
+        "eduYears": 8.75,
+        "rankProm": 16.9,
+        "probTop5": 0
+      },
+      {
+        "name": "Cuscatlán Norte",
+        "eduYears": 8.67,
+        "rankProm": 18.3,
+        "probTop5": 0
+      },
+      {
+        "name": "Chalatenango Sur",
+        "eduYears": 8.63,
+        "rankProm": 18.9,
+        "probTop5": 0
+      },
+      {
+        "name": "San Vicente Sur",
+        "eduYears": 8.52,
+        "rankProm": 21,
+        "probTop5": 0
+      },
+      {
+        "name": "Ahuachapán Centro",
+        "eduYears": 8.44,
+        "rankProm": 22.8,
+        "probTop5": 0
+      },
+      {
+        "name": "San Salvador Norte",
+        "eduYears": 8.44,
+        "rankProm": 22.8,
+        "probTop5": 0
+      },
+      {
+        "name": "San Miguel Oeste",
+        "eduYears": 8.43,
+        "rankProm": 23.2,
+        "probTop5": 0
+      },
+      {
+        "name": "La Paz Centro",
+        "eduYears": 8.41,
+        "rankProm": 23.7,
+        "probTop5": 0
+      },
+      {
+        "name": "Usulután Norte",
+        "eduYears": 8.39,
+        "rankProm": 24.3,
+        "probTop5": 0
+      },
+      {
+        "name": "Usulután Este",
+        "eduYears": 8.36,
+        "rankProm": 25.2,
+        "probTop5": 0
+      },
+      {
+        "name": "Santa Ana Este",
+        "eduYears": 8.29,
+        "rankProm": 26.8,
+        "probTop5": 0
+      },
+      {
+        "name": "San Vicente Norte",
+        "eduYears": 8.27,
+        "rankProm": 27.1,
+        "probTop5": 0
+      },
+      {
+        "name": "Sonsonate Este",
+        "eduYears": 8.23,
+        "rankProm": 28.4,
+        "probTop5": 0
+      },
+      {
+        "name": "Sonsonate Norte",
+        "eduYears": 8.21,
+        "rankProm": 28.6,
+        "probTop5": 0
+      },
+      {
+        "name": "Cabañas Oeste",
+        "eduYears": 7.94,
+        "rankProm": 31.5,
+        "probTop5": 0
+      },
+      {
+        "name": "Morazán Sur",
+        "eduYears": 7.85,
+        "rankProm": 32.3,
+        "probTop5": 0
+      },
+      {
+        "name": "Sonsonate Oeste",
+        "eduYears": 7.79,
+        "rankProm": 33.1,
+        "probTop5": 0
+      },
+      {
+        "name": "Morazán Norte",
+        "eduYears": 7.67,
+        "rankProm": 34.8,
+        "probTop5": 0
+      },
+      {
+        "name": "La Libertad Costa",
+        "eduYears": 7.59,
+        "rankProm": 35.7,
+        "probTop5": 0
+      },
+      {
+        "name": "Chalatenango Centro",
+        "eduYears": 7.59,
+        "rankProm": 35.8,
+        "probTop5": 0
+      },
+      {
+        "name": "Chalatenango Norte",
+        "eduYears": 7.56,
+        "rankProm": 36.3,
+        "probTop5": 0
+      },
+      {
+        "name": "La Unión Sur",
+        "eduYears": 7.48,
+        "rankProm": 37.5,
+        "probTop5": 0
+      },
+      {
+        "name": "Usulután Oeste",
+        "eduYears": 7.39,
+        "rankProm": 38.6,
+        "probTop5": 0
+      },
+      {
+        "name": "Cabañas Este",
+        "eduYears": 7.29,
+        "rankProm": 39.6,
+        "probTop5": 0
+      },
+      {
+        "name": "La Unión Norte",
+        "eduYears": 7.03,
+        "rankProm": 41.5,
+        "probTop5": 0
+      },
+      {
+        "name": "Santa Ana Norte",
+        "eduYears": 7.02,
+        "rankProm": 41.5,
+        "probTop5": 0
+      },
+      {
+        "name": "Ahuachapán Sur",
+        "eduYears": 6.81,
+        "rankProm": 42.9,
+        "probTop5": 0
+      },
+      {
+        "name": "San Miguel Norte",
+        "eduYears": 6.51,
+        "rankProm": 44,
+        "probTop5": 0
+      }
+    ]
+  },
+  "scenario": {
+    "formula": "ICH = 100·(0.5·norm(eduYears) + 0.3·norm(pctHigher) + 0.2·norm(pctUrban))",
+    "municipios": [
+      {
+        "name": "San Salvador Centro",
+        "department": "San Salvador",
+        "eduYears": 11.27,
+        "pctHigher": 29.8,
+        "pctUrban": 99.7,
+        "ich": 87.1
+      },
+      {
+        "name": "San Salvador Este",
+        "department": "San Salvador",
+        "eduYears": 10.42,
+        "pctHigher": 19,
+        "pctUrban": 98.6,
+        "ich": 69.9
+      },
+      {
+        "name": "San Miguel Centro",
+        "department": "San Miguel",
+        "eduYears": 9.29,
+        "pctHigher": 19,
+        "pctUrban": 76.4,
+        "ich": 54.8
+      },
+      {
+        "name": "Santa Ana Centro",
+        "department": "Santa Ana",
+        "eduYears": 9.75,
+        "pctHigher": 21,
+        "pctUrban": 88.9,
+        "ich": 63.3
+      },
+      {
+        "name": "La Libertad Oeste",
+        "department": "La Libertad",
+        "eduYears": 9.69,
+        "pctHigher": 16.4,
+        "pctUrban": 91.8,
+        "ich": 59.5
+      },
+      {
+        "name": "Ahuachapán Centro",
+        "department": "Ahuachapán",
+        "eduYears": 8.44,
+        "pctHigher": 9.5,
+        "pctUrban": 75.7,
+        "ich": 38.8
+      },
+      {
+        "name": "Sonsonate Este",
+        "department": "Sonsonate",
+        "eduYears": 8.23,
+        "pctHigher": 7.2,
+        "pctUrban": 67.5,
+        "ich": 33.2
+      },
+      {
+        "name": "San Salvador Sur",
+        "department": "San Salvador",
+        "eduYears": 9.8,
+        "pctHigher": 16.2,
+        "pctUrban": 93.9,
+        "ich": 60.8
+      },
+      {
+        "name": "La Libertad Centro",
+        "department": "La Libertad",
+        "eduYears": 8.95,
+        "pctHigher": 11.8,
+        "pctUrban": 84.8,
+        "ich": 47.3
+      },
+      {
+        "name": "San Salvador Oeste",
+        "department": "San Salvador",
+        "eduYears": 9.63,
+        "pctHigher": 13.1,
+        "pctUrban": 95.2,
+        "ich": 56.9
+      },
+      {
+        "name": "Sonsonate Centro",
+        "department": "Sonsonate",
+        "eduYears": 9.3,
+        "pctHigher": 15.9,
+        "pctUrban": 83,
+        "ich": 53.7
+      },
+      {
+        "name": "Usulután Este",
+        "department": "Usulután",
+        "eduYears": 8.36,
+        "pctHigher": 11.5,
+        "pctUrban": 61.2,
+        "ich": 36.7
+      },
+      {
+        "name": "Cuscatlán Sur",
+        "department": "Cuscatlán",
+        "eduYears": 9.16,
+        "pctHigher": 10.8,
+        "pctUrban": 86.5,
+        "ich": 48.8
+      },
+      {
+        "name": "Santa Ana Oeste",
+        "department": "Santa Ana",
+        "eduYears": 8.79,
+        "pctHigher": 12.8,
+        "pctUrban": 71.5,
+        "ich": 43.9
+      },
+      {
+        "name": "La Libertad Sur",
+        "department": "La Libertad",
+        "eduYears": 11.85,
+        "pctHigher": 38.8,
+        "pctUrban": 86.8,
+        "ich": 97.3
+      },
+      {
+        "name": "La Paz Centro",
+        "department": "La Paz",
+        "eduYears": 8.41,
+        "pctHigher": 6.3,
+        "pctUrban": 58.4,
+        "ich": 32.3
+      },
+      {
+        "name": "La Unión Sur",
+        "department": "La Unión",
+        "eduYears": 7.48,
+        "pctHigher": 8,
+        "pctUrban": 32.1,
+        "ich": 19.6
+      },
+      {
+        "name": "La Libertad Este",
+        "department": "La Libertad",
+        "eduYears": 11.06,
+        "pctHigher": 32,
+        "pctUrban": 93.2,
+        "ich": 85.6
+      },
+      {
+        "name": "Usulután Norte",
+        "department": "Usulután",
+        "eduYears": 8.39,
+        "pctHigher": 10.4,
+        "pctUrban": 50.9,
+        "ich": 34
+      },
+      {
+        "name": "Morazán Sur",
+        "department": "Morazán",
+        "eduYears": 7.85,
+        "pctHigher": 11.8,
+        "pctUrban": 37,
+        "ich": 27.2
+      },
+      {
+        "name": "La Paz Oeste",
+        "department": "La Paz",
+        "eduYears": 8.75,
+        "pctHigher": 8.2,
+        "pctUrban": 64.5,
+        "ich": 38.3
+      },
+      {
+        "name": "Sonsonate Norte",
+        "department": "Sonsonate",
+        "eduYears": 8.21,
+        "pctHigher": 8.4,
+        "pctUrban": 82,
+        "ich": 37
+      },
+      {
+        "name": "La Unión Norte",
+        "department": "La Unión",
+        "eduYears": 7.03,
+        "pctHigher": 6,
+        "pctUrban": 14.4,
+        "ich": 10.1
+      },
+      {
+        "name": "Cuscatlán Norte",
+        "department": "Cuscatlán",
+        "eduYears": 8.67,
+        "pctHigher": 6.7,
+        "pctUrban": 66.6,
+        "ich": 36.7
+      },
+      {
+        "name": "Ahuachapán Sur",
+        "department": "Ahuachapán",
+        "eduYears": 6.81,
+        "pctHigher": 2.7,
+        "pctUrban": 48.7,
+        "ich": 12.3
+      },
+      {
+        "name": "San Vicente Sur",
+        "department": "San Vicente",
+        "eduYears": 8.52,
+        "pctHigher": 12.7,
+        "pctUrban": 76.7,
+        "ich": 42.4
+      },
+      {
+        "name": "La Paz Este",
+        "department": "La Paz",
+        "eduYears": 8.98,
+        "pctHigher": 13.6,
+        "pctUrban": 76.6,
+        "ich": 47.4
+      },
+      {
+        "name": "San Miguel Oeste",
+        "department": "San Miguel",
+        "eduYears": 8.43,
+        "pctHigher": 13.4,
+        "pctUrban": 65.9,
+        "ich": 39.9
+      },
+      {
+        "name": "La Libertad Norte",
+        "department": "La Libertad",
+        "eduYears": 8.86,
+        "pctHigher": 11.6,
+        "pctUrban": 71.8,
+        "ich": 43.7
+      },
+      {
+        "name": "Santa Ana Norte",
+        "department": "Santa Ana",
+        "eduYears": 7.02,
+        "pctHigher": 5.5,
+        "pctUrban": 31.5,
+        "ich": 13.1
+      },
+      {
+        "name": "La Libertad Costa",
+        "department": "La Libertad",
+        "eduYears": 7.59,
+        "pctHigher": 4.7,
+        "pctUrban": 43.4,
+        "ich": 20.2
+      },
+      {
+        "name": "Chalatenango Centro",
+        "department": "Chalatenango",
+        "eduYears": 7.59,
+        "pctHigher": 8.3,
+        "pctUrban": 26.7,
+        "ich": 19.8
+      },
+      {
+        "name": "Cabañas Oeste",
+        "department": "Cabañas",
+        "eduYears": 7.94,
+        "pctHigher": 10.2,
+        "pctUrban": 49,
+        "ich": 29.2
+      },
+      {
+        "name": "San Miguel Norte",
+        "department": "San Miguel",
+        "eduYears": 6.51,
+        "pctHigher": 5.8,
+        "pctUrban": 21.9,
+        "ich": 6.6
+      },
+      {
+        "name": "Ahuachapán Norte",
+        "department": "Ahuachapán",
+        "eduYears": 9.09,
+        "pctHigher": 14.8,
+        "pctUrban": 81.3,
+        "ich": 50.4
+      },
+      {
+        "name": "Usulután Oeste",
+        "department": "Usulután",
+        "eduYears": 7.39,
+        "pctHigher": 6.5,
+        "pctUrban": 45.4,
+        "ich": 20.2
+      },
+      {
+        "name": "Chalatenango Sur",
+        "department": "Chalatenango",
+        "eduYears": 8.63,
+        "pctHigher": 15,
+        "pctUrban": 30.6,
+        "ich": 35.9
+      },
+      {
+        "name": "Santa Ana Este",
+        "department": "Santa Ana",
+        "eduYears": 8.29,
+        "pctHigher": 7.4,
+        "pctUrban": 65.9,
+        "ich": 33.6
+      },
+      {
+        "name": "Cabañas Este",
+        "department": "Cabañas",
+        "eduYears": 7.29,
+        "pctHigher": 8.7,
+        "pctUrban": 33.6,
+        "ich": 18.7
+      },
+      {
+        "name": "San Salvador Norte",
+        "department": "San Salvador",
+        "eduYears": 8.44,
+        "pctHigher": 9.2,
+        "pctUrban": 69.8,
+        "ich": 37.3
+      },
+      {
+        "name": "San Vicente Norte",
+        "department": "San Vicente",
+        "eduYears": 8.27,
+        "pctHigher": 12.5,
+        "pctUrban": 46.4,
+        "ich": 33.7
+      },
+      {
+        "name": "Sonsonate Oeste",
+        "department": "Sonsonate",
+        "eduYears": 7.79,
+        "pctHigher": 5.3,
+        "pctUrban": 70.8,
+        "ich": 28.2
+      },
+      {
+        "name": "Morazán Norte",
+        "department": "Morazán",
+        "eduYears": 7.67,
+        "pctHigher": 8.8,
+        "pctUrban": 2.4,
+        "ich": 15.9
+      },
+      {
+        "name": "Chalatenango Norte",
+        "department": "Chalatenango",
+        "eduYears": 7.56,
+        "pctHigher": 9.6,
+        "pctUrban": 27.3,
+        "ich": 20.7
+      }
+    ]
+  }
+}

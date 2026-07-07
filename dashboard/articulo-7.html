@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Predecir y simular el futuro · El Salvador Sintético</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b3d91'/><rect x='6' y='6' width='20' height='20' rx='5' fill='%234a90e2'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="article.css" />
+  <style>
+    .sim { max-width: 960px; margin: 24px auto; }
+    .sim .ctl { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; background: var(--blue-050); border: 1px solid var(--blue-100); border-radius: 14px; padding: 16px 20px; margin-bottom: 14px; }
+    .sim input[type=range] { flex: 1; min-width: 220px; accent-color: var(--blue-600); }
+    .sim .val { font-weight: 800; color: var(--blue-700); font-size: 20px; min-width: 90px; }
+    .sim .read { font-size: 14px; color: var(--ink-soft); }
+    .sim .read b { color: var(--blue-700); }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="index.html" style="color:inherit"><span class="dot"></span> El Salvador <small>Sintético</small></a>
+      <div class="nav-links"><a href="index.html">Dashboard</a><a href="publicaciones.html">Publicaciones</a></div>
+    </div>
+  </nav>
+
+  <article>
+    <div class="article article-hero">
+      <span class="eyebrow">🔮 Predicción y simulación · Datos sintéticos</span>
+      <h1>Predecir y simular el futuro</h1>
+      <p class="subtitle">¿Puede una máquina adivinar quién llegará a la universidad? ¿Qué tan seguros estamos de los
+        rankings? Y lo más divertido: <b>mueve tú una perilla</b> y mira cómo cambiaría el país.</p>
+      <div class="byline"><span class="who"><span class="av"></span> Análisis</span><span>· 7 min de lectura</span><span>· ML + simulación</span></div>
+    </div>
+
+    <div class="article">
+      <div class="synthetic-badge">
+        <span class="ic">⚠️</span>
+        <span><b>Datos sintéticos.</b> El simulador de abajo es un "¿y si…?" ilustrativo sobre el mundo simulado, no una promesa de resultados reales.</span>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p class="lead-p dropcap">Entrenamos una máquina (un <b>árbol de decisión</b>: una cadena de preguntas tipo "¿vive
+        en la ciudad? ¿es de San Salvador?") para adivinar quién alcanzará estudios superiores. Y aquí va una lección de
+        humildad que me encanta.</p>
+    </div>
+
+    <div class="statline reveal">
+      <div class="bigstat"><div class="n" id="acc">—</div><div class="l">Acierta el árbol</div></div>
+      <div class="bigstat"><div class="n" id="base">—</div><div class="l">Acierta "adivinar siempre que NO"</div></div>
+    </div>
+
+    <div class="prose">
+      <p>¿Ves el truco? La máquina acierta <b id="acc2">—</b>… pero decir "nadie llega a superior" ya acierta
+        <b id="base2">—</b> (porque pocos llegan). O sea: con solo edad, sexo y lugar, <b>predecir quién estudiará una
+        carrera es muy difícil</b>. El destino no está escrito en la demografía — y eso, en el fondo, es una
+        <b>buena noticia</b>. La pista más útil que encontró la máquina fue simplemente <b>vivir en San Salvador</b>.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">¿Qué mira la máquina para decidir?</div>
+        <div class="fsub">Importancia de cada pista (suma 100%)</div>
+        <div id="fImp" class="fig-chart" style="height:280px"></div>
+      </div>
+      <figcaption>Fig. 1 — El lugar (San Salvador, ciudad) manda; el sexo casi no aporta.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <h2>¿Qué tan de fiar son los rankings?</h2>
+      <p>Cada vez que decimos "este municipio es el #1", ¿estamos seguros o es suerte del muestreo? Para saberlo hicimos
+        una <b>simulación Monte Carlo</b>: repetimos el cálculo <b id="mcT">—</b> veces metiéndole ruido realista, y
+        contamos cuántas veces cada municipio quedó entre los 5 mejores. Si un municipio sale casi siempre arriba, su
+        posición es <b>sólida</b>.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">Municipios con el puesto más sólido</div>
+        <div class="fsub">% de simulaciones en que quedaron en el Top 5</div>
+        <div id="fMc" class="fig-chart"></div>
+      </div>
+      <figcaption>Fig. 2 — Cuando la barra llega a 100%, el liderazgo no es casualidad.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <h2>Y ahora… juega tú: el simulador</h2>
+      <p>Aquí está lo bonito de tener un gemelo digital: puedes hacer <b>experimentos imposibles en la vida real</b>.
+        Mueve la perilla para <b>darles más años de escuela a los municipios más rezagados</b> (el 25% de abajo) y
+        observa cómo se repinta el mapa del Índice de Capital Humano.</p>
+    </div>
+
+    <div class="sim">
+      <div class="ctl">
+        <span>+ años de escuela al 25% más rezagado:</span>
+        <input type="range" id="slider" min="0" max="4" step="0.5" value="0" />
+        <span class="val" id="sliderVal">+0.0</span>
+      </div>
+      <div class="card">
+        <div class="ftitle">Mapa del Índice de Capital Humano — escenario</div>
+        <div class="read" id="simRead" style="margin:2px 0 6px;"></div>
+        <div id="fSim" class="fig-chart tall"></div>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>Verás que basta un empujón focalizado para que el mapa se vuelva <b>más parejo</b> — sin tocar a los que ya
+        están bien. Eso es, en esencia, lo que busca una política de equidad territorial. (Recuerda: es un laboratorio;
+        con datos reales calcularíamos también cuánto cuesta lograr ese "+1 año".)</p>
+    </div>
+
+    <div class="takeaway reveal">
+      <h4>En una frase</h4>
+      <ul>
+        <li>Predecir quién estudia una carrera con pura demografía es <b>difícil</b>: el destino no está escrito.</li>
+        <li>El Monte Carlo nos dice <b>cuánto confiar</b> en cada ranking.</li>
+        <li>El simulador muestra que <b>empujar a los rezagados</b> empareja el país rápido.</li>
+      </ul>
+    </div>
+
+    <div class="next"><a href="articulo-8.html"><div><div class="lbl">Siguiente</div><div class="t">¿De qué sueña El Salvador? →</div></div><div class="arrow">→</div></a></div>
+  </article>
+
+  <footer><div class="wrap"><div>Árbol de decisión, Monte Carlo y simulador en Node.js + navegador · <b>NVIDIA</b> CC-BY-4.0 · sintético.</div><div><a href="publicaciones.html">← Publicaciones</a></div></div></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script src="viz.js"></script>
+  <script>
+    const { BLUE, FONT, fmt, baseTooltip, axisStyle, make, reveal, progress, load } = VIZ;
+    const set = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v; };
+    (async () => {
+      progress();
+      const [a, geo] = await Promise.all([load('data/advanced.json'), load('data/municipios.geojson')]);
+      echarts.registerMap('SVmuni', geo);
+
+      // árbol: accuracy + importancias
+      const acc = Math.round(a.tree.accuracy * 100), base = Math.round((1 - a.tree.baseRate) * 100);
+      set('acc', acc + '%'); set('acc2', acc + '%'); set('base', base + '%'); set('base2', base + '%');
+      const imp = a.tree.importances.filter((x) => x.importance > 0);
+      make(document.getElementById('fImp')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'axis', axisPointer: { type: 'shadow' }, valueFormatter: (v) => Math.round(v * 100) + '%' },
+        grid: { left: 4, right: 44, top: 8, bottom: 6, containLabel: true },
+        xAxis: { type: 'value', ...axisStyle, axisLabel: { ...axisStyle.axisLabel, formatter: (v) => Math.round(v * 100) + '%' } },
+        yAxis: { type: 'category', inverse: true, data: imp.map((x) => x.name), axisLine: { show: false }, axisTick: { show: false }, axisLabel: { color: BLUE.ink, fontFamily: FONT, fontSize: 12 } },
+        series: [{ type: 'bar', barWidth: '60%', data: imp.map((x) => x.importance), itemStyle: { color: BLUE.p500, borderRadius: [0, 4, 4, 0] }, label: { show: true, position: 'right', formatter: (p) => Math.round(p.value * 100) + '%', color: BLUE.muted, fontFamily: FONT, fontSize: 11 } }],
+      });
+
+      // Monte Carlo: probTop5 (top 12 by probTop5)
+      set('mcT', fmt(a.monteCarlo.T));
+      const mc = [...a.monteCarlo.ranking].sort((x, y) => y.probTop5 - x.probTop5).slice(0, 12).reverse();
+      make(document.getElementById('fMc')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'axis', axisPointer: { type: 'shadow' }, valueFormatter: (v) => v + '%' },
+        grid: { left: 4, right: 44, top: 8, bottom: 6, containLabel: true },
+        xAxis: { type: 'value', max: 100, ...axisStyle, axisLabel: { ...axisStyle.axisLabel, formatter: (v) => v + '%' } },
+        yAxis: { type: 'category', data: mc.map((x) => x.name), axisLine: { show: false }, axisTick: { show: false }, axisLabel: { color: BLUE.ink, fontFamily: FONT, fontSize: 11.5 } },
+        series: [{ type: 'bar', barWidth: '62%', data: mc.map((x) => x.probTop5), itemStyle: { color: BLUE.p600, borderRadius: [0, 4, 4, 0] }, label: { show: true, position: 'right', formatter: (p) => p.value + '%', color: BLUE.muted, fontFamily: FONT, fontSize: 11 } }],
+      });
+
+      // ---- Simulador interactivo ----
+      const M = a.scenario.municipios;
+      const edu = M.map((m) => m.eduYears), hi = M.map((m) => m.pctHigher), ur = M.map((m) => m.pctUrban);
+      const q25 = [...edu].sort((x, y) => x - y)[Math.floor(edu.length * 0.25)];
+      const isBottom = edu.map((e) => e <= q25);
+      const minmax = (arr) => { const mn = Math.min(...arr), mx = Math.max(...arr); return (v) => mx === mn ? 0.5 : (v - mn) / (mx - mn) };
+      function ichWith(extra) {
+        const e2 = edu.map((e, i) => e + (isBottom[i] ? extra : 0));
+        const ne = minmax(e2), nh = minmax(hi), nu = minmax(ur);
+        return e2.map((_, i) => 100 * (0.5 * ne(e2[i]) + 0.3 * nh(hi[i]) + 0.2 * nu(ur[i])));
+      }
+      const base0 = ichWith(0);
+      const simChart = make(document.getElementById('fSim'));
+      function draw(extra) {
+        const ich = ichWith(extra);
+        const data = M.map((m, i) => ({ name: m.name, value: +ich[i].toFixed(1) }));
+        simChart.setOption({
+          textStyle: { fontFamily: FONT },
+          tooltip: { ...baseTooltip, trigger: 'item', formatter: (p) => p.data ? `<b>${p.name}</b><br/>ICH: ${p.value}${isBottom[M.findIndex((m) => m.name === p.name)] ? ' <span style="color:'+BLUE.teal+'">(rezagado)</span>' : ''}` : p.name },
+          visualMap: { min: 0, max: 100, calculable: true, left: 12, bottom: 14, text: ['alto', 'bajo'], textStyle: { color: BLUE.muted, fontFamily: FONT }, inRange: { color: BLUE.seq }, itemHeight: 110 },
+          series: [{ type: 'map', map: 'SVmuni', nameProperty: 'municipality', roam: false, itemStyle: { borderColor: '#fff', borderWidth: 0.5 }, label: { show: false }, emphasis: { label: { show: false } }, data }],
+        });
+        const avgBottomBefore = base0.filter((_, i) => isBottom[i]).reduce((s, v) => s + v, 0) / isBottom.filter(Boolean).length;
+        const avgBottomAfter = ich.filter((_, i) => isBottom[i]).reduce((s, v) => s + v, 0) / isBottom.filter(Boolean).length;
+        set('simRead', '');
+        document.getElementById('simRead').innerHTML = extra === 0
+          ? 'Mueve la perilla para simular. Hay <b>' + isBottom.filter(Boolean).length + '</b> municipios en el 25% más rezagado.'
+          : `Con <b>+${extra.toFixed(1)} años</b>, el ICH promedio de los rezagados sube de <b>${avgBottomBefore.toFixed(0)}</b> a <b>${avgBottomAfter.toFixed(0)}</b>. El mapa se empareja.`;
+      }
+      draw(0);
+      const sl = document.getElementById('slider');
+      sl.addEventListener('input', () => { const x = parseFloat(sl.value); document.getElementById('sliderVal').textContent = '+' + x.toFixed(1); draw(x); });
+
+      reveal();
+    })();
+  </script>
+</body>
+</html>

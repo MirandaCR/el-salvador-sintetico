@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Un portafolio de capital humano · El Salvador Sintético</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b3d91'/><rect x='6' y='6' width='20' height='20' rx='5' fill='%234a90e2'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="article.css" />
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="index.html" style="color:inherit"><span class="dot"></span> El Salvador <small>Sintético</small></a>
+      <div class="nav-links"><a href="index.html">Dashboard</a><a href="publicaciones.html">Publicaciones</a></div>
+    </div>
+  </nav>
+
+  <article>
+    <div class="article article-hero">
+      <span class="eyebrow">🎯 Economía + Inversión · Datos sintéticos</span>
+      <h1>Un portafolio de capital humano</h1>
+      <p class="subtitle">Si el gobierno invirtiera en educación como un inversionista arma su portafolio —buscando
+        el mejor rendimiento sin poner todos los huevos en la misma canasta—, ¿en qué departamentos entraría primero?
+        Le apliqué al país la misma lógica de un trader.</p>
+      <div class="byline">
+        <span class="who"><span class="av"></span> Análisis</span>
+        <span>· 6 min de lectura</span>
+        <span>· Micro + finanzas</span>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="synthetic-badge">
+        <span class="ic">⚠️</span>
+        <span><b>Ejercicio ilustrativo</b> sobre datos <b>sintéticos</b>: sirve para mostrar <b>cómo se prioriza</b>
+          una inversión, no para dictar el presupuesto real del país.</span>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p class="lead-p dropcap">Un buen inversionista no compra al azar. Se pregunta dos cosas de cada opción:
+        ¿cuánto puedo ganar? (el <b>rendimiento</b>) y ¿qué tan segura es? (el <b>riesgo</b>). Y no pone todo en un solo
+        lugar: <b>diversifica</b>.</p>
+      <p>La educación de un país se puede mirar igual. Cada departamento es como una <b>acción</b> en la que el Estado
+        puede "invertir" (poner escuelas, becas, maestros). Traduzcamos:</p>
+      <ul>
+        <li><b>El "rendimiento" = cuánto se puede mejorar.</b> Un departamento que ya está muy arriba tiene poco margen;
+          uno rezagado tiene <b>mucho por ganar</b> con cada dólar. A eso le llamamos <i>potencial</i>.</li>
+        <li><b>El "riesgo" = qué tan disparejo está por dentro.</b> Si en un mismo lugar conviven gente con mucha y con
+          poquísima educación, el resultado de invertir es menos predecible.</li>
+      </ul>
+      <p>Con esas dos medidas por departamento, armé este "mapa de inversión":</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">El mapa de inversión: potencial vs. riesgo</div>
+        <div class="fsub">Cada burbuja es un departamento · tamaño = cuánta gente vive ahí</div>
+        <div id="fScatter" class="fig-chart tall"></div>
+      </div>
+      <figcaption>Fig. 1 — Arriba a la derecha: mucho por ganar. Las burbujas grandes ahí son las <b>joyas</b>:
+        gran potencial y mucha gente a la que llegar.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <p>La estrategia de un buen inversionista de "valor" es clara: <b>buscar lo bueno-bonito-y-desatendido</b>.
+        Es decir, poner el dinero donde hay <b>más por mejorar</b> y donde ese esfuerzo alcanza a <b>más personas</b>.</p>
+      <p>Si combinamos esas dos ideas (potencial × población) en una sola receta, sale este reparto sugerido del
+        presupuesto — un <b>portafolio</b> de inversión en gente:</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">El portafolio sugerido: dónde poner cada dólar</div>
+        <div class="fsub">% del presupuesto de capital humano que recibiría cada departamento</div>
+        <div id="fAlloc" class="fig-chart tall"></div>
+      </div>
+      <figcaption>Fig. 2 — No es repartir parejo: es concentrar donde el impacto por dólar es mayor.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <div class="statline" id="topPicks"></div>
+
+      <blockquote>Repartir el presupuesto en partes iguales suena "justo", pero rinde poco. Un portafolio inteligente
+        <b>sobrepondera lo desatendido</b> — igual que un inversionista compra barato lo que vale mucho.</blockquote>
+
+      <h2>Lo que un trader le diría a un ministro</h2>
+      <ul>
+        <li><b>Diversifica, pero con criterio.</b> No es meter lo mismo en los 14; es pesar cada uno por su potencial
+          y su población.</li>
+        <li><b>El riesgo se gestiona, no se evita.</b> Los departamentos más "disparejos" por dentro necesitan
+          acompañamiento (no solo plata): programas focalizados dentro del propio territorio.</li>
+        <li><b>Piensa en rendimiento por dólar, no en gasto total.</b> La pregunta correcta no es "¿cuánto gastamos?"
+          sino "¿cuánto capital humano compramos con cada dólar?".</li>
+      </ul>
+      <p>Como siempre en esta serie: es un laboratorio sintético. Pero el <b>método</b> —tratar la inversión social como
+        un portafolio de riesgo-rendimiento— es totalmente real y se usa en economía del desarrollo. Con datos reales
+        (ingresos, costos por alumno, resultados), esto se vuelve una herramienta de presupuesto de verdad.</p>
+    </div>
+
+    <div class="takeaway reveal">
+      <h4>En una frase</h4>
+      <ul>
+        <li>Pensar la educación como inversión: rendimiento = cuánto se puede mejorar; riesgo = qué tan disparejo está.</li>
+        <li>La jugada de "valor": invertir donde hay más potencial y más gente — no repartir parejo.</li>
+        <li>Con datos reales, este ejercicio se convierte en una guía de presupuesto.</li>
+      </ul>
+    </div>
+
+    <div class="next">
+      <a href="publicaciones.html">
+        <div><div class="lbl">Volver</div><div class="t">Todas las publicaciones</div></div>
+        <div class="arrow">≡</div>
+      </a>
+    </div>
+  </article>
+
+  <footer>
+    <div class="wrap">
+      <div>Portafolio calculado en Node.js · Fuente: <b>NVIDIA</b> (CC-BY-4.0) · Datos sintéticos.</div>
+      <div><a href="articulo-3.html">← Artículo anterior</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script src="viz.js"></script>
+  <script>
+    const { BLUE, FONT, fmt, baseTooltip, axisStyle, make, reveal, progress, load } = VIZ;
+    (async () => {
+      progress();
+      const m = await load('data/models.json');
+      const pf = m.portfolio;
+
+      // Fig1: scatter potencial vs riesgo (burbuja=poblacion)
+      const maxN = Math.max(...pf.map((p) => p.poblacion));
+      make(document.getElementById('fScatter')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'item', formatter: (p) => `<b>${p.data.name}</b><br/>Potencial de mejora: ${p.value[1]}<br/>Riesgo (dispersión): ${p.value[0]}<br/>Población: ${fmt(p.data.pop)}<br/>Asignación: <b>${p.data.alloc}%</b>` },
+        grid: { left: 10, right: 24, top: 20, bottom: 36, containLabel: true },
+        xAxis: { type: 'value', name: 'Riesgo (qué tan disparejo) →', nameLocation: 'middle', nameGap: 30, nameTextStyle: { color: BLUE.muted, fontFamily: FONT }, ...axisStyle, scale: true },
+        yAxis: { type: 'value', name: 'Potencial de mejora →', nameTextStyle: { color: BLUE.muted, fontFamily: FONT }, ...axisStyle, scale: true },
+        series: [{
+          type: 'scatter',
+          data: pf.map((p) => ({ name: p.name, pop: p.poblacion, alloc: p.asignacion, value: [p.riesgo, p.retornoPotencial], symbolSize: 16 + 46 * Math.sqrt(p.poblacion / maxN), itemStyle: { color: BLUE.p500, opacity: .82, borderColor: '#fff', borderWidth: 1.5 } })),
+          label: { show: true, formatter: (p) => p.data.name, position: 'top', color: BLUE.ink, fontFamily: FONT, fontSize: 10.5, fontWeight: 600 },
+          emphasis: { itemStyle: { color: BLUE.p700, opacity: 1 } },
+        }],
+      });
+
+      // Fig2: allocation bar
+      const alloc = [...pf].sort((a, b) => a.asignacion - b.asignacion);
+      make(document.getElementById('fAlloc')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (p) => `<b>${p[0].name}</b><br/>Asignación: <b>${p[0].value}%</b>` },
+        grid: { left: 4, right: 44, top: 8, bottom: 20, containLabel: true },
+        xAxis: { type: 'value', name: '% del presupuesto', nameLocation: 'middle', nameGap: 30, nameTextStyle: { color: BLUE.muted, fontFamily: FONT }, ...axisStyle, axisLabel: { ...axisStyle.axisLabel, formatter: (v) => v + '%' } },
+        yAxis: { type: 'category', data: alloc.map((p) => p.name), axisLine: { show: false }, axisTick: { show: false }, axisLabel: { color: BLUE.ink, fontFamily: FONT, fontSize: 12 } },
+        visualMap: { show: false, min: 0, max: Math.max(...alloc.map((p) => p.asignacion)), dimension: 0, inRange: { color: [BLUE.p300, BLUE.p700] } },
+        series: [{ type: 'bar', data: alloc.map((p) => p.asignacion), barWidth: '64%', itemStyle: { borderRadius: [0, 4, 4, 0] }, label: { show: true, position: 'right', formatter: (p) => p.value + '%', color: BLUE.ink, fontFamily: FONT, fontSize: 11, fontWeight: 700 } }],
+      });
+
+      // top picks
+      document.getElementById('topPicks').innerHTML = pf.slice(0, 3).map((p, i) =>
+        `<div class="bigstat"><div class="n">${p.asignacion}%</div><div class="l">#${i + 1} ${p.name}<br/>${fmt(p.poblacion)} personas</div></div>`).join('');
+
+      reveal();
+    })();
+  </script>
+</body>
+</html>

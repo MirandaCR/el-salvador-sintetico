@@ -1,0 +1,2611 @@
+{
+  "meta": {
+    "dataset": "nvidia/Nemotron-Personas-El-Salvador",
+    "license": "CC-BY-4.0",
+    "naturaleza": "SINTETICO: personas generadas por IA, calibradas a distribuciones demograficas. No son individuos reales.",
+    "totalPersonas": 148000,
+    "nDepartamentos": 14,
+    "nMunicipios": 44,
+    "nOcupaciones": 119,
+    "geometria": "geoBoundaries ADM1 (solo lienzo cartografico)"
+  },
+  "kpis": {
+    "totalPersonas": 148000,
+    "edadPromedio": 42.8,
+    "pctFemenino": 53.8,
+    "pctUrbano": 73.7,
+    "nDepartamentos": 14,
+    "nMunicipios": 44,
+    "nOcupaciones": 119,
+    "eduYearsGlobal": 9.16,
+    "pctHigherGlobal": 15.3
+  },
+  "distributions": {
+    "sex": {
+      "Masculino": 68368,
+      "Femenino": 79632
+    },
+    "area": {
+      "urbano": 109063,
+      "rural": 38937
+    },
+    "edu": {
+      "bachillerato": 45436,
+      "universitario": 17766,
+      "secundaria": 26057,
+      "primaria": 36437,
+      "ninguno": 17363,
+      "tecnico": 3864,
+      "posgrado": 1077
+    },
+    "marital": {
+      "union_libre": 35464,
+      "casado": 45148,
+      "soltero": 43846,
+      "viudo": 8259,
+      "separado": 13040,
+      "divorciado": 2243
+    },
+    "household": {
+      "nuclear": 52618,
+      "monoparental": 18100,
+      "extendido": 53126,
+      "pareja": 14104,
+      "unipersonal": 10052
+    },
+    "langs": {
+      "español": 134650,
+      "español e inglés": 12770,
+      "español y otro idioma": 453,
+      "lengua de señas salvadoreña (LESSA)": 89,
+      "español y lengua indígena (náhuat, lenca o cacaopera)": 37,
+      "lengua indígena (náhuat, lenca o cacaopera)": 1
+    }
+  },
+  "eduOrder": [
+    "ninguno",
+    "primaria",
+    "secundaria",
+    "bachillerato",
+    "tecnico",
+    "universitario",
+    "posgrado"
+  ],
+  "pyramid": [
+    {
+      "bin": "18-24",
+      "Masculino": 11870,
+      "Femenino": 12316
+    },
+    {
+      "bin": "25-29",
+      "Masculino": 8545,
+      "Femenino": 9607
+    },
+    {
+      "bin": "30-34",
+      "Masculino": 7480,
+      "Femenino": 8587
+    },
+    {
+      "bin": "35-39",
+      "Masculino": 6577,
+      "Femenino": 7567
+    },
+    {
+      "bin": "40-44",
+      "Masculino": 5998,
+      "Femenino": 7240
+    },
+    {
+      "bin": "45-49",
+      "Masculino": 5812,
+      "Femenino": 7160
+    },
+    {
+      "bin": "50-54",
+      "Masculino": 5258,
+      "Femenino": 6188
+    },
+    {
+      "bin": "55-59",
+      "Masculino": 4242,
+      "Femenino": 5395
+    },
+    {
+      "bin": "60-64",
+      "Masculino": 3825,
+      "Femenino": 4461
+    },
+    {
+      "bin": "65-69",
+      "Masculino": 2884,
+      "Femenino": 3540
+    },
+    {
+      "bin": "70-74",
+      "Masculino": 2359,
+      "Femenino": 2790
+    },
+    {
+      "bin": "75-79",
+      "Masculino": 1595,
+      "Femenino": 1962
+    },
+    {
+      "bin": "80-84",
+      "Masculino": 1035,
+      "Femenino": 1439
+    },
+    {
+      "bin": "85+",
+      "Masculino": 888,
+      "Femenino": 1380
+    }
+  ],
+  "crosstabs": {
+    "eduBySex": {
+      "bachillerato": {
+        "Masculino": 21727,
+        "Femenino": 23709
+      },
+      "universitario": {
+        "Masculino": 7808,
+        "Femenino": 9958
+      },
+      "secundaria": {
+        "Femenino": 13183,
+        "Masculino": 12874
+      },
+      "primaria": {
+        "Masculino": 16209,
+        "Femenino": 20228
+      },
+      "ninguno": {
+        "Masculino": 7289,
+        "Femenino": 10074
+      },
+      "tecnico": {
+        "Femenino": 1976,
+        "Masculino": 1888
+      },
+      "posgrado": {
+        "Femenino": 504,
+        "Masculino": 573
+      }
+    },
+    "eduByArea": {
+      "bachillerato": {
+        "urbano": 35270,
+        "rural": 10166
+      },
+      "universitario": {
+        "urbano": 14673,
+        "rural": 3093
+      },
+      "secundaria": {
+        "urbano": 18911,
+        "rural": 7146
+      },
+      "primaria": {
+        "urbano": 24671,
+        "rural": 11766
+      },
+      "ninguno": {
+        "urbano": 11586,
+        "rural": 5777
+      },
+      "tecnico": {
+        "rural": 855,
+        "urbano": 3009
+      },
+      "posgrado": {
+        "urbano": 943,
+        "rural": 134
+      }
+    },
+    "maritalBySex": {
+      "union_libre": {
+        "Masculino": 17983,
+        "Femenino": 17481
+      },
+      "casado": {
+        "Masculino": 22539,
+        "Femenino": 22609
+      },
+      "soltero": {
+        "Masculino": 21488,
+        "Femenino": 22358
+      },
+      "viudo": {
+        "Masculino": 1687,
+        "Femenino": 6572
+      },
+      "separado": {
+        "Femenino": 9088,
+        "Masculino": 3952
+      },
+      "divorciado": {
+        "Masculino": 719,
+        "Femenino": 1524
+      }
+    }
+  },
+  "departments": [
+    {
+      "name": "San Salvador",
+      "count": 39603,
+      "pctFemale": 55.7,
+      "pctUrban": 97.1,
+      "meanAge": 43.8,
+      "eduYears": 10.55,
+      "eduStd": 4.33,
+      "pctHigher": 22.3,
+      "eduDist": {
+        "universitario": 7126,
+        "bachillerato": 15048,
+        "primaria": 6329,
+        "ninguno": 2782,
+        "secundaria": 6617,
+        "tecnico": 1192,
+        "posgrado": 509
+      },
+      "marital": {
+        "casado": 12191,
+        "soltero": 13500,
+        "viudo": 2197,
+        "separado": 2861,
+        "union_libre": 8029,
+        "divorciado": 825
+      },
+      "household": {
+        "nuclear": 13346,
+        "monoparental": 5038,
+        "extendido": 14797,
+        "unipersonal": 2779,
+        "pareja": 3643
+      },
+      "topOccupations": [
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 3544
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 2388
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 1970
+        },
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 1876
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 1718
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 1593
+        }
+      ],
+      "ich": 100
+    },
+    {
+      "name": "La Libertad",
+      "count": 19625,
+      "pctFemale": 53.9,
+      "pctUrban": 82.2,
+      "meanAge": 42.8,
+      "eduYears": 9.79,
+      "eduStd": 4.66,
+      "pctHigher": 19.9,
+      "eduDist": {
+        "secundaria": 3259,
+        "tecnico": 589,
+        "bachillerato": 6316,
+        "universitario": 3005,
+        "primaria": 4204,
+        "ninguno": 1944,
+        "posgrado": 308
+      },
+      "marital": {
+        "soltero": 5620,
+        "casado": 6288,
+        "union_libre": 4531,
+        "divorciado": 332,
+        "separado": 1846,
+        "viudo": 1008
+      },
+      "household": {
+        "extendido": 7113,
+        "monoparental": 2371,
+        "pareja": 1918,
+        "nuclear": 6970,
+        "unipersonal": 1253
+      },
+      "topOccupations": [
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 1688
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 1197
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 1130
+        },
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 1125
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 1008
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 779
+        }
+      ],
+      "ich": 79.7
+    },
+    {
+      "name": "Santa Ana",
+      "count": 13868,
+      "pctFemale": 54.1,
+      "pctUrban": 72.9,
+      "meanAge": 43.3,
+      "eduYears": 8.91,
+      "eduStd": 4.63,
+      "pctHigher": 14.9,
+      "eduDist": {
+        "secundaria": 2513,
+        "universitario": 1666,
+        "bachillerato": 3771,
+        "primaria": 3872,
+        "tecnico": 334,
+        "ninguno": 1647,
+        "posgrado": 65
+      },
+      "marital": {
+        "union_libre": 3305,
+        "soltero": 3959,
+        "casado": 4337,
+        "separado": 1298,
+        "divorciado": 237,
+        "viudo": 732
+      },
+      "household": {
+        "extendido": 5000,
+        "nuclear": 4897,
+        "pareja": 1347,
+        "monoparental": 1662,
+        "unipersonal": 962
+      },
+      "topOccupations": [
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 1152
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 895
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 887
+        },
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 865
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 639
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 578
+        }
+      ],
+      "ich": 54
+    },
+    {
+      "name": "Sonsonate",
+      "count": 12111,
+      "pctFemale": 52.9,
+      "pctUrban": 75.8,
+      "meanAge": 41.7,
+      "eduYears": 8.51,
+      "eduStd": 4.42,
+      "pctHigher": 10,
+      "eduDist": {
+        "primaria": 3538,
+        "bachillerato": 3492,
+        "secundaria": 2356,
+        "universitario": 877,
+        "ninguno": 1519,
+        "tecnico": 300,
+        "posgrado": 29
+      },
+      "marital": {
+        "casado": 3797,
+        "soltero": 2994,
+        "separado": 1318,
+        "union_libre": 3135,
+        "viudo": 720,
+        "divorciado": 147
+      },
+      "household": {
+        "extendido": 4318,
+        "monoparental": 1430,
+        "nuclear": 4441,
+        "unipersonal": 788,
+        "pareja": 1134
+      },
+      "topOccupations": [
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 963
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 916
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 773
+        },
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 740
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 571
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 503
+        }
+      ],
+      "ich": 39.1
+    },
+    {
+      "name": "San Miguel",
+      "count": 11140,
+      "pctFemale": 54.1,
+      "pctUrban": 66,
+      "meanAge": 42.7,
+      "eduYears": 8.69,
+      "eduStd": 4.98,
+      "pctHigher": 15.9,
+      "eduDist": {
+        "bachillerato": 3026,
+        "universitario": 1405,
+        "primaria": 2837,
+        "ninguno": 1766,
+        "secundaria": 1742,
+        "tecnico": 299,
+        "posgrado": 65
+      },
+      "marital": {
+        "soltero": 3183,
+        "union_libre": 2778,
+        "casado": 3359,
+        "separado": 1003,
+        "viudo": 649,
+        "divorciado": 168
+      },
+      "household": {
+        "extendido": 3956,
+        "nuclear": 3995,
+        "pareja": 1074,
+        "unipersonal": 739,
+        "monoparental": 1376
+      },
+      "topOccupations": [
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 919
+        },
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 789
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 730
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 681
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 489
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 474
+        }
+      ],
+      "ich": 50.7
+    },
+    {
+      "name": "Ahuachapán",
+      "count": 8728,
+      "pctFemale": 53,
+      "pctUrban": 69.2,
+      "meanAge": 41.7,
+      "eduYears": 8.1,
+      "eduStd": 4.53,
+      "pctHigher": 8.6,
+      "eduDist": {
+        "bachillerato": 2416,
+        "primaria": 2738,
+        "ninguno": 1314,
+        "secundaria": 1508,
+        "universitario": 580,
+        "tecnico": 160,
+        "posgrado": 12
+      },
+      "marital": {
+        "union_libre": 2235,
+        "casado": 2777,
+        "soltero": 2437,
+        "viudo": 499,
+        "separado": 714,
+        "divorciado": 66
+      },
+      "household": {
+        "nuclear": 3243,
+        "extendido": 3054,
+        "unipersonal": 509,
+        "monoparental": 1057,
+        "pareja": 865
+      },
+      "topOccupations": [
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 778
+        },
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 657
+        },
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 598
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 561
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 346
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 343
+        }
+      ],
+      "ich": 28.3
+    },
+    {
+      "name": "Usulután",
+      "count": 8094,
+      "pctFemale": 53.4,
+      "pctUrban": 54.5,
+      "meanAge": 43,
+      "eduYears": 8.17,
+      "eduStd": 4.69,
+      "pctHigher": 10.1,
+      "eduDist": {
+        "ninguno": 1326,
+        "secundaria": 1432,
+        "bachillerato": 2242,
+        "primaria": 2277,
+        "tecnico": 206,
+        "universitario": 589,
+        "posgrado": 22
+      },
+      "marital": {
+        "soltero": 1928,
+        "casado": 2260,
+        "viudo": 507,
+        "separado": 965,
+        "union_libre": 2327,
+        "divorciado": 107
+      },
+      "household": {
+        "monoparental": 946,
+        "nuclear": 2881,
+        "extendido": 2861,
+        "unipersonal": 609,
+        "pareja": 797
+      },
+      "topOccupations": [
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 686
+        },
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 633
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 531
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 511
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 335
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 313
+        }
+      ],
+      "ich": 28.3
+    },
+    {
+      "name": "La Paz",
+      "count": 7737,
+      "pctFemale": 52.8,
+      "pctUrban": 65.9,
+      "meanAge": 41.7,
+      "eduYears": 8.69,
+      "eduStd": 4.25,
+      "pctHigher": 9.1,
+      "eduDist": {
+        "secundaria": 1554,
+        "primaria": 2232,
+        "bachillerato": 2409,
+        "ninguno": 836,
+        "universitario": 529,
+        "tecnico": 168,
+        "posgrado": 9
+      },
+      "marital": {
+        "casado": 2105,
+        "soltero": 2195,
+        "viudo": 438,
+        "separado": 812,
+        "union_libre": 2119,
+        "divorciado": 68
+      },
+      "household": {
+        "nuclear": 2858,
+        "extendido": 2702,
+        "monoparental": 945,
+        "pareja": 704,
+        "unipersonal": 528
+      },
+      "topOccupations": [
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 626
+        },
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 505
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 469
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 417
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 357
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 319
+        }
+      ],
+      "ich": 37.3
+    },
+    {
+      "name": "Cuscatlán",
+      "count": 6115,
+      "pctFemale": 53.3,
+      "pctUrban": 78.5,
+      "meanAge": 41.3,
+      "eduYears": 8.96,
+      "eduStd": 4.2,
+      "pctHigher": 9.2,
+      "eduDist": {
+        "primaria": 1547,
+        "secundaria": 1273,
+        "bachillerato": 2113,
+        "tecnico": 133,
+        "universitario": 418,
+        "ninguno": 622,
+        "posgrado": 9
+      },
+      "marital": {
+        "casado": 1749,
+        "separado": 511,
+        "union_libre": 1576,
+        "soltero": 1930,
+        "viudo": 296,
+        "divorciado": 53
+      },
+      "household": {
+        "extendido": 2175,
+        "nuclear": 2222,
+        "unipersonal": 371,
+        "pareja": 570,
+        "monoparental": 777
+      },
+      "topOccupations": [
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 499
+        },
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 418
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 414
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 373
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 293
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 268
+        }
+      ],
+      "ich": 45.1
+    },
+    {
+      "name": "La Unión",
+      "count": 5337,
+      "pctFemale": 51.7,
+      "pctUrban": 23.8,
+      "meanAge": 42.6,
+      "eduYears": 7.26,
+      "eduStd": 4.57,
+      "pctHigher": 7,
+      "eduDist": {
+        "bachillerato": 1098,
+        "primaria": 1858,
+        "secundaria": 957,
+        "universitario": 261,
+        "tecnico": 104,
+        "ninguno": 1048,
+        "posgrado": 11
+      },
+      "marital": {
+        "casado": 1569,
+        "separado": 423,
+        "soltero": 1398,
+        "viudo": 317,
+        "union_libre": 1567,
+        "divorciado": 63
+      },
+      "household": {
+        "nuclear": 2039,
+        "unipersonal": 390,
+        "extendido": 1759,
+        "monoparental": 598,
+        "pareja": 551
+      },
+      "topOccupations": [
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 438
+        },
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 421
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 394
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 387
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 276
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 213
+        }
+      ],
+      "ich": 0
+    },
+    {
+      "name": "Chalatenango",
+      "count": 4261,
+      "pctFemale": 48.6,
+      "pctUrban": 28.3,
+      "meanAge": 42.5,
+      "eduYears": 7.98,
+      "eduStd": 4.66,
+      "pctHigher": 11,
+      "eduDist": {
+        "primaria": 1337,
+        "bachillerato": 936,
+        "secundaria": 828,
+        "tecnico": 111,
+        "ninguno": 691,
+        "universitario": 350,
+        "posgrado": 8
+      },
+      "marital": {
+        "soltero": 1234,
+        "viudo": 232,
+        "casado": 1403,
+        "union_libre": 1059,
+        "separado": 278,
+        "divorciado": 55
+      },
+      "household": {
+        "unipersonal": 319,
+        "extendido": 1440,
+        "nuclear": 1611,
+        "monoparental": 454,
+        "pareja": 437
+      },
+      "topOccupations": [
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 366
+        },
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 345
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 255
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 228
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 191
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 180
+        }
+      ],
+      "ich": 20
+    },
+    {
+      "name": "Morazán",
+      "count": 4005,
+      "pctFemale": 49.7,
+      "pctUrban": 25.6,
+      "meanAge": 41.4,
+      "eduYears": 7.79,
+      "eduStd": 4.86,
+      "pctHigher": 10.8,
+      "eduDist": {
+        "universitario": 322,
+        "ninguno": 759,
+        "bachillerato": 940,
+        "primaria": 1229,
+        "secundaria": 643,
+        "tecnico": 99,
+        "posgrado": 13
+      },
+      "marital": {
+        "soltero": 1267,
+        "separado": 333,
+        "casado": 1186,
+        "union_libre": 982,
+        "viudo": 198,
+        "divorciado": 39
+      },
+      "household": {
+        "nuclear": 1543,
+        "monoparental": 500,
+        "extendido": 1325,
+        "unipersonal": 281,
+        "pareja": 356
+      },
+      "topOccupations": [
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 375
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 308
+        },
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 298
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 248
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 173
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 168
+        }
+      ],
+      "ich": 16
+    },
+    {
+      "name": "San Vicente",
+      "count": 3902,
+      "pctFemale": 52.9,
+      "pctUrban": 65.1,
+      "meanAge": 43.3,
+      "eduYears": 8.43,
+      "eduStd": 4.62,
+      "pctHigher": 12.6,
+      "eduDist": {
+        "primaria": 1151,
+        "bachillerato": 938,
+        "ninguno": 541,
+        "universitario": 390,
+        "secundaria": 779,
+        "tecnico": 97,
+        "posgrado": 6
+      },
+      "marital": {
+        "viudo": 258,
+        "soltero": 1097,
+        "separado": 423,
+        "union_libre": 1059,
+        "casado": 1013,
+        "divorciado": 52
+      },
+      "household": {
+        "monoparental": 505,
+        "extendido": 1439,
+        "nuclear": 1317,
+        "unipersonal": 286,
+        "pareja": 355
+      },
+      "topOccupations": [
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 311
+        },
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 294
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 259
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 253
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 161
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 158
+        }
+      ],
+      "ich": 40
+    },
+    {
+      "name": "Cabañas",
+      "count": 3474,
+      "pctFemale": 53.6,
+      "pctUrban": 41.9,
+      "meanAge": 43.1,
+      "eduYears": 7.64,
+      "eduStd": 4.56,
+      "pctHigher": 9.5,
+      "eduDist": {
+        "secundaria": 596,
+        "bachillerato": 691,
+        "universitario": 248,
+        "primaria": 1288,
+        "ninguno": 568,
+        "tecnico": 72,
+        "posgrado": 11
+      },
+      "marital": {
+        "soltero": 1104,
+        "union_libre": 762,
+        "separado": 255,
+        "casado": 1114,
+        "viudo": 208,
+        "divorciado": 31
+      },
+      "household": {
+        "monoparental": 441,
+        "nuclear": 1255,
+        "extendido": 1187,
+        "pareja": 353,
+        "unipersonal": 238
+      },
+      "topOccupations": [
+        {
+          "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+          "count": 285
+        },
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "count": 267
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "count": 239
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "count": 219
+        },
+        {
+          "name": "Elaboración de productos de panadería",
+          "count": 154
+        },
+        {
+          "name": "Construcción de edificios",
+          "count": 147
+        }
+      ],
+      "ich": 15.6
+    }
+  ],
+  "municipalities": [
+    {
+      "name": "San Salvador Centro",
+      "department": "San Salvador",
+      "count": 16932,
+      "pctFemale": 55.8,
+      "pctUrban": 99.7,
+      "meanAge": 44.8,
+      "eduYears": 11.27,
+      "eduStd": 4.3,
+      "pctHigher": 29.8,
+      "ich": 87.1
+    },
+    {
+      "name": "San Salvador Este",
+      "department": "San Salvador",
+      "count": 12651,
+      "pctFemale": 55.9,
+      "pctUrban": 98.6,
+      "meanAge": 43.3,
+      "eduYears": 10.42,
+      "eduStd": 4.14,
+      "pctHigher": 19,
+      "ich": 69.9
+    },
+    {
+      "name": "San Miguel Centro",
+      "department": "San Miguel",
+      "count": 7213,
+      "pctFemale": 54.8,
+      "pctUrban": 76.4,
+      "meanAge": 42.4,
+      "eduYears": 9.29,
+      "eduStd": 4.94,
+      "pctHigher": 19,
+      "ich": 54.8
+    },
+    {
+      "name": "Santa Ana Centro",
+      "department": "Santa Ana",
+      "count": 6503,
+      "pctFemale": 55.3,
+      "pctUrban": 88.9,
+      "meanAge": 43.8,
+      "eduYears": 9.75,
+      "eduStd": 4.63,
+      "pctHigher": 21,
+      "ich": 63.3
+    },
+    {
+      "name": "La Libertad Oeste",
+      "department": "La Libertad",
+      "count": 4766,
+      "pctFemale": 55.1,
+      "pctUrban": 91.8,
+      "meanAge": 41.7,
+      "eduYears": 9.69,
+      "eduStd": 4.4,
+      "pctHigher": 16.4,
+      "ich": 59.5
+    },
+    {
+      "name": "Ahuachapán Centro",
+      "department": "Ahuachapán",
+      "count": 4609,
+      "pctFemale": 53.4,
+      "pctUrban": 75.7,
+      "meanAge": 41.8,
+      "eduYears": 8.44,
+      "eduStd": 4.52,
+      "pctHigher": 9.5,
+      "ich": 38.8
+    },
+    {
+      "name": "Sonsonate Este",
+      "department": "Sonsonate",
+      "count": 4372,
+      "pctFemale": 51.6,
+      "pctUrban": 67.5,
+      "meanAge": 41.3,
+      "eduYears": 8.23,
+      "eduStd": 4.23,
+      "pctHigher": 7.2,
+      "ich": 33.2
+    },
+    {
+      "name": "San Salvador Sur",
+      "department": "San Salvador",
+      "count": 4368,
+      "pctFemale": 55,
+      "pctUrban": 93.9,
+      "meanAge": 42.1,
+      "eduYears": 9.8,
+      "eduStd": 4.39,
+      "pctHigher": 16.2,
+      "ich": 60.8
+    },
+    {
+      "name": "La Libertad Centro",
+      "department": "La Libertad",
+      "count": 4267,
+      "pctFemale": 53.9,
+      "pctUrban": 84.8,
+      "meanAge": 41.9,
+      "eduYears": 8.95,
+      "eduStd": 4.47,
+      "pctHigher": 11.8,
+      "ich": 47.3
+    },
+    {
+      "name": "San Salvador Oeste",
+      "department": "San Salvador",
+      "count": 4125,
+      "pctFemale": 55.1,
+      "pctUrban": 95.2,
+      "meanAge": 43.2,
+      "eduYears": 9.63,
+      "eduStd": 4.29,
+      "pctHigher": 13.1,
+      "ich": 56.9
+    },
+    {
+      "name": "Sonsonate Centro",
+      "department": "Sonsonate",
+      "count": 3796,
+      "pctFemale": 54.5,
+      "pctUrban": 83,
+      "meanAge": 42.4,
+      "eduYears": 9.3,
+      "eduStd": 4.52,
+      "pctHigher": 15.9,
+      "ich": 53.7
+    },
+    {
+      "name": "Usulután Este",
+      "department": "Usulután",
+      "count": 3682,
+      "pctFemale": 53.3,
+      "pctUrban": 61.2,
+      "meanAge": 43.2,
+      "eduYears": 8.36,
+      "eduStd": 4.74,
+      "pctHigher": 11.5,
+      "ich": 36.7
+    },
+    {
+      "name": "Cuscatlán Sur",
+      "department": "Cuscatlán",
+      "count": 3639,
+      "pctFemale": 54.9,
+      "pctUrban": 86.5,
+      "meanAge": 41.2,
+      "eduYears": 9.16,
+      "eduStd": 4.24,
+      "pctHigher": 10.8,
+      "ich": 48.8
+    },
+    {
+      "name": "Santa Ana Oeste",
+      "department": "Santa Ana",
+      "count": 3637,
+      "pctFemale": 53.7,
+      "pctUrban": 71.5,
+      "meanAge": 42.7,
+      "eduYears": 8.79,
+      "eduStd": 4.52,
+      "pctHigher": 12.8,
+      "ich": 43.9
+    },
+    {
+      "name": "La Libertad Sur",
+      "department": "La Libertad",
+      "count": 3523,
+      "pctFemale": 55.5,
+      "pctUrban": 86.8,
+      "meanAge": 45.1,
+      "eduYears": 11.85,
+      "eduStd": 4.42,
+      "pctHigher": 38.8,
+      "ich": 97.3
+    },
+    {
+      "name": "La Paz Centro",
+      "department": "La Paz",
+      "count": 2823,
+      "pctFemale": 51.8,
+      "pctUrban": 58.4,
+      "meanAge": 41.7,
+      "eduYears": 8.41,
+      "eduStd": 4.1,
+      "pctHigher": 6.3,
+      "ich": 32.3
+    },
+    {
+      "name": "La Unión Sur",
+      "department": "La Unión",
+      "count": 2823,
+      "pctFemale": 52.9,
+      "pctUrban": 32.1,
+      "meanAge": 42.3,
+      "eduYears": 7.48,
+      "eduStd": 4.57,
+      "pctHigher": 8,
+      "ich": 19.6
+    },
+    {
+      "name": "La Libertad Este",
+      "department": "La Libertad",
+      "count": 2804,
+      "pctFemale": 54,
+      "pctUrban": 93.2,
+      "meanAge": 44.7,
+      "eduYears": 11.06,
+      "eduStd": 4.7,
+      "pctHigher": 32,
+      "ich": 85.6
+    },
+    {
+      "name": "Usulután Norte",
+      "department": "Usulután",
+      "count": 2785,
+      "pctFemale": 53.3,
+      "pctUrban": 50.9,
+      "meanAge": 42.8,
+      "eduYears": 8.39,
+      "eduStd": 4.65,
+      "pctHigher": 10.4,
+      "ich": 34
+    },
+    {
+      "name": "Morazán Sur",
+      "department": "Morazán",
+      "count": 2694,
+      "pctFemale": 51,
+      "pctUrban": 37,
+      "meanAge": 41.7,
+      "eduYears": 7.85,
+      "eduStd": 4.96,
+      "pctHigher": 11.8,
+      "ich": 27.2
+    },
+    {
+      "name": "La Paz Oeste",
+      "department": "La Paz",
+      "count": 2606,
+      "pctFemale": 52.4,
+      "pctUrban": 64.5,
+      "meanAge": 41.1,
+      "eduYears": 8.75,
+      "eduStd": 4.17,
+      "pctHigher": 8.2,
+      "ich": 38.3
+    },
+    {
+      "name": "Sonsonate Norte",
+      "department": "Sonsonate",
+      "count": 2570,
+      "pctFemale": 52.1,
+      "pctUrban": 82,
+      "meanAge": 41.7,
+      "eduYears": 8.21,
+      "eduStd": 4.48,
+      "pctHigher": 8.4,
+      "ich": 37
+    },
+    {
+      "name": "La Unión Norte",
+      "department": "La Unión",
+      "count": 2514,
+      "pctFemale": 50.4,
+      "pctUrban": 14.4,
+      "meanAge": 43,
+      "eduYears": 7.03,
+      "eduStd": 4.57,
+      "pctHigher": 6,
+      "ich": 10.1
+    },
+    {
+      "name": "Cuscatlán Norte",
+      "department": "Cuscatlán",
+      "count": 2476,
+      "pctFemale": 51.1,
+      "pctUrban": 66.6,
+      "meanAge": 41.4,
+      "eduYears": 8.67,
+      "eduStd": 4.12,
+      "pctHigher": 6.7,
+      "ich": 36.7
+    },
+    {
+      "name": "Ahuachapán Sur",
+      "department": "Ahuachapán",
+      "count": 2458,
+      "pctFemale": 53.1,
+      "pctUrban": 48.7,
+      "meanAge": 40.8,
+      "eduYears": 6.81,
+      "eduStd": 4.28,
+      "pctHigher": 2.7,
+      "ich": 12.3
+    },
+    {
+      "name": "San Vicente Sur",
+      "department": "San Vicente",
+      "count": 2413,
+      "pctFemale": 53,
+      "pctUrban": 76.7,
+      "meanAge": 43.4,
+      "eduYears": 8.52,
+      "eduStd": 4.66,
+      "pctHigher": 12.7,
+      "ich": 42.4
+    },
+    {
+      "name": "La Paz Este",
+      "department": "La Paz",
+      "count": 2308,
+      "pctFemale": 54.5,
+      "pctUrban": 76.6,
+      "meanAge": 42.4,
+      "eduYears": 8.98,
+      "eduStd": 4.48,
+      "pctHigher": 13.6,
+      "ich": 47.4
+    },
+    {
+      "name": "San Miguel Oeste",
+      "department": "San Miguel",
+      "count": 2234,
+      "pctFemale": 55,
+      "pctUrban": 65.9,
+      "meanAge": 43.5,
+      "eduYears": 8.43,
+      "eduStd": 4.87,
+      "pctHigher": 13.4,
+      "ich": 39.9
+    },
+    {
+      "name": "La Libertad Norte",
+      "department": "La Libertad",
+      "count": 2174,
+      "pctFemale": 52.9,
+      "pctUrban": 71.8,
+      "meanAge": 42.7,
+      "eduYears": 8.86,
+      "eduStd": 4.57,
+      "pctHigher": 11.6,
+      "ich": 43.7
+    },
+    {
+      "name": "Santa Ana Norte",
+      "department": "Santa Ana",
+      "count": 2125,
+      "pctFemale": 52.7,
+      "pctUrban": 31.5,
+      "meanAge": 43.7,
+      "eduYears": 7.02,
+      "eduStd": 4.43,
+      "pctHigher": 5.5,
+      "ich": 13.1
+    },
+    {
+      "name": "La Libertad Costa",
+      "department": "La Libertad",
+      "count": 2091,
+      "pctFemale": 49.7,
+      "pctUrban": 43.4,
+      "meanAge": 41.1,
+      "eduYears": 7.59,
+      "eduStd": 4.3,
+      "pctHigher": 4.7,
+      "ich": 20.2
+    },
+    {
+      "name": "Chalatenango Centro",
+      "department": "Chalatenango",
+      "count": 2028,
+      "pctFemale": 49,
+      "pctUrban": 26.7,
+      "meanAge": 43,
+      "eduYears": 7.59,
+      "eduStd": 4.59,
+      "pctHigher": 8.3,
+      "ich": 19.8
+    },
+    {
+      "name": "Cabañas Oeste",
+      "department": "Cabañas",
+      "count": 1887,
+      "pctFemale": 54.2,
+      "pctUrban": 49,
+      "meanAge": 42.7,
+      "eduYears": 7.94,
+      "eduStd": 4.55,
+      "pctHigher": 10.2,
+      "ich": 29.2
+    },
+    {
+      "name": "San Miguel Norte",
+      "department": "San Miguel",
+      "count": 1693,
+      "pctFemale": 50.1,
+      "pctUrban": 21.9,
+      "meanAge": 43,
+      "eduYears": 6.51,
+      "eduStd": 4.65,
+      "pctHigher": 5.8,
+      "ich": 6.6
+    },
+    {
+      "name": "Ahuachapán Norte",
+      "department": "Ahuachapán",
+      "count": 1661,
+      "pctFemale": 51.4,
+      "pctUrban": 81.3,
+      "meanAge": 42.8,
+      "eduYears": 9.09,
+      "eduStd": 4.51,
+      "pctHigher": 14.8,
+      "ich": 50.4
+    },
+    {
+      "name": "Usulután Oeste",
+      "department": "Usulután",
+      "count": 1627,
+      "pctFemale": 53.7,
+      "pctUrban": 45.4,
+      "meanAge": 42.7,
+      "eduYears": 7.39,
+      "eduStd": 4.58,
+      "pctHigher": 6.5,
+      "ich": 20.2
+    },
+    {
+      "name": "Chalatenango Sur",
+      "department": "Chalatenango",
+      "count": 1617,
+      "pctFemale": 48.2,
+      "pctUrban": 30.6,
+      "meanAge": 42.6,
+      "eduYears": 8.63,
+      "eduStd": 4.72,
+      "pctHigher": 15,
+      "ich": 35.9
+    },
+    {
+      "name": "Santa Ana Este",
+      "department": "Santa Ana",
+      "count": 1603,
+      "pctFemale": 52.5,
+      "pctUrban": 65.9,
+      "meanAge": 42.2,
+      "eduYears": 8.29,
+      "eduStd": 4.28,
+      "pctHigher": 7.4,
+      "ich": 33.6
+    },
+    {
+      "name": "Cabañas Este",
+      "department": "Cabañas",
+      "count": 1587,
+      "pctFemale": 52.9,
+      "pctUrban": 33.6,
+      "meanAge": 43.6,
+      "eduYears": 7.29,
+      "eduStd": 4.55,
+      "pctHigher": 8.7,
+      "ich": 18.7
+    },
+    {
+      "name": "San Salvador Norte",
+      "department": "San Salvador",
+      "count": 1527,
+      "pctFemale": 58.3,
+      "pctUrban": 69.8,
+      "meanAge": 42.6,
+      "eduYears": 8.44,
+      "eduStd": 4.45,
+      "pctHigher": 9.2,
+      "ich": 37.3
+    },
+    {
+      "name": "San Vicente Norte",
+      "department": "San Vicente",
+      "count": 1489,
+      "pctFemale": 52.7,
+      "pctUrban": 46.4,
+      "meanAge": 43.3,
+      "eduYears": 8.27,
+      "eduStd": 4.56,
+      "pctHigher": 12.5,
+      "ich": 33.7
+    },
+    {
+      "name": "Sonsonate Oeste",
+      "department": "Sonsonate",
+      "count": 1373,
+      "pctFemale": 53.8,
+      "pctUrban": 70.8,
+      "meanAge": 41.1,
+      "eduYears": 7.79,
+      "eduStd": 4.28,
+      "pctHigher": 5.3,
+      "ich": 28.2
+    },
+    {
+      "name": "Morazán Norte",
+      "department": "Morazán",
+      "count": 1311,
+      "pctFemale": 47.1,
+      "pctUrban": 2.4,
+      "meanAge": 40.8,
+      "eduYears": 7.67,
+      "eduStd": 4.65,
+      "pctHigher": 8.8,
+      "ich": 15.9
+    },
+    {
+      "name": "Chalatenango Norte",
+      "department": "Chalatenango",
+      "count": 616,
+      "pctFemale": 48.2,
+      "pctUrban": 27.3,
+      "meanAge": 40.6,
+      "eduYears": 7.56,
+      "eduStd": 4.53,
+      "pctHigher": 9.6,
+      "ich": 20.7
+    }
+  ],
+  "occupations": {
+    "top": [
+      {
+        "name": "Actividades de restaurantes y de comida ambulante",
+        "count": 12359
+      },
+      {
+        "name": "Cultivo de cereales (excepto arroz), legumbres y semillas oleaginosas",
+        "count": 9324
+      },
+      {
+        "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+        "count": 9163
+      },
+      {
+        "name": "Actividades de los hogares como empleadores de personal doméstico",
+        "count": 8996
+      },
+      {
+        "name": "Construcción de edificios",
+        "count": 6862
+      },
+      {
+        "name": "Elaboración de productos de panadería",
+        "count": 6137
+      },
+      {
+        "name": "Fabricación de prendas de vestir, excepto prendas de piel",
+        "count": 5068
+      },
+      {
+        "name": "otras actividades de comercio",
+        "count": 4231
+      },
+      {
+        "name": "Venta al por menor de alimentos, bebidas y tabaco en puestos de venta y mercados",
+        "count": 4175
+      },
+      {
+        "name": "otras actividades de servicios",
+        "count": 4100
+      },
+      {
+        "name": "Actividades de la administración pública en general",
+        "count": 3695
+      },
+      {
+        "name": "Actividades de mantenimiento del orden público y de seguridad",
+        "count": 3099
+      },
+      {
+        "name": "Enseñanza secundaria de formación general",
+        "count": 3005
+      },
+      {
+        "name": "Actividades de hospitales",
+        "count": 2699
+      },
+      {
+        "name": "Mantenimiento y reparación de vehículos automotores",
+        "count": 2368
+      },
+      {
+        "name": "Venta al por menor de alimentos en comercios especializados",
+        "count": 2176
+      },
+      {
+        "name": "Otras actividades de transporte por vía terrestre",
+        "count": 1994
+      },
+      {
+        "name": "otras actividades de manufactura",
+        "count": 1970
+      },
+      {
+        "name": "Cultivo de plantas con las que se preparan bebidas",
+        "count": 1950
+      },
+      {
+        "name": "otras actividades agropecuarias",
+        "count": 1806
+      }
+    ]
+  },
+  "skills": {
+    "words": [
+      {
+        "name": "manejo",
+        "count": 114912
+      },
+      {
+        "name": "control",
+        "count": 104981
+      },
+      {
+        "name": "gestión",
+        "count": 82815
+      },
+      {
+        "name": "productos",
+        "count": 77197
+      },
+      {
+        "name": "inventario",
+        "count": 71788
+      },
+      {
+        "name": "normas",
+        "count": 69526
+      },
+      {
+        "name": "atención",
+        "count": 60308
+      },
+      {
+        "name": "aplicación",
+        "count": 51576
+      },
+      {
+        "name": "venta",
+        "count": 48806
+      },
+      {
+        "name": "registro",
+        "count": 47905
+      },
+      {
+        "name": "cliente",
+        "count": 47429
+      },
+      {
+        "name": "sistemas",
+        "count": 47103
+      },
+      {
+        "name": "equipos",
+        "count": 43015
+      },
+      {
+        "name": "mantenimiento",
+        "count": 42187
+      },
+      {
+        "name": "alimentos",
+        "count": 39461
+      },
+      {
+        "name": "caja",
+        "count": 39377
+      },
+      {
+        "name": "seguridad",
+        "count": 38885
+      },
+      {
+        "name": "clientes",
+        "count": 38826
+      },
+      {
+        "name": "calidad",
+        "count": 37548
+      },
+      {
+        "name": "organización",
+        "count": 33742
+      },
+      {
+        "name": "higiene",
+        "count": 33586
+      },
+      {
+        "name": "según",
+        "count": 33169
+      },
+      {
+        "name": "proveedores",
+        "count": 32224
+      },
+      {
+        "name": "controlar",
+        "count": 30838
+      },
+      {
+        "name": "básico",
+        "count": 30821
+      },
+      {
+        "name": "limpieza",
+        "count": 30352
+      },
+      {
+        "name": "conocimiento",
+        "count": 29861
+      },
+      {
+        "name": "precios",
+        "count": 29584
+      },
+      {
+        "name": "ventas",
+        "count": 29506
+      },
+      {
+        "name": "producción",
+        "count": 29213
+      },
+      {
+        "name": "realizar",
+        "count": 28019
+      },
+      {
+        "name": "insumos",
+        "count": 27530
+      },
+      {
+        "name": "coordinación",
+        "count": 26992
+      },
+      {
+        "name": "manejar",
+        "count": 26800
+      },
+      {
+        "name": "aplicar",
+        "count": 26796
+      },
+      {
+        "name": "cumplimiento",
+        "count": 25153
+      },
+      {
+        "name": "técnicas",
+        "count": 25024
+      },
+      {
+        "name": "personal",
+        "count": 24343
+      },
+      {
+        "name": "gestionar",
+        "count": 23995
+      },
+      {
+        "name": "herramientas",
+        "count": 23801
+      },
+      {
+        "name": "negociación",
+        "count": 23057
+      },
+      {
+        "name": "efectivo",
+        "count": 23000
+      },
+      {
+        "name": "locales",
+        "count": 22655
+      },
+      {
+        "name": "sanitarias",
+        "count": 22515
+      },
+      {
+        "name": "atender",
+        "count": 21731
+      },
+      {
+        "name": "mantener",
+        "count": 21086
+      },
+      {
+        "name": "cultivos",
+        "count": 20963
+      },
+      {
+        "name": "reposición",
+        "count": 20519
+      },
+      {
+        "name": "rotación",
+        "count": 20120
+      },
+      {
+        "name": "bebidas",
+        "count": 19861
+      },
+      {
+        "name": "materiales",
+        "count": 19782
+      },
+      {
+        "name": "trabajo",
+        "count": 19421
+      },
+      {
+        "name": "pedidos",
+        "count": 18630
+      },
+      {
+        "name": "elaboración",
+        "count": 18504
+      },
+      {
+        "name": "operar",
+        "count": 18410
+      },
+      {
+        "name": "organizar",
+        "count": 18397
+      },
+      {
+        "name": "registradora",
+        "count": 18391
+      },
+      {
+        "name": "puesto",
+        "count": 18125
+      },
+      {
+        "name": "planificación",
+        "count": 18062
+      },
+      {
+        "name": "reclamos",
+        "count": 17975
+      }
+    ],
+    "phrases": [
+      {
+        "name": "Manejo de caja registradora y control de efectivo",
+        "count": 1511
+      },
+      {
+        "name": "Conocimiento de normas sanitarias y de manipulación de alimentos",
+        "count": 1444
+      },
+      {
+        "name": "Manejo de caja y registro de ventas",
+        "count": 1326
+      },
+      {
+        "name": "Atender a los clientes con amabilidad y rapidez",
+        "count": 1100
+      },
+      {
+        "name": "Atención al cliente con trato cercano y cordial",
+        "count": 1091
+      },
+      {
+        "name": "Manejo de caja y control de efectivo",
+        "count": 978
+      },
+      {
+        "name": "Control de inventario y reposición de productos",
+        "count": 952
+      },
+      {
+        "name": "control de calidad de costuras y acabados",
+        "count": 838
+      },
+      {
+        "name": "Negociación con proveedores y gestión de pedidos",
+        "count": 732
+      },
+      {
+        "name": "Manejo de caja y cobro en efectivo",
+        "count": 720
+      },
+      {
+        "name": "Manejo de agenda y coordinación de citas",
+        "count": 690
+      },
+      {
+        "name": "Atención al cliente y gestión de reclamos",
+        "count": 671
+      },
+      {
+        "name": "Atención al cliente con trato cordial y rápido",
+        "count": 655
+      },
+      {
+        "name": "Control integrado de plagas y enfermedades en cereales y leguminosas",
+        "count": 601
+      },
+      {
+        "name": "Atención al público y gestión de consultas ciudadanas",
+        "count": 590
+      },
+      {
+        "name": "Negociación de precios y condiciones con proveedores",
+        "count": 578
+      },
+      {
+        "name": "Manejo de caja registradora y cobro en efectivo",
+        "count": 574
+      },
+      {
+        "name": "Control de calidad de costuras y acabados",
+        "count": 546
+      },
+      {
+        "name": "Manejo de inventario y control de stock",
+        "count": 526
+      },
+      {
+        "name": "Atención al cliente y trato cordial",
+        "count": 517
+      },
+      {
+        "name": "Atención al cliente y resolución de reclamos",
+        "count": 511
+      },
+      {
+        "name": "Lectura e interpretación de planos estructurales",
+        "count": 509
+      },
+      {
+        "name": "atender a los clientes con amabilidad y rapidez",
+        "count": 483
+      },
+      {
+        "name": "Uso de sistemas de punto de venta (POS) y registro de ventas",
+        "count": 482
+      },
+      {
+        "name": "Negociación de precios y condiciones con proveedores locales",
+        "count": 481
+      }
+    ]
+  },
+  "hobbies": {
+    "words": [
+      {
+        "name": "jugar",
+        "count": 130940
+      },
+      {
+        "name": "barrio",
+        "count": 99069
+      },
+      {
+        "name": "pupusas",
+        "count": 97530
+      },
+      {
+        "name": "familia",
+        "count": 94329
+      },
+      {
+        "name": "cocinar",
+        "count": 82274
+      },
+      {
+        "name": "participar",
+        "count": 81930
+      },
+      {
+        "name": "parque",
+        "count": 79939
+      },
+      {
+        "name": "dominó",
+        "count": 79638
+      },
+      {
+        "name": "escuchar",
+        "count": 77352
+      },
+      {
+        "name": "cuidar",
+        "count": 67261
+      },
+      {
+        "name": "fútbol",
+        "count": 66677
+      },
+      {
+        "name": "pasear",
+        "count": 61873
+      },
+      {
+        "name": "vecinos",
+        "count": 60958
+      },
+      {
+        "name": "leer",
+        "count": 55480
+      },
+      {
+        "name": "amigos",
+        "count": 55146
+      },
+      {
+        "name": "casa",
+        "count": 55123
+      },
+      {
+        "name": "tele",
+        "count": 54764
+      },
+      {
+        "name": "semana",
+        "count": 54363
+      },
+      {
+        "name": "hacer",
+        "count": 53316
+      },
+      {
+        "name": "centro",
+        "count": 52959
+      },
+      {
+        "name": "fines",
+        "count": 52938
+      },
+      {
+        "name": "radio",
+        "count": 52587
+      },
+      {
+        "name": "cumbia",
+        "count": 52048
+      },
+      {
+        "name": "tomar",
+        "count": 51595
+      },
+      {
+        "name": "partidos",
+        "count": 51591
+      },
+      {
+        "name": "tejer",
+        "count": 49930
+      },
+      {
+        "name": "mientras",
+        "count": 49709
+      },
+      {
+        "name": "novelas",
+        "count": 49007
+      },
+      {
+        "name": "música",
+        "count": 48001
+      },
+      {
+        "name": "asistir",
+        "count": 45902
+      },
+      {
+        "name": "típicos",
+        "count": 44855
+      },
+      {
+        "name": "zona",
+        "count": 44049
+      },
+      {
+        "name": "tamales",
+        "count": 43940
+      },
+      {
+        "name": "plaza",
+        "count": 42861
+      },
+      {
+        "name": "cancha",
+        "count": 42372
+      },
+      {
+        "name": "mantas",
+        "count": 40723
+      },
+      {
+        "name": "selección",
+        "count": 39912
+      },
+      {
+        "name": "café",
+        "count": 39349
+      },
+      {
+        "name": "bailar",
+        "count": 38417
+      },
+      {
+        "name": "series",
+        "count": 37686
+      },
+      {
+        "name": "huerto",
+        "count": 37020
+      },
+      {
+        "name": "charlar",
+        "count": 36264
+      },
+      {
+        "name": "misa",
+        "count": 35782
+      },
+      {
+        "name": "cantar",
+        "count": 35741
+      },
+      {
+        "name": "amigas",
+        "count": 34611
+      },
+      {
+        "name": "caminar",
+        "count": 33819
+      },
+      {
+        "name": "esquina",
+        "count": 33313
+      },
+      {
+        "name": "compas",
+        "count": 32246
+      },
+      {
+        "name": "salir",
+        "count": 31927
+      },
+      {
+        "name": "chales",
+        "count": 30438
+      },
+      {
+        "name": "reggaetón",
+        "count": 30370
+      },
+      {
+        "name": "salsa",
+        "count": 30096
+      },
+      {
+        "name": "películas",
+        "count": 29892
+      },
+      {
+        "name": "parroquia",
+        "count": 28745
+      },
+      {
+        "name": "verduras",
+        "count": 27811
+      },
+      {
+        "name": "románticas",
+        "count": 27535
+      },
+      {
+        "name": "platillos",
+        "count": 26831
+      },
+      {
+        "name": "boleros",
+        "count": 26178
+      },
+      {
+        "name": "iglesia",
+        "count": 25692
+      },
+      {
+        "name": "domingos",
+        "count": 25644
+      }
+    ],
+    "phrases": [
+      {
+        "name": "Ver series y películas en plataformas de streaming",
+        "count": 3950
+      },
+      {
+        "name": "Jugar fútbol en la cancha del barrio",
+        "count": 3891
+      },
+      {
+        "name": "Ver partidos de la selección en la tele con la familia",
+        "count": 3312
+      },
+      {
+        "name": "Jugar fútbol en la cancha del barrio los fines de semana",
+        "count": 2961
+      },
+      {
+        "name": "Cocinar pupusas y tamales para la familia",
+        "count": 2715
+      },
+      {
+        "name": "Jugar fútbol en la cancha del barrio con los compas",
+        "count": 2170
+      },
+      {
+        "name": "Jugar fútbol en la cancha del barrio con los amigos",
+        "count": 2039
+      },
+      {
+        "name": "Pescar en el río Lempa los fines de semana",
+        "count": 2017
+      },
+      {
+        "name": "Jugar dominó con los vecinos en la esquina del barrio",
+        "count": 1952
+      },
+      {
+        "name": "Leer novelas románticas y de misterio en la biblioteca municipal",
+        "count": 1906
+      },
+      {
+        "name": "Leer novelas románticas y de misterio",
+        "count": 1899
+      },
+      {
+        "name": "Tejer mantas y chales para la familia",
+        "count": 1784
+      },
+      {
+        "name": "Jugar fútbol con los compas en la cancha del barrio",
+        "count": 1736
+      },
+      {
+        "name": "Jugar fútbol con los amigos en la cancha del barrio",
+        "count": 1689
+      },
+      {
+        "name": "Ver los partidos de la selección en la tele con la familia",
+        "count": 1643
+      },
+      {
+        "name": "Jugar dominó con los vecinos en la esquina",
+        "count": 1625
+      },
+      {
+        "name": "cocinar pupusas y tamales para la familia",
+        "count": 1565
+      },
+      {
+        "name": "Jugar dominó con los compas en la esquina del barrio",
+        "count": 1543
+      },
+      {
+        "name": "Tejer chales y mantas para la familia",
+        "count": 1465
+      },
+      {
+        "name": "Cocinar pupusas y otros platillos típicos para la familia",
+        "count": 1330
+      },
+      {
+        "name": "Jugar dominó con los vecinos en la plaza",
+        "count": 1219
+      },
+      {
+        "name": "Jugar fútbol en la cancha del barrio con los panas",
+        "count": 1097
+      },
+      {
+        "name": "Ir a la playa de El Tunco los fines de semana",
+        "count": 1077
+      },
+      {
+        "name": "Cocinar pupusas y experimentar con rellenos nuevos",
+        "count": 1019
+      },
+      {
+        "name": "Leer novelas románticas o de misterio",
+        "count": 999
+      }
+    ]
+  },
+  "bias": {
+    "baselineFemale": 53.8,
+    "occupation": {
+      "mostFemale": [
+        {
+          "name": "Lavado y limpieza, incluida la limpieza en seco, de productos textiles y de piel",
+          "n": 406,
+          "pctFemale": 97.8
+        },
+        {
+          "name": "Venta al por menor por correo y por Internet",
+          "n": 941,
+          "pctFemale": 94.3
+        },
+        {
+          "name": "Actividades de los hogares como empleadores de personal doméstico",
+          "n": 8996,
+          "pctFemale": 91.5
+        },
+        {
+          "name": "Actividades de restaurantes y de comida ambulante",
+          "n": 12359,
+          "pctFemale": 85.1
+        },
+        {
+          "name": "Otras actividades de atención de la salud humana",
+          "n": 1408,
+          "pctFemale": 81.7
+        },
+        {
+          "name": "Peluquería y otros tratamientos de belleza",
+          "n": 1788,
+          "pctFemale": 81.5
+        },
+        {
+          "name": "Venta al por menor en comercios no especializados con predominio de la venta de alimentos, bebidas o tabaco",
+          "n": 9163,
+          "pctFemale": 80.4
+        },
+        {
+          "name": "Venta al por menor de prendas de vestir, calzado y artículos de cuero en comercios especializados",
+          "n": 518,
+          "pctFemale": 80.3
+        }
+      ],
+      "mostMale": [
+        {
+          "name": "Otras actividades de transporte por vía terrestre",
+          "n": 1994,
+          "pctFemale": 3.4
+        },
+        {
+          "name": "Otras actividades especializadas de construcción",
+          "n": 1309,
+          "pctFemale": 3.7
+        },
+        {
+          "name": "Construcción de edificios",
+          "n": 6862,
+          "pctFemale": 4.2
+        },
+        {
+          "name": "Instalaciones eléctricas",
+          "n": 515,
+          "pctFemale": 4.3
+        },
+        {
+          "name": "Fabricación de productos metálicos para uso estructural",
+          "n": 919,
+          "pctFemale": 4.5
+        },
+        {
+          "name": "Transporte urbano y suburbano de pasajeros por vía terrestre",
+          "n": 1479,
+          "pctFemale": 6.5
+        },
+        {
+          "name": "Fabricación de muebles",
+          "n": 720,
+          "pctFemale": 7.8
+        },
+        {
+          "name": "Mantenimiento y reparación de vehículos automotores",
+          "n": 2368,
+          "pctFemale": 8.6
+        }
+      ]
+    },
+    "hobbies": {
+      "female": [
+        {
+          "w": "pilates",
+          "n": 4110,
+          "pctFemale": 100
+        },
+        {
+          "w": "compañeras",
+          "n": 486,
+          "pctFemale": 100
+        },
+        {
+          "w": "blusas",
+          "n": 1292,
+          "pctFemale": 100
+        },
+        {
+          "w": "uñas",
+          "n": 599,
+          "pctFemale": 100
+        },
+        {
+          "w": "mujeres",
+          "n": 644,
+          "pctFemale": 100
+        },
+        {
+          "w": "voluntaria",
+          "n": 521,
+          "pctFemale": 100
+        },
+        {
+          "w": "maquillaje",
+          "n": 409,
+          "pctFemale": 100
+        },
+        {
+          "w": "amigas",
+          "n": 34611,
+          "pctFemale": 99.9
+        },
+        {
+          "w": "yoga",
+          "n": 11635,
+          "pctFemale": 99.9
+        },
+        {
+          "w": "vecinas",
+          "n": 10816,
+          "pctFemale": 99.8
+        },
+        {
+          "w": "encaje",
+          "n": 382,
+          "pctFemale": 99.7
+        },
+        {
+          "w": "zumba",
+          "n": 1618,
+          "pctFemale": 99.7
+        }
+      ],
+      "male": [
+        {
+          "w": "construir",
+          "n": 305,
+          "pctFemale": 1
+        },
+        {
+          "w": "asar",
+          "n": 480,
+          "pctFemale": 1.3
+        },
+        {
+          "w": "motos",
+          "n": 444,
+          "pctFemale": 1.4
+        },
+        {
+          "w": "mantenimiento",
+          "n": 332,
+          "pctFemale": 1.5
+        },
+        {
+          "w": "carpintería",
+          "n": 1966,
+          "pctFemale": 1.6
+        },
+        {
+          "w": "asados",
+          "n": 1359,
+          "pctFemale": 2
+        },
+        {
+          "w": "herramientas",
+          "n": 702,
+          "pctFemale": 2.1
+        },
+        {
+          "w": "maquinaria",
+          "n": 425,
+          "pctFemale": 2.1
+        },
+        {
+          "w": "muebles",
+          "n": 2136,
+          "pctFemale": 2.3
+        },
+        {
+          "w": "reparaciones",
+          "n": 1014,
+          "pctFemale": 2.3
+        },
+        {
+          "w": "parrillada",
+          "n": 895,
+          "pctFemale": 2.3
+        },
+        {
+          "w": "mototaxis",
+          "n": 557,
+          "pctFemale": 2.3
+        }
+      ]
+    }
+  }
+}

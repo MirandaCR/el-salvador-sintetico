@@ -1,0 +1,7 @@
+node_modules/
+data/raw/*.parquet
+geo/*_raw.json
+geo/slv_hdx/
+geo/slv_geojson.zip
+shots/
+*.log

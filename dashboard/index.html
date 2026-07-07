@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Salvador Sintético · Laboratorio de datos</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b3d91'/><rect x='6' y='6' width='20' height='20' rx='5' fill='%234a90e2'/></svg>" />
+  <meta name="description" content="Un gemelo digital sintético de El Salvador: dashboard interactivo sobre el dataset Nemotron-Personas-El-Salvador (NVIDIA)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="wrap">
+      <div class="brand"><span class="dot"></span> El Salvador <small>Sintético</small></div>
+      <div class="nav-links">
+        <a href="#que-es">Qué es</a>
+        <a href="#poblacion">Población</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#educacion">Educación</a>
+        <a href="#trabajo">Trabajo</a>
+        <a href="#cultura">Cultura</a>
+        <a href="#indice">Índice</a>
+        <a href="#limites">Límites</a>
+        <a href="publicaciones.html" style="background:var(--blue-700);color:#fff">Publicaciones →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">🇸🇻 Gemelo digital · Dato sintético</span>
+      <h1>El Salvador, contado por <span class="grad">148 mil personas que no existen</span></h1>
+      <p class="lead">Un laboratorio interactivo construido sobre <b>Nemotron-Personas-El-Salvador</b> de NVIDIA:
+        148,000 perfiles humanos generados por inteligencia artificial, calibrados para parecerse a la
+        demografía real del país. Aquí los exploramos con mapas y visualizaciones — sin academicismos.</p>
+
+      <div class="synthetic-badge">
+        <span class="ic">⚠️</span>
+        <span><b>Importante:</b> estas personas son <b>sintéticas</b> (creadas por IA), no individuos reales.
+          Todo lo que ves describe a esta población simulada, no es una medición oficial del país.
+          Es un <b>laboratorio de métodos</b>, no una encuesta.</span>
+      </div>
+
+      <div class="kpi-grid" id="kpis"></div>
+    </div>
+  </header>
+
+  <!-- QUÉ ES -->
+  <section class="block" id="que-es">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Para entenderlo en 30 segundos</span>
+        <h2>¿Qué estás viendo exactamente?</h2>
+        <p>Imagina un simulador de "SimCity" pero de personas: la IA de NVIDIA inventó 148 mil salvadoreños
+          ficticios — con edad, educación, trabajo, familia y hasta hobbies — respetando cómo se distribuye
+          de verdad la población. Nosotros lo convertimos en tableros para explorarlo.</p>
+      </div>
+      <div class="method-grid">
+        <div class="step"><div class="n">1</div><h4>Dato crudo</h4><p>3 archivos parquet (568 MB, 148k filas, 25 columnas) descargados de Hugging Face.</p></div>
+        <div class="step"><div class="n">2</div><h4>Procesamiento</h4><p>Node.js lee los parquet y calcula agregados por departamento, municipio, edad, educación…</p></div>
+        <div class="step"><div class="n">3</div><h4>Geometría</h4><p>Se unen los 14 departamentos a su mapa real (solo el lienzo; el análisis es 100% del dataset).</p></div>
+        <div class="step"><div class="n">4</div><h4>Historia visual</h4><p>Todo se cuenta con mapas y gráficos interactivos, fáciles de leer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POBLACIÓN -->
+  <section class="block" id="poblacion">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Retrato demográfico</span>
+        <h2>El país en una foto</h2>
+        <p>¿Quiénes componen esta población sintética? Edad, sexo y dónde viven. Pasa el cursor por cualquier gráfico
+          para ver los números exactos.</p>
+      </div>
+      <div class="grid g-2">
+        <div class="card">
+          <h3>Pirámide poblacional</h3>
+          <div class="sub">Personas por grupo de edad y sexo</div>
+          <div id="chartPyramid" class="chart tall"><div class="loading">cargando…</div></div>
+        </div>
+        <div class="grid" style="grid-template-columns:1fr; gap:18px;">
+          <div class="card">
+            <h3>Sexo</h3>
+            <div class="sub">Distribución de la población</div>
+            <div id="chartSex" class="chart short"></div>
+          </div>
+          <div class="card">
+            <h3>Área de residencia</h3>
+            <div class="sub">Urbano vs. rural</div>
+            <div id="chartArea" class="chart short"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="block" id="mapa">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Geografía interactiva</span>
+        <h2>El mapa que responde</h2>
+        <p>Elige el nivel (14 departamentos o 44 municipios) y qué medir. <b>Haz clic en el mapa</b>
+          para ver el detalle. El color más oscuro = valor más alto.</p>
+      </div>
+      <div class="pills" id="mapLevel" style="margin-bottom:10px"></div>
+      <div class="pills" id="mapPills"></div>
+      <div class="grid g-map">
+        <div class="card">
+          <h3 id="mapTitle">Población por departamento</h3>
+          <div class="sub" id="mapSub">Haz clic en un departamento para explorarlo</div>
+          <div id="chartMap" class="chart tall"><div class="loading">cargando mapa…</div></div>
+        </div>
+        <div class="card detail" id="deptDetail">
+          <div class="dept-name">Selecciona un departamento</div>
+          <div class="hint">Haz clic en el mapa para ver aquí su radiografía y municipios.</div>
+        </div>
+      </div>
+      <div class="callout" style="margin-top:18px;">
+        <span class="ic">🧭</span>
+        <span>El dataset usa la <b>nueva división de 44 municipios</b> (reforma 2024). Usamos la geometría oficial
+          (HDX/UNOCHA) para mapear ambos niveles: cambia el selector a <b>Municipio</b> para ver el detalle fino.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCACIÓN -->
+  <section class="block" id="educacion">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Capital humano</span>
+        <h2>¿Cuánto estudian?</h2>
+        <p>El nivel educativo es el mejor termómetro del capital humano. Aquí, cómo se reparte y sus brechas
+          por sexo y por zona (urbano/rural).</p>
+      </div>
+      <div class="grid g-2">
+        <div class="card">
+          <h3>Nivel educativo alcanzado</h3>
+          <div class="sub">Del más bajo al más alto</div>
+          <div id="chartEdu" class="chart"></div>
+        </div>
+        <div class="card">
+          <h3>Brecha urbano · rural</h3>
+          <div class="sub">% de cada nivel según zona de residencia</div>
+          <div id="chartEduArea" class="chart"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRABAJO -->
+  <section class="block" id="trabajo">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Estructura ocupacional</span>
+        <h2>¿En qué trabaja el país sintético?</h2>
+        <p>Las ocupaciones más comunes revelan la estructura económica: mucha comida, comercio, agricultura y
+          hogares como empleadores. Un retrato de una economía de servicios y baja productividad.</p>
+      </div>
+      <div class="card">
+        <h3>Top 15 ocupaciones</h3>
+        <div class="sub">Número de personas (población sintética)</div>
+        <div id="chartOcc" class="chart tall"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURA -->
+  <section class="block" id="cultura">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Texto y cultura (mini-NLP)</span>
+        <h2>Habilidades y pasiones</h2>
+        <p>Cada persona trae descripciones en texto libre. Extrajimos las palabras más frecuentes de sus
+          <b>habilidades</b> y <b>hobbies</b>. Aquí asoma lo cultural: pupusas, fútbol, dominó, familia.</p>
+      </div>
+      <div class="grid g-2">
+        <div class="card"><h3>Habilidades y experiencia</h3><div class="sub">palabras más frecuentes</div><div id="wcSkills" class="chart wc"></div></div>
+        <div class="card"><h3>Hobbies e intereses</h3><div class="sub">palabras más frecuentes</div><div id="wcHobbies" class="chart wc"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÍNDICE -->
+  <section class="block" id="indice">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Modelo · Índice compuesto</span>
+        <h2>Índice de Capital Humano Sintético (ICH)</h2>
+        <p>Combinamos escolaridad, % con educación superior y urbanización en un solo número (0–100) por
+          departamento. Sirve para <b>rankear y focalizar</b>. Recuerda: es ilustrativo, sobre datos sintéticos.</p>
+      </div>
+      <div class="grid g-2">
+        <div class="card">
+          <h3>Ranking departamental (ICH)</h3>
+          <div class="sub">0 = menor · 100 = mayor capital humano (relativo)</div>
+          <div id="chartICH" class="chart tall"></div>
+        </div>
+        <div class="card">
+          <h3>Escolaridad vs. urbanización</h3>
+          <div class="sub">Cada burbuja = un departamento · tamaño = población</div>
+          <div id="chartScatter" class="chart tall"></div>
+        </div>
+      </div>
+      <div class="callout" style="margin-top:18px;">
+        <span class="ic">📐</span>
+        <span><b>Cómo se calcula:</b> ICH = 0.5·(años de escolaridad) + 0.3·(% educación superior) + 0.2·(% urbano),
+          cada componente normalizado 0–1 entre departamentos y escalado a 100. Transparente y reproducible.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LÍMITES -->
+  <section class="block" id="limites">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Honestidad metodológica</span>
+        <h2>Qué SÍ y qué NO puedes concluir</h2>
+        <p>Ser riguroso con un dato sintético es lo que separa el análisis serio del humo. Estas son las reglas.</p>
+      </div>
+      <div class="limits">
+        <div class="card yes">
+          <h3 style="color:#1e8f55">✔ Sí es válido</h3>
+          <ul>
+            <li><span class="mk">✔</span> Demostrar métodos (econometría, mapas, IA) sobre una población controlada.</li>
+            <li><span class="mk">✔</span> Simular escenarios: "¿qué pasaría si…?".</li>
+            <li><span class="mk">✔</span> Auditar la calidad y los sesgos del propio dato sintético.</li>
+            <li><span class="mk">✔</span> Enseñar y comunicar ideas económicas de forma visual.</li>
+          </ul>
+        </div>
+        <div class="card no">
+          <h3 style="color:#c0392b">✘ No es válido</h3>
+          <ul>
+            <li><span class="mk">✘</span> Afirmar efectos causales de una política real.</li>
+            <li><span class="mk">✘</span> Presentarlo como medición oficial de El Salvador.</li>
+            <li><span class="mk">✘</span> Sacar conclusiones empíricas nuevas del país real.</li>
+            <li><span class="mk">✘</span> Tratar los textos como testimonios reales.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout" style="margin-top:18px;">
+        <span class="ic">🚀</span>
+        <span><b>Cómo escalarlo (v2):</b> fusionar con datos reales (EHPM/ONEC, BCR, Banco Mundial) habilitaría
+          ingresos, informalidad, microsimulación fiscal y validación de fidelidad. Ruta de crecimiento, no este alcance.</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>Fuente: <b>nvidia/Nemotron-Personas-El-Salvador</b> (CC-BY-4.0) · Geometría: geoBoundaries ADM1 · Construido con Node.js + ECharts.</div>
+      <div><b>El Salvador Sintético</b> — laboratorio de datos · 2025</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.1.0/dist/echarts-wordcloud.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

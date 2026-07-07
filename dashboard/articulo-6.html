@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El país por dentro: tribus y contagios · El Salvador Sintético</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b3d91'/><rect x='6' y='6' width='20' height='20' rx='5' fill='%234a90e2'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="article.css" />
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="index.html" style="color:inherit"><span class="dot"></span> El Salvador <small>Sintético</small></a>
+      <div class="nav-links"><a href="index.html">Dashboard</a><a href="publicaciones.html">Publicaciones</a></div>
+    </div>
+  </nav>
+
+  <article>
+    <div class="article article-hero">
+      <span class="eyebrow">🗺️ Territorio · Datos sintéticos</span>
+      <h1>El país por dentro: tribus y contagios</h1>
+      <p class="subtitle">Si agrupamos los 44 municipios por cómo se parecen, aparecen "tribus" territoriales. Y si
+        medimos cómo se influyen entre vecinos, aparece el "contagio". Dos técnicas para ver el país como bloques, no
+        como un promedio.</p>
+      <div class="byline"><span class="who"><span class="av"></span> Análisis</span><span>· 6 min de lectura</span><span>· Espacial avanzado</span></div>
+    </div>
+
+    <div class="article">
+      <div class="synthetic-badge">
+        <span class="ic">⚠️</span>
+        <span><b>Datos sintéticos:</b> el método es real y usable con datos oficiales; los resultados describen el mundo simulado.</span>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p class="lead-p dropcap">Cuando miras 44 municipios uno por uno, te pierdes. La mente pide <b>grupos</b>. Así que
+        dejamos que un algoritmo (se llama <i>k-means</i>, pero piénsalo como "juntar lo que se parece") ordenara los
+        municipios en <b>cuatro tribus</b> según su educación, urbanización y edad. Esto salió:</p>
+    </div>
+
+    <div class="statline reveal" id="clusterStats"></div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">Las 4 tribus territoriales</div>
+        <div class="fsub">Cada municipio pintado según el grupo al que se parece</div>
+        <div id="fClusters" class="fig-chart tall"></div>
+        <div id="clusterLegend" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:8px;font-size:13px;color:var(--muted)"></div>
+      </div>
+      <figcaption>Fig. 1 — El "núcleo desarrollado" es pequeño y central; el "rezago rural" domina la periferia.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <h2>El "contagio" entre vecinos, medido</h2>
+      <p>Ya sabíamos (por el Moran) que los municipios parecidos se agrupan. Pero, ¿un municipio <b>jala</b> a sus
+        vecinos? Para eso hay un modelo espacial (SAR) que estima un número, la <b>ρ (rho)</b>, que mide ese "arrastre":
+        0 = cada quien por su cuenta; positivo = lo que pasa en un municipio se contagia a los de al lado.</p>
+    </div>
+
+    <div class="statline reveal">
+      <div class="bigstat"><div class="n" id="sarRho">—</div><div class="l">Fuerza del "contagio" entre vecinos (ρ)</div></div>
+    </div>
+
+    <div class="prose">
+      <p>Dio <b id="sarRho2">—</b>, positivo: hay <b>derrames</b>. En cristiano — <b>mejorar un municipio ayuda un
+        poco a los de al lado</b>. Es el argumento económico para crear <b>polos de desarrollo</b>: concentrar
+        inversión en un punto y dejar que "contagie" a su entorno, en vez de rociar recursos por todos lados.</p>
+
+      <h2>La misma medicina no rinde igual en todos lados</h2>
+      <p>Última técnica (GWR): en vez de un solo número para todo el país, calcula la relación
+        <b>educación ↔ urbanización en cada municipio por separado</b>. Donde el color es más intenso, "hacerse ciudad"
+        se asocia con más salto educativo — ahí una política urbana rinde más.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">¿Dónde rinde más urbanizar? (coeficiente local)</div>
+        <div class="fsub">Más oscuro = la relación urbanización→educación es más fuerte ahí</div>
+        <div id="fGwr" class="fig-chart tall"></div>
+      </div>
+      <figcaption>Fig. 2 — La misma política tiene efectos distintos según el territorio. Por eso el "café para todos" falla.</figcaption>
+    </figure>
+
+    <div class="takeaway reveal">
+      <h4>En una frase</h4>
+      <ul>
+        <li>El país se ordena en 4 "tribus": un núcleo central desarrollado y una periferia rezagada.</li>
+        <li>Hay <b>contagio</b> entre vecinos (ρ &gt; 0): invertir en polos tiene sentido.</li>
+        <li>La misma política rinde distinto según el lugar → hay que <b>focalizar</b>.</li>
+      </ul>
+    </div>
+
+    <div class="next"><a href="articulo-7.html"><div><div class="lbl">Siguiente</div><div class="t">Predecir y simular el futuro →</div></div><div class="arrow">→</div></a></div>
+  </article>
+
+  <footer><div class="wrap"><div>k-means, SAR y GWR en Node.js sobre 44 municipios · <b>NVIDIA</b> CC-BY-4.0 · sintético.</div><div><a href="publicaciones.html">← Publicaciones</a></div></div></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script src="viz.js"></script>
+  <script>
+    const { BLUE, FONT, baseTooltip, make, reveal, progress, load } = VIZ;
+    (async () => {
+      progress();
+      const [a, geo] = await Promise.all([load('data/advanced.json'), load('data/municipios.geojson')]);
+      echarts.registerMap('SVmuni', geo);
+
+      // cluster stats
+      const CCOL = { 'Rezago rural': BLUE.p200, 'En desarrollo': BLUE.p400, 'Emergente urbano': BLUE.p600, 'Núcleo desarrollado': BLUE.p900 };
+      document.getElementById('clusterStats').innerHTML = a.clusters.summary.map((s) =>
+        `<div class="bigstat"><div class="n" style="color:${CCOL[s.label]}">${s.nMunis}</div><div class="l">${s.label}<br/>ICH medio ${s.ichMedio}</div></div>`).join('');
+      document.getElementById('clusterLegend').innerHTML = a.clusters.summary.map((s) =>
+        `<span><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:${CCOL[s.label]};margin-right:5px;vertical-align:middle"></span>${s.label}</span>`).join('');
+
+      // clusters map
+      const byName = Object.fromEntries(a.clusters.assignment.map((x) => [x.name, x]));
+      make(document.getElementById('fClusters')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'item', formatter: (p) => { const d = byName[p.name]; return d ? `<b>${p.name}</b><br/>${d.cluster}<br/><span style="color:${BLUE.muted}">ICH ${d.ich}</span>` : p.name } },
+        series: [{ type: 'map', map: 'SVmuni', nameProperty: 'municipality', roam: false, itemStyle: { borderColor: '#fff', borderWidth: 0.5 }, label: { show: false }, emphasis: { label: { show: false }, itemStyle: { areaColor: null } }, data: a.clusters.assignment.map((x) => ({ name: x.name, value: x.ich, itemStyle: { areaColor: CCOL[x.cluster] || BLUE.p300 } })) }],
+      });
+
+      // SAR
+      const set = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v; };
+      set('sarRho', a.sar.rho.toFixed(2)); set('sarRho2', a.sar.rho.toFixed(2));
+
+      // GWR local slope map
+      const g = a.gwr.local; const vals = g.map((x) => x.slope);
+      make(document.getElementById('fGwr')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'item', formatter: (p) => p.data ? `<b>${p.name}</b><br/>coef. local: ${p.value.toFixed(3)}` : p.name },
+        visualMap: { min: Math.min(...vals), max: Math.max(...vals), calculable: true, left: 12, bottom: 14, text: ['fuerte', 'débil'], textStyle: { color: BLUE.muted, fontFamily: FONT }, inRange: { color: BLUE.seq }, itemHeight: 110 },
+        series: [{ type: 'map', map: 'SVmuni', nameProperty: 'municipality', roam: false, itemStyle: { borderColor: '#fff', borderWidth: 0.5 }, label: { show: false }, emphasis: { label: { show: false } }, data: g.map((x) => ({ name: x.name, value: x.slope })) }],
+      });
+      reveal();
+    })();
+  </script>
+</body>
+</html>

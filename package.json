@@ -1,0 +1,23 @@
+{
+  "name": "nemotron-sv",
+  "version": "0.1.0",
+  "description": "El Salvador Sintetico - Laboratorio interactivo sobre el dataset Nemotron-Personas-El-Salvador",
+  "type": "module",
+  "scripts": {
+    "download": "node src/download.mjs",
+    "geo": "node src/prepare_geo.mjs",
+    "process": "node --max-old-space-size=4096 src/process.mjs",
+    "models": "node --max-old-space-size=4096 src/models.mjs",
+    "advanced": "node --max-old-space-size=4096 src/advanced.mjs",
+    "nlp": "node --max-old-space-size=4096 src/nlp.mjs",
+    "survival": "node --max-old-space-size=4096 src/survival.mjs",
+    "highered": "node --max-old-space-size=4096 src/highered.mjs",
+    "build": "npm run download && npm run geo && npm run process && npm run models && npm run advanced && npm run nlp && npm run survival && npm run highered",
+    "serve": "node src/serve.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "hyparquet": "^1.26.2",
+    "hyparquet-compressors": "^1.1.1"
+  }
+}

@@ -1,0 +1,1637 @@
+{
+  "meta": {
+    "nota": "Modelos sobre datos SINTÉTICOS: ilustran método, no efectos causales reales.",
+    "n": 148000,
+    "ref_departamento": "San Salvador"
+  },
+  "olsEducacion": {
+    "coef": [
+      {
+        "name": "(intercepto)",
+        "beta": 14.0207,
+        "se": 0.0771,
+        "t": 181.77,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "edad",
+        "beta": -0.0679,
+        "se": 0.0031,
+        "t": -21.78,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "edad²/100",
+        "beta": -0.0382,
+        "se": 0.0032,
+        "t": -12.02,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "mujer",
+        "beta": -0.2098,
+        "se": 0.0216,
+        "t": -9.71,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "urbano",
+        "beta": 0.4851,
+        "se": 0.0277,
+        "t": 17.54,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:La Libertad",
+        "beta": -0.7868,
+        "se": 0.0363,
+        "t": -21.65,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Santa Ana",
+        "beta": -1.5728,
+        "se": 0.0414,
+        "t": -38.03,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Sonsonate",
+        "beta": -2.156,
+        "se": 0.0434,
+        "t": -49.72,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:San Miguel",
+        "beta": -1.8172,
+        "se": 0.0452,
+        "t": -40.22,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Ahuachapán",
+        "beta": -2.5272,
+        "se": 0.0495,
+        "t": -51.03,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Usulután",
+        "beta": -2.2492,
+        "se": 0.0518,
+        "t": -43.41,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:La Paz",
+        "beta": -1.9215,
+        "se": 0.0521,
+        "t": -36.85,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Cuscatlán",
+        "beta": -1.7604,
+        "se": 0.0571,
+        "t": -30.84,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:La Unión",
+        "beta": -3.0536,
+        "se": 0.0636,
+        "t": -47.99,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Chalatenango",
+        "beta": -2.3871,
+        "se": 0.0693,
+        "t": -34.42,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Morazán",
+        "beta": -2.6646,
+        "se": 0.0714,
+        "t": -37.33,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:San Vicente",
+        "beta": -2.0164,
+        "se": 0.07,
+        "t": -28.82,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Cabañas",
+        "beta": -2.7086,
+        "se": 0.0748,
+        "t": -36.23,
+        "p": 0,
+        "sig": "***"
+      }
+    ],
+    "r2": 0.2073,
+    "n": 148000,
+    "rmse": 4.136
+  },
+  "lpmSuperior": {
+    "coef": [
+      {
+        "name": "(intercepto)",
+        "beta": 0.1825,
+        "se": 0.0066,
+        "t": 27.61,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "edad",
+        "beta": 0.0024,
+        "se": 0.0003,
+        "t": 9.11,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "edad²/100",
+        "beta": -0.0043,
+        "se": 0.0003,
+        "t": -15.94,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "mujer",
+        "beta": 0.0041,
+        "se": 0.0019,
+        "t": 2.2,
+        "p": 0.028,
+        "sig": "*"
+      },
+      {
+        "name": "urbano",
+        "beta": 0.029,
+        "se": 0.0024,
+        "t": 12.25,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:La Libertad",
+        "beta": -0.0213,
+        "se": 0.0031,
+        "t": -6.83,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Santa Ana",
+        "beta": -0.0675,
+        "se": 0.0035,
+        "t": -19.04,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Sonsonate",
+        "beta": -0.1204,
+        "se": 0.0037,
+        "t": -32.4,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:San Miguel",
+        "beta": -0.0563,
+        "se": 0.0039,
+        "t": -14.54,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Ahuachapán",
+        "beta": -0.1312,
+        "se": 0.0042,
+        "t": -30.92,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Usulután",
+        "beta": -0.1098,
+        "se": 0.0044,
+        "t": -24.72,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:La Paz",
+        "beta": -0.1252,
+        "se": 0.0045,
+        "t": -28.02,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Cuscatlán",
+        "beta": -0.1295,
+        "se": 0.0049,
+        "t": -26.47,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:La Unión",
+        "beta": -0.132,
+        "se": 0.0055,
+        "t": -24.21,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Chalatenango",
+        "beta": -0.0948,
+        "se": 0.0059,
+        "t": -15.96,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Morazán",
+        "beta": -0.0967,
+        "se": 0.0061,
+        "t": -15.81,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:San Vicente",
+        "beta": -0.087,
+        "se": 0.006,
+        "t": -14.52,
+        "p": 0,
+        "sig": "***"
+      },
+      {
+        "name": "dep:Cabañas",
+        "beta": -0.1123,
+        "se": 0.0064,
+        "t": -17.53,
+        "p": 0,
+        "sig": "***"
+      }
+    ],
+    "r2": 0.0331,
+    "n": 148000,
+    "rmse": 0.354
+  },
+  "gaps": {
+    "gender": {
+      "raw": -0.247,
+      "conditional": -0.2098,
+      "sig": "***"
+    },
+    "area": {
+      "raw": 1.255,
+      "conditional": 0.4851,
+      "sig": "***"
+    }
+  },
+  "moran": {
+    "variable": "ICH por departamento (14 unidades)",
+    "I": 0.095,
+    "expected": -0.0769,
+    "pseudoP": 0.132,
+    "nPerm": 999,
+    "n": 14,
+    "avgNeighbors": 4,
+    "significativo": false,
+    "scatter": [
+      {
+        "name": "San Salvador",
+        "z": 2.388,
+        "lag": 0.235
+      },
+      {
+        "name": "La Libertad",
+        "z": 1.586,
+        "lag": 0.415
+      },
+      {
+        "name": "Santa Ana",
+        "z": 0.57,
+        "lag": 0.087
+      },
+      {
+        "name": "Sonsonate",
+        "z": -0.019,
+        "lag": 0.57
+      },
+      {
+        "name": "San Miguel",
+        "z": 0.44,
+        "lag": -0.775
+      },
+      {
+        "name": "Ahuachapán",
+        "z": -0.446,
+        "lag": 0.276
+      },
+      {
+        "name": "Usulután",
+        "z": -0.446,
+        "lag": -0.3
+      },
+      {
+        "name": "La Paz",
+        "z": -0.09,
+        "lag": 0.753
+      },
+      {
+        "name": "Cuscatlán",
+        "z": 0.218,
+        "lag": 0.119
+      },
+      {
+        "name": "La Unión",
+        "z": -1.564,
+        "lag": -0.313
+      },
+      {
+        "name": "Chalatenango",
+        "z": -0.774,
+        "lag": 0.763
+      },
+      {
+        "name": "Morazán",
+        "z": -0.932,
+        "lag": -0.562
+      },
+      {
+        "name": "San Vicente",
+        "z": 0.017,
+        "lag": -0.165
+      },
+      {
+        "name": "Cabañas",
+        "z": -0.948,
+        "lag": -0.025
+      }
+    ],
+    "local": [
+      {
+        "name": "San Salvador",
+        "value": 100,
+        "z": 2.388,
+        "lag": 0.235,
+        "quadrant": "Alto-Alto",
+        "Ii": 0.561
+      },
+      {
+        "name": "La Libertad",
+        "value": 79.7,
+        "z": 1.586,
+        "lag": 0.415,
+        "quadrant": "Alto-Alto",
+        "Ii": 0.658
+      },
+      {
+        "name": "Santa Ana",
+        "value": 54,
+        "z": 0.57,
+        "lag": 0.087,
+        "quadrant": "Alto-Alto",
+        "Ii": 0.049
+      },
+      {
+        "name": "Sonsonate",
+        "value": 39.1,
+        "z": -0.019,
+        "lag": 0.57,
+        "quadrant": "Bajo-Alto",
+        "Ii": -0.011
+      },
+      {
+        "name": "San Miguel",
+        "value": 50.7,
+        "z": 0.44,
+        "lag": -0.775,
+        "quadrant": "Alto-Bajo",
+        "Ii": -0.34
+      },
+      {
+        "name": "Ahuachapán",
+        "value": 28.3,
+        "z": -0.446,
+        "lag": 0.276,
+        "quadrant": "Bajo-Alto",
+        "Ii": -0.123
+      },
+      {
+        "name": "Usulután",
+        "value": 28.3,
+        "z": -0.446,
+        "lag": -0.3,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.134
+      },
+      {
+        "name": "La Paz",
+        "value": 37.3,
+        "z": -0.09,
+        "lag": 0.753,
+        "quadrant": "Bajo-Alto",
+        "Ii": -0.068
+      },
+      {
+        "name": "Cuscatlán",
+        "value": 45.1,
+        "z": 0.218,
+        "lag": 0.119,
+        "quadrant": "Alto-Alto",
+        "Ii": 0.026
+      },
+      {
+        "name": "La Unión",
+        "value": 0,
+        "z": -1.564,
+        "lag": -0.313,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.489
+      },
+      {
+        "name": "Chalatenango",
+        "value": 20,
+        "z": -0.774,
+        "lag": 0.763,
+        "quadrant": "Bajo-Alto",
+        "Ii": -0.59
+      },
+      {
+        "name": "Morazán",
+        "value": 16,
+        "z": -0.932,
+        "lag": -0.562,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.524
+      },
+      {
+        "name": "San Vicente",
+        "value": 40,
+        "z": 0.017,
+        "lag": -0.165,
+        "quadrant": "Alto-Bajo",
+        "Ii": -0.003
+      },
+      {
+        "name": "Cabañas",
+        "value": 15.6,
+        "z": -0.948,
+        "lag": -0.025,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.024
+      }
+    ],
+    "neighborList": {
+      "San Salvador": [
+        "La Libertad",
+        "La Paz",
+        "Cuscatlán",
+        "Chalatenango"
+      ],
+      "La Libertad": [
+        "San Salvador",
+        "Santa Ana",
+        "Sonsonate",
+        "La Paz",
+        "Chalatenango"
+      ],
+      "Santa Ana": [
+        "La Libertad",
+        "Sonsonate",
+        "Ahuachapán",
+        "Chalatenango"
+      ],
+      "Sonsonate": [
+        "La Libertad",
+        "Santa Ana",
+        "Ahuachapán"
+      ],
+      "San Miguel": [
+        "Usulután",
+        "La Unión",
+        "Morazán",
+        "San Vicente",
+        "Cabañas"
+      ],
+      "Ahuachapán": [
+        "Santa Ana",
+        "Sonsonate"
+      ],
+      "Usulután": [
+        "San Miguel",
+        "La Paz",
+        "La Unión",
+        "San Vicente"
+      ],
+      "La Paz": [
+        "San Salvador",
+        "La Libertad",
+        "Usulután",
+        "Cuscatlán",
+        "San Vicente"
+      ],
+      "Cuscatlán": [
+        "San Salvador",
+        "La Paz",
+        "Chalatenango",
+        "San Vicente",
+        "Cabañas"
+      ],
+      "La Unión": [
+        "San Miguel",
+        "Usulután",
+        "Morazán"
+      ],
+      "Chalatenango": [
+        "San Salvador",
+        "La Libertad",
+        "Santa Ana",
+        "Cuscatlán",
+        "Cabañas"
+      ],
+      "Morazán": [
+        "San Miguel",
+        "La Unión"
+      ],
+      "San Vicente": [
+        "San Miguel",
+        "Usulután",
+        "La Paz",
+        "Cuscatlán",
+        "Cabañas"
+      ],
+      "Cabañas": [
+        "San Miguel",
+        "Cuscatlán",
+        "Chalatenango",
+        "San Vicente"
+      ]
+    }
+  },
+  "moranMuni": {
+    "variable": "ICH por municipio (44 unidades)",
+    "I": 0.3928,
+    "expected": -0.0233,
+    "pseudoP": 0.001,
+    "nPerm": 999,
+    "n": 44,
+    "avgNeighbors": 4.9,
+    "significativo": true,
+    "scatter": [
+      {
+        "name": "San Salvador Centro",
+        "z": 2.345,
+        "lag": 1.453
+      },
+      {
+        "name": "San Salvador Este",
+        "z": 1.496,
+        "lag": 0.798
+      },
+      {
+        "name": "San Miguel Centro",
+        "z": 0.751,
+        "lag": -0.671
+      },
+      {
+        "name": "Santa Ana Centro",
+        "z": 1.17,
+        "lag": -0.373
+      },
+      {
+        "name": "La Libertad Oeste",
+        "z": 0.983,
+        "lag": 0.502
+      },
+      {
+        "name": "Ahuachapán Centro",
+        "z": -0.039,
+        "lag": -0.182
+      },
+      {
+        "name": "Sonsonate Este",
+        "z": -0.315,
+        "lag": 0.264
+      },
+      {
+        "name": "San Salvador Sur",
+        "z": 1.047,
+        "lag": 1.018
+      },
+      {
+        "name": "La Libertad Centro",
+        "z": 0.381,
+        "lag": 0.713
+      },
+      {
+        "name": "San Salvador Oeste",
+        "z": 0.854,
+        "lag": 1
+      },
+      {
+        "name": "Sonsonate Centro",
+        "z": 0.696,
+        "lag": -0.588
+      },
+      {
+        "name": "Usulután Este",
+        "z": -0.143,
+        "lag": -0.117
+      },
+      {
+        "name": "Cuscatlán Sur",
+        "z": 0.455,
+        "lag": -0.234
+      },
+      {
+        "name": "Santa Ana Oeste",
+        "z": 0.213,
+        "lag": 0.046
+      },
+      {
+        "name": "La Libertad Sur",
+        "z": 2.848,
+        "lag": 0.868
+      },
+      {
+        "name": "La Paz Centro",
+        "z": -0.36,
+        "lag": 0.229
+      },
+      {
+        "name": "La Unión Sur",
+        "z": -0.987,
+        "lag": -0.439
+      },
+      {
+        "name": "La Libertad Este",
+        "z": 2.271,
+        "lag": 1.321
+      },
+      {
+        "name": "Usulután Norte",
+        "z": -0.276,
+        "lag": -0.477
+      },
+      {
+        "name": "Morazán Sur",
+        "z": -0.612,
+        "lag": -0.898
+      },
+      {
+        "name": "La Paz Oeste",
+        "z": -0.064,
+        "lag": -0.09
+      },
+      {
+        "name": "Sonsonate Norte",
+        "z": -0.128,
+        "lag": 0.13
+      },
+      {
+        "name": "La Unión Norte",
+        "z": -1.456,
+        "lag": -0.923
+      },
+      {
+        "name": "Cuscatlán Norte",
+        "z": -0.143,
+        "lag": 0.146
+      },
+      {
+        "name": "Ahuachapán Sur",
+        "z": -1.347,
+        "lag": -0.008
+      },
+      {
+        "name": "San Vicente Sur",
+        "z": 0.139,
+        "lag": -0.174
+      },
+      {
+        "name": "La Paz Este",
+        "z": 0.385,
+        "lag": -0.111
+      },
+      {
+        "name": "San Miguel Oeste",
+        "z": 0.015,
+        "lag": -0.324
+      },
+      {
+        "name": "La Libertad Norte",
+        "z": 0.203,
+        "lag": 0.799
+      },
+      {
+        "name": "Santa Ana Norte",
+        "z": -1.308,
+        "lag": -0.132
+      },
+      {
+        "name": "La Libertad Costa",
+        "z": -0.957,
+        "lag": 1.128
+      },
+      {
+        "name": "Chalatenango Centro",
+        "z": -0.977,
+        "lag": -0.186
+      },
+      {
+        "name": "Cabañas Oeste",
+        "z": -0.513,
+        "lag": -0.238
+      },
+      {
+        "name": "San Miguel Norte",
+        "z": -1.628,
+        "lag": -0.373
+      },
+      {
+        "name": "Ahuachapán Norte",
+        "z": 0.534,
+        "lag": 0.015
+      },
+      {
+        "name": "Usulután Oeste",
+        "z": -0.957,
+        "lag": -0.093
+      },
+      {
+        "name": "Chalatenango Sur",
+        "z": -0.182,
+        "lag": -0.666
+      },
+      {
+        "name": "Santa Ana Este",
+        "z": -0.296,
+        "lag": 0.36
+      },
+      {
+        "name": "Cabañas Este",
+        "z": -1.031,
+        "lag": -0.654
+      },
+      {
+        "name": "San Salvador Norte",
+        "z": -0.113,
+        "lag": 0.287
+      },
+      {
+        "name": "San Vicente Norte",
+        "z": -0.291,
+        "lag": -0.476
+      },
+      {
+        "name": "Sonsonate Oeste",
+        "z": -0.562,
+        "lag": -0.325
+      },
+      {
+        "name": "Morazán Norte",
+        "z": -1.169,
+        "lag": -1.232
+      },
+      {
+        "name": "Chalatenango Norte",
+        "z": -0.932,
+        "lag": -1.142
+      }
+    ],
+    "local": [
+      {
+        "name": "San Salvador Centro",
+        "value": 87.1,
+        "z": 2.345,
+        "lag": 1.453,
+        "quadrant": "Alto-Alto",
+        "Ii": 3.408
+      },
+      {
+        "name": "San Salvador Este",
+        "value": 69.9,
+        "z": 1.496,
+        "lag": 0.798,
+        "quadrant": "Alto-Alto",
+        "Ii": 1.194
+      },
+      {
+        "name": "San Miguel Centro",
+        "value": 54.8,
+        "z": 0.751,
+        "lag": -0.671,
+        "quadrant": "Alto-Bajo",
+        "Ii": -0.504
+      },
+      {
+        "name": "Santa Ana Centro",
+        "value": 63.3,
+        "z": 1.17,
+        "lag": -0.373,
+        "quadrant": "Alto-Bajo",
+        "Ii": -0.436
+      },
+      {
+        "name": "La Libertad Oeste",
+        "value": 59.5,
+        "z": 0.983,
+        "lag": 0.502,
+        "quadrant": "Alto-Alto",
+        "Ii": 0.494
+      },
+      {
+        "name": "Ahuachapán Centro",
+        "value": 38.8,
+        "z": -0.039,
+        "lag": -0.182,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.007
+      },
+      {
+        "name": "Sonsonate Este",
+        "value": 33.2,
+        "z": -0.315,
+        "lag": 0.264,
+        "quadrant": "Bajo-Alto",
+        "Ii": -0.083
+      },
+      {
+        "name": "San Salvador Sur",
+        "value": 60.8,
+        "z": 1.047,
+        "lag": 1.018,
+        "quadrant": "Alto-Alto",
+        "Ii": 1.066
+      },
+      {
+        "name": "La Libertad Centro",
+        "value": 47.3,
+        "z": 0.381,
+        "lag": 0.713,
+        "quadrant": "Alto-Alto",
+        "Ii": 0.271
+      },
+      {
+        "name": "San Salvador Oeste",
+        "value": 56.9,
+        "z": 0.854,
+        "lag": 1,
+        "quadrant": "Alto-Alto",
+        "Ii": 0.854
+      },
+      {
+        "name": "Sonsonate Centro",
+        "value": 53.7,
+        "z": 0.696,
+        "lag": -0.588,
+        "quadrant": "Alto-Bajo",
+        "Ii": -0.41
+      },
+      {
+        "name": "Usulután Este",
+        "value": 36.7,
+        "z": -0.143,
+        "lag": -0.117,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.017
+      },
+      {
+        "name": "Cuscatlán Sur",
+        "value": 48.8,
+        "z": 0.455,
+        "lag": -0.234,
+        "quadrant": "Alto-Bajo",
+        "Ii": -0.106
+      },
+      {
+        "name": "Santa Ana Oeste",
+        "value": 43.9,
+        "z": 0.213,
+        "lag": 0.046,
+        "quadrant": "Alto-Alto",
+        "Ii": 0.01
+      },
+      {
+        "name": "La Libertad Sur",
+        "value": 97.3,
+        "z": 2.848,
+        "lag": 0.868,
+        "quadrant": "Alto-Alto",
+        "Ii": 2.474
+      },
+      {
+        "name": "La Paz Centro",
+        "value": 32.3,
+        "z": -0.36,
+        "lag": 0.229,
+        "quadrant": "Bajo-Alto",
+        "Ii": -0.082
+      },
+      {
+        "name": "La Unión Sur",
+        "value": 19.6,
+        "z": -0.987,
+        "lag": -0.439,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.433
+      },
+      {
+        "name": "La Libertad Este",
+        "value": 85.6,
+        "z": 2.271,
+        "lag": 1.321,
+        "quadrant": "Alto-Alto",
+        "Ii": 2.999
+      },
+      {
+        "name": "Usulután Norte",
+        "value": 34,
+        "z": -0.276,
+        "lag": -0.477,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.132
+      },
+      {
+        "name": "Morazán Sur",
+        "value": 27.2,
+        "z": -0.612,
+        "lag": -0.898,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.549
+      },
+      {
+        "name": "La Paz Oeste",
+        "value": 38.3,
+        "z": -0.064,
+        "lag": -0.09,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.006
+      },
+      {
+        "name": "Sonsonate Norte",
+        "value": 37,
+        "z": -0.128,
+        "lag": 0.13,
+        "quadrant": "Bajo-Alto",
+        "Ii": -0.017
+      },
+      {
+        "name": "La Unión Norte",
+        "value": 10.1,
+        "z": -1.456,
+        "lag": -0.923,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 1.343
+      },
+      {
+        "name": "Cuscatlán Norte",
+        "value": 36.7,
+        "z": -0.143,
+        "lag": 0.146,
+        "quadrant": "Bajo-Alto",
+        "Ii": -0.021
+      },
+      {
+        "name": "Ahuachapán Sur",
+        "value": 12.3,
+        "z": -1.347,
+        "lag": -0.008,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.011
+      },
+      {
+        "name": "San Vicente Sur",
+        "value": 42.4,
+        "z": 0.139,
+        "lag": -0.174,
+        "quadrant": "Alto-Bajo",
+        "Ii": -0.024
+      },
+      {
+        "name": "La Paz Este",
+        "value": 47.4,
+        "z": 0.385,
+        "lag": -0.111,
+        "quadrant": "Alto-Bajo",
+        "Ii": -0.043
+      },
+      {
+        "name": "San Miguel Oeste",
+        "value": 39.9,
+        "z": 0.015,
+        "lag": -0.324,
+        "quadrant": "Alto-Bajo",
+        "Ii": -0.005
+      },
+      {
+        "name": "La Libertad Norte",
+        "value": 43.7,
+        "z": 0.203,
+        "lag": 0.799,
+        "quadrant": "Alto-Alto",
+        "Ii": 0.162
+      },
+      {
+        "name": "Santa Ana Norte",
+        "value": 13.1,
+        "z": -1.308,
+        "lag": -0.132,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.172
+      },
+      {
+        "name": "La Libertad Costa",
+        "value": 20.2,
+        "z": -0.957,
+        "lag": 1.128,
+        "quadrant": "Bajo-Alto",
+        "Ii": -1.08
+      },
+      {
+        "name": "Chalatenango Centro",
+        "value": 19.8,
+        "z": -0.977,
+        "lag": -0.186,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.182
+      },
+      {
+        "name": "Cabañas Oeste",
+        "value": 29.2,
+        "z": -0.513,
+        "lag": -0.238,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.122
+      },
+      {
+        "name": "San Miguel Norte",
+        "value": 6.6,
+        "z": -1.628,
+        "lag": -0.373,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.608
+      },
+      {
+        "name": "Ahuachapán Norte",
+        "value": 50.4,
+        "z": 0.534,
+        "lag": 0.015,
+        "quadrant": "Alto-Alto",
+        "Ii": 0.008
+      },
+      {
+        "name": "Usulután Oeste",
+        "value": 20.2,
+        "z": -0.957,
+        "lag": -0.093,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.089
+      },
+      {
+        "name": "Chalatenango Sur",
+        "value": 35.9,
+        "z": -0.182,
+        "lag": -0.666,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.121
+      },
+      {
+        "name": "Santa Ana Este",
+        "value": 33.6,
+        "z": -0.296,
+        "lag": 0.36,
+        "quadrant": "Bajo-Alto",
+        "Ii": -0.106
+      },
+      {
+        "name": "Cabañas Este",
+        "value": 18.7,
+        "z": -1.031,
+        "lag": -0.654,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.674
+      },
+      {
+        "name": "San Salvador Norte",
+        "value": 37.3,
+        "z": -0.113,
+        "lag": 0.287,
+        "quadrant": "Bajo-Alto",
+        "Ii": -0.032
+      },
+      {
+        "name": "San Vicente Norte",
+        "value": 33.7,
+        "z": -0.291,
+        "lag": -0.476,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.138
+      },
+      {
+        "name": "Sonsonate Oeste",
+        "value": 28.2,
+        "z": -0.562,
+        "lag": -0.325,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 0.183
+      },
+      {
+        "name": "Morazán Norte",
+        "value": 15.9,
+        "z": -1.169,
+        "lag": -1.232,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 1.44
+      },
+      {
+        "name": "Chalatenango Norte",
+        "value": 20.7,
+        "z": -0.932,
+        "lag": -1.142,
+        "quadrant": "Bajo-Bajo",
+        "Ii": 1.065
+      }
+    ],
+    "neighborList": {
+      "San Salvador Centro": [
+        "San Salvador Este",
+        "San Salvador Sur",
+        "San Salvador Oeste",
+        "La Libertad Sur",
+        "La Libertad Este",
+        "La Libertad Norte"
+      ],
+      "San Salvador Este": [
+        "San Salvador Centro",
+        "San Salvador Sur",
+        "San Salvador Oeste",
+        "Cuscatlán Norte",
+        "San Salvador Norte"
+      ],
+      "San Miguel Centro": [
+        "Usulután Este",
+        "La Unión Sur",
+        "Morazán Sur",
+        "San Miguel Oeste",
+        "San Miguel Norte"
+      ],
+      "Santa Ana Centro": [
+        "Sonsonate Este",
+        "Santa Ana Oeste",
+        "Sonsonate Norte",
+        "La Libertad Norte",
+        "Santa Ana Norte",
+        "Chalatenango Centro",
+        "Santa Ana Este"
+      ],
+      "La Libertad Oeste": [
+        "Sonsonate Este",
+        "La Libertad Centro",
+        "San Salvador Oeste",
+        "La Libertad Sur",
+        "La Libertad Norte",
+        "La Libertad Costa"
+      ],
+      "Ahuachapán Centro": [
+        "Santa Ana Oeste",
+        "Sonsonate Norte",
+        "Ahuachapán Sur",
+        "Ahuachapán Norte"
+      ],
+      "Sonsonate Este": [
+        "Santa Ana Centro",
+        "La Libertad Oeste",
+        "La Libertad Centro",
+        "Sonsonate Centro",
+        "Sonsonate Norte",
+        "La Libertad Costa",
+        "Santa Ana Este"
+      ],
+      "San Salvador Sur": [
+        "San Salvador Centro",
+        "San Salvador Este",
+        "La Libertad Este",
+        "La Paz Oeste",
+        "La Libertad Costa"
+      ],
+      "La Libertad Centro": [
+        "La Libertad Oeste",
+        "Sonsonate Este",
+        "San Salvador Oeste",
+        "La Libertad Sur",
+        "La Libertad Norte",
+        "Santa Ana Este"
+      ],
+      "San Salvador Oeste": [
+        "San Salvador Centro",
+        "San Salvador Este",
+        "La Libertad Oeste",
+        "La Libertad Centro",
+        "La Libertad Sur",
+        "Cuscatlán Norte",
+        "La Libertad Norte",
+        "San Salvador Norte"
+      ],
+      "Sonsonate Centro": [
+        "Sonsonate Este",
+        "Sonsonate Norte",
+        "Ahuachapán Sur",
+        "Sonsonate Oeste"
+      ],
+      "Usulután Este": [
+        "San Miguel Centro",
+        "Usulután Norte",
+        "San Miguel Oeste",
+        "Usulután Oeste"
+      ],
+      "Cuscatlán Sur": [
+        "La Paz Centro",
+        "Cuscatlán Norte",
+        "San Vicente Sur",
+        "Cabañas Oeste",
+        "San Vicente Norte"
+      ],
+      "Santa Ana Oeste": [
+        "Santa Ana Centro",
+        "Ahuachapán Centro",
+        "Sonsonate Norte",
+        "Santa Ana Norte",
+        "Ahuachapán Norte"
+      ],
+      "La Libertad Sur": [
+        "San Salvador Centro",
+        "La Libertad Oeste",
+        "La Libertad Centro",
+        "San Salvador Oeste",
+        "La Libertad Este",
+        "La Libertad Norte",
+        "La Libertad Costa"
+      ],
+      "La Paz Centro": [
+        "Cuscatlán Sur",
+        "La Paz Oeste",
+        "San Vicente Sur",
+        "La Paz Este"
+      ],
+      "La Unión Sur": [
+        "San Miguel Centro",
+        "Morazán Sur",
+        "La Unión Norte"
+      ],
+      "La Libertad Este": [
+        "San Salvador Centro",
+        "San Salvador Sur",
+        "La Libertad Sur",
+        "La Libertad Costa"
+      ],
+      "Usulután Norte": [
+        "Usulután Este",
+        "San Vicente Sur",
+        "San Miguel Oeste",
+        "San Miguel Norte",
+        "Usulután Oeste",
+        "San Vicente Norte"
+      ],
+      "Morazán Sur": [
+        "San Miguel Centro",
+        "La Unión Sur",
+        "La Unión Norte",
+        "San Miguel Norte",
+        "Morazán Norte"
+      ],
+      "La Paz Oeste": [
+        "San Salvador Sur",
+        "La Paz Centro",
+        "La Libertad Costa"
+      ],
+      "Sonsonate Norte": [
+        "Santa Ana Centro",
+        "Ahuachapán Centro",
+        "Sonsonate Este",
+        "Sonsonate Centro",
+        "Santa Ana Oeste",
+        "Ahuachapán Sur",
+        "Ahuachapán Norte"
+      ],
+      "La Unión Norte": [
+        "La Unión Sur",
+        "Morazán Sur",
+        "Morazán Norte"
+      ],
+      "Cuscatlán Norte": [
+        "San Salvador Este",
+        "San Salvador Oeste",
+        "Cuscatlán Sur",
+        "Chalatenango Centro",
+        "Cabañas Oeste",
+        "Chalatenango Sur",
+        "San Salvador Norte"
+      ],
+      "Ahuachapán Sur": [
+        "Ahuachapán Centro",
+        "Sonsonate Centro",
+        "Sonsonate Norte",
+        "Sonsonate Oeste"
+      ],
+      "San Vicente Sur": [
+        "Cuscatlán Sur",
+        "La Paz Centro",
+        "Usulután Norte",
+        "La Paz Este",
+        "Usulután Oeste",
+        "San Vicente Norte"
+      ],
+      "La Paz Este": [
+        "La Paz Centro",
+        "San Vicente Sur"
+      ],
+      "San Miguel Oeste": [
+        "San Miguel Centro",
+        "Usulután Este",
+        "Usulután Norte",
+        "San Miguel Norte"
+      ],
+      "La Libertad Norte": [
+        "San Salvador Centro",
+        "Santa Ana Centro",
+        "La Libertad Oeste",
+        "La Libertad Centro",
+        "San Salvador Oeste",
+        "La Libertad Sur",
+        "Chalatenango Centro",
+        "Santa Ana Este",
+        "San Salvador Norte"
+      ],
+      "Santa Ana Norte": [
+        "Santa Ana Centro",
+        "Santa Ana Oeste",
+        "Chalatenango Centro",
+        "Chalatenango Norte"
+      ],
+      "La Libertad Costa": [
+        "La Libertad Oeste",
+        "Sonsonate Este",
+        "San Salvador Sur",
+        "La Libertad Sur",
+        "La Libertad Este",
+        "La Paz Oeste"
+      ],
+      "Chalatenango Centro": [
+        "Santa Ana Centro",
+        "Cuscatlán Norte",
+        "La Libertad Norte",
+        "Santa Ana Norte",
+        "Chalatenango Sur",
+        "San Salvador Norte",
+        "Chalatenango Norte"
+      ],
+      "Cabañas Oeste": [
+        "Cuscatlán Sur",
+        "Cuscatlán Norte",
+        "Chalatenango Sur",
+        "Cabañas Este",
+        "San Vicente Norte"
+      ],
+      "San Miguel Norte": [
+        "San Miguel Centro",
+        "Usulután Norte",
+        "Morazán Sur",
+        "San Miguel Oeste",
+        "Cabañas Este",
+        "San Vicente Norte",
+        "Morazán Norte"
+      ],
+      "Ahuachapán Norte": [
+        "Ahuachapán Centro",
+        "Santa Ana Oeste",
+        "Sonsonate Norte"
+      ],
+      "Usulután Oeste": [
+        "Usulután Este",
+        "Usulután Norte",
+        "San Vicente Sur"
+      ],
+      "Chalatenango Sur": [
+        "Cuscatlán Norte",
+        "Chalatenango Centro",
+        "Cabañas Oeste",
+        "Cabañas Este"
+      ],
+      "Santa Ana Este": [
+        "Santa Ana Centro",
+        "Sonsonate Este",
+        "La Libertad Centro",
+        "La Libertad Norte"
+      ],
+      "Cabañas Este": [
+        "Cabañas Oeste",
+        "San Miguel Norte",
+        "Chalatenango Sur",
+        "San Vicente Norte"
+      ],
+      "San Salvador Norte": [
+        "San Salvador Este",
+        "San Salvador Oeste",
+        "Cuscatlán Norte",
+        "La Libertad Norte",
+        "Chalatenango Centro"
+      ],
+      "San Vicente Norte": [
+        "Cuscatlán Sur",
+        "Usulután Norte",
+        "San Vicente Sur",
+        "Cabañas Oeste",
+        "San Miguel Norte",
+        "Cabañas Este"
+      ],
+      "Sonsonate Oeste": [
+        "Sonsonate Centro",
+        "Ahuachapán Sur"
+      ],
+      "Morazán Norte": [
+        "Morazán Sur",
+        "La Unión Norte",
+        "San Miguel Norte"
+      ],
+      "Chalatenango Norte": [
+        "Santa Ana Norte",
+        "Chalatenango Centro"
+      ]
+    }
+  },
+  "portfolio": [
+    {
+      "name": "Sonsonate",
+      "ich": 39.1,
+      "retornoPotencial": 60.9,
+      "riesgo": 4.42,
+      "escolaridad": 8.51,
+      "poblacion": 12111,
+      "pesoPoblacion": 8.2,
+      "asignacion": 12.1
+    },
+    {
+      "name": "Santa Ana",
+      "ich": 54,
+      "retornoPotencial": 46,
+      "riesgo": 4.63,
+      "escolaridad": 8.91,
+      "poblacion": 13868,
+      "pesoPoblacion": 9.4,
+      "asignacion": 10.5
+    },
+    {
+      "name": "Ahuachapán",
+      "ich": 28.3,
+      "retornoPotencial": 71.7,
+      "riesgo": 4.53,
+      "escolaridad": 8.1,
+      "poblacion": 8728,
+      "pesoPoblacion": 5.9,
+      "asignacion": 10.3
+    },
+    {
+      "name": "Usulután",
+      "ich": 28.3,
+      "retornoPotencial": 71.7,
+      "riesgo": 4.69,
+      "escolaridad": 8.17,
+      "poblacion": 8094,
+      "pesoPoblacion": 5.5,
+      "asignacion": 9.5
+    },
+    {
+      "name": "San Miguel",
+      "ich": 50.7,
+      "retornoPotencial": 49.3,
+      "riesgo": 4.98,
+      "escolaridad": 8.69,
+      "poblacion": 11140,
+      "pesoPoblacion": 7.5,
+      "asignacion": 9
+    },
+    {
+      "name": "La Unión",
+      "ich": 0,
+      "retornoPotencial": 100,
+      "riesgo": 4.57,
+      "escolaridad": 7.26,
+      "poblacion": 5337,
+      "pesoPoblacion": 3.6,
+      "asignacion": 8.8
+    },
+    {
+      "name": "La Paz",
+      "ich": 37.3,
+      "retornoPotencial": 62.7,
+      "riesgo": 4.25,
+      "escolaridad": 8.69,
+      "poblacion": 7737,
+      "pesoPoblacion": 5.2,
+      "asignacion": 8
+    },
+    {
+      "name": "La Libertad",
+      "ich": 79.7,
+      "retornoPotencial": 20.3,
+      "riesgo": 4.66,
+      "escolaridad": 9.79,
+      "poblacion": 19625,
+      "pesoPoblacion": 13.3,
+      "asignacion": 6.5
+    },
+    {
+      "name": "Chalatenango",
+      "ich": 20,
+      "retornoPotencial": 80,
+      "riesgo": 4.66,
+      "escolaridad": 7.98,
+      "poblacion": 4261,
+      "pesoPoblacion": 2.9,
+      "asignacion": 5.6
+    },
+    {
+      "name": "Cuscatlán",
+      "ich": 45.1,
+      "retornoPotencial": 54.9,
+      "riesgo": 4.2,
+      "escolaridad": 8.96,
+      "poblacion": 6115,
+      "pesoPoblacion": 4.1,
+      "asignacion": 5.5
+    },
+    {
+      "name": "Morazán",
+      "ich": 16,
+      "retornoPotencial": 84,
+      "riesgo": 4.86,
+      "escolaridad": 7.79,
+      "poblacion": 4005,
+      "pesoPoblacion": 2.7,
+      "asignacion": 5.5
+    },
+    {
+      "name": "Cabañas",
+      "ich": 15.6,
+      "retornoPotencial": 84.4,
+      "riesgo": 4.56,
+      "escolaridad": 7.64,
+      "poblacion": 3474,
+      "pesoPoblacion": 2.3,
+      "asignacion": 4.8
+    },
+    {
+      "name": "San Vicente",
+      "ich": 40,
+      "retornoPotencial": 60,
+      "riesgo": 4.62,
+      "escolaridad": 8.43,
+      "poblacion": 3902,
+      "pesoPoblacion": 2.6,
+      "asignacion": 3.8
+    },
+    {
+      "name": "San Salvador",
+      "ich": 100,
+      "retornoPotencial": 0,
+      "riesgo": 4.33,
+      "escolaridad": 10.55,
+      "poblacion": 39603,
+      "pesoPoblacion": 26.8,
+      "asignacion": 0
+    }
+  ]
+}

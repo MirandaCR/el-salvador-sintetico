@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El país de arriba: quién llega a la universidad · El Salvador Sintético</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b3d91'/><rect x='6' y='6' width='20' height='20' rx='5' fill='%234a90e2'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="article.css" />
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="index.html" style="color:inherit"><span class="dot"></span> El Salvador <small>Sintético</small></a>
+      <div class="nav-links"><a href="index.html">Dashboard</a><a href="publicaciones.html">Publicaciones</a></div>
+    </div>
+  </nav>
+
+  <article>
+    <div class="article article-hero">
+      <span class="eyebrow">🎓 Educación superior · Datos sintéticos</span>
+      <h1>El país de arriba: quién llega a la universidad (y qué hace con ella)</h1>
+      <p class="subtitle">Miramos el techo de la pirámide educativa —tercer y cuarto nivel— por cuatro ángulos: cuántos
+        llegan, quién se queda en el camino, si el título sirve, y dónde vive esa gente. El resultado incomoda.</p>
+      <div class="byline"><span class="who"><span class="av"></span> Análisis</span><span>· 8 min de lectura</span><span>· Capital humano</span></div>
+    </div>
+
+    <div class="article">
+      <div class="synthetic-badge">
+        <span class="ic">⚠️</span>
+        <span><b>Datos sintéticos.</b> El método es real; los números describen el mundo simulado. El <b>retorno
+          salarial</b> (¿cuánto paga un título?) necesita ingresos reales → queda para la versión con datos oficiales.</span>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p class="lead-p dropcap">De cada 100 adultos de este El Salvador sintético, muy pocos llegan arriba: el
+        <b id="pTerc">—</b>% tiene estudios superiores (técnico, universitario o posgrado) y apenas el
+        <b id="pPos">—</b>% alcanza un posgrado. La pirámide se angosta brutalmente en la cima.</p>
+
+      <h2>1. La escalera se vacía en cada escalón</h2>
+      <p>Así se reparte la población por nivel educativo. Fíjate en lo delgadas que son las barras de la derecha —
+        técnico y posgrado son casi invisibles frente a primaria o bachillerato.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">¿Hasta dónde llegó la gente?</div>
+        <div class="fsub">Población por nivel educativo alcanzado</div>
+        <div id="fLadder" class="fig-chart"></div>
+      </div>
+      <figcaption>Fig. 1 — Del bachillerato para arriba, el país se adelgaza rapidísimo.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <h2>2. El techo de cristal aparece en la cima</h2>
+      <p>Aquí una historia de género con giro. Las mujeres son <b>mayoría</b> en la universidad
+        (<b id="fUni">—</b>% son mujeres)… pero al llegar al <b>posgrado</b> pierden la delantera y caen a
+        <b id="fPos">—</b>%. Suben la escalera, pero <b>se les cierra la puerta en el último piso</b>.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">% de mujeres en cada nivel</div>
+        <div class="fsub">La línea marca el 50% (paridad)</div>
+        <div id="fGender" class="fig-chart"></div>
+      </div>
+      <figcaption>Fig. 2 — Mayoría hasta la universidad; minoría en posgrado. Un techo de cristal de manual.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <h2>3. El título… que la economía no usa</h2>
+      <p>Ahora lo más fuerte. ¿Para qué sirve un título si no hay dónde ejercerlo? Miramos en qué <b>trabajan</b> los
+        universitarios y posgraduados. El resultado es un golpe:</p>
+    </div>
+
+    <div class="statline reveal">
+      <div class="bigstat"><div class="n" id="overRate">—</div><div class="l">de los universitarios/posgrado trabaja en actividades NO intensivas en conocimiento</div></div>
+    </div>
+
+    <div class="prose">
+      <p>Casi <b>9 de cada 10</b> personas con título universitario o posgrado terminan en comercio, comida,
+        agricultura, construcción o servicios varios — no en actividades que aprovechen su formación. Es la
+        <b>"sobreeducación"</b> o cerebros subutilizados: el país produce diplomas que su economía no absorbe.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">Sobreeducación por grupo</div>
+        <div class="fsub">% de graduados superiores en actividades no intensivas en conocimiento</div>
+        <div id="fOver" class="fig-chart" style="height:280px"></div>
+      </div>
+      <figcaption>Fig. 3 — Curiosamente, ellas están algo mejor "colocadas" (más van a educación y salud).
+        <br/><small>Nota: la ocupación del dato es por actividad económica, no por cargo; es una aproximación.</small></figcaption>
+    </figure>
+
+    <div class="prose">
+      <h2>4. Y casi todos los cerebros viven en el mismo lugar</h2>
+      <p>Último ángulo: ¿dónde vive esa élite educativa? Concentradísima. El <b id="posSS">—</b>% de <b>todos</b> los
+        posgraduados del país vive en el departamento de San Salvador, y el <b id="posTop3">—</b>% en apenas tres
+        departamentos. El resto del país son casi <b>desiertos de educación superior</b>.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">Tasa de educación superior por municipio</div>
+        <div class="fsub">% de la población con técnico, universitario o posgrado</div>
+        <div id="fMap" class="fig-chart tall"></div>
+      </div>
+      <figcaption>Fig. 4 — De <b id="topRate">—</b>% en el municipio más formado a <b id="botRate">—</b>% en el menos.
+        Un abismo de más de 10 veces.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <blockquote>El país no solo tiene pocos profesionales: los tiene <b>amontonados</b> en un punto y <b>malgastados</b>
+        en la economía. Dos problemas en uno.</blockquote>
+
+      <h2>¿Qué haría un economista con esto? (crítica, sin bandería)</h2>
+      <ul>
+        <li><b>No basta con más títulos.</b> Si 9 de cada 10 graduados no ejercen, ampliar cupos sin crear empleo
+          calificado solo fabrica frustración (y emigración). Hay que crear <b>demanda</b>, no solo oferta.</li>
+        <li><b>Descentralizar la educación superior.</b> Con el posgrado concentrado en la capital, el talento del
+          oriente tiene que migrar o renunciar. Universidades y empleo calificado regionales cambian el juego.</li>
+        <li><b>Cuidar el techo de cristal.</b> Que las mujeres lideren el pregrado pero no el posgrado es una fuga de
+          talento evitable con becas y apoyo en esa transición.</li>
+      </ul>
+      <p><b>El dato que falta (v2):</b> con ingresos reales (EHPM) calcularíamos el <b>retorno</b> de cada nivel —
+        cuánto paga de verdad un título— y una ecuación de Mincer. Ahí esto pasa de diagnóstico a herramienta de política.</p>
+    </div>
+
+    <div class="takeaway reveal">
+      <h4>En una frase</h4>
+      <ul>
+        <li>Poquísimos llegan arriba, y las mujeres pierden la delantera justo en el posgrado.</li>
+        <li>~<b>9 de cada 10</b> graduados superiores trabajan fuera de actividades de conocimiento (subutilización).</li>
+        <li>El posgrado está <b>hiperconcentrado</b> en San Salvador; el resto son desiertos.</li>
+      </ul>
+    </div>
+
+    <div class="next"><a href="publicaciones.html"><div><div class="lbl">Volver</div><div class="t">Todas las publicaciones</div></div><div class="arrow">≡</div></a></div>
+  </article>
+
+  <footer><div class="wrap"><div>Análisis de educación superior en Node.js · <b>NVIDIA</b> CC-BY-4.0 · sintético.</div><div><a href="publicaciones.html">← Publicaciones</a></div></div></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script src="viz.js"></script>
+  <script>
+    const { BLUE, FONT, fmt, baseTooltip, axisStyle, make, reveal, progress, load } = VIZ;
+    const set = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v; };
+    (async () => {
+      progress();
+      const [h, geo] = await Promise.all([load('data/highered.json'), load('data/municipios.geojson')]);
+      echarts.registerMap('SVmuni', geo);
+
+      // KPIs texto
+      const terc = h.funnel.filter((f) => ['tecnico', 'universitario', 'posgrado'].includes(f.level)).reduce((s, f) => s + f.pctOfAdults, 0);
+      set('pTerc', terc.toFixed(1)); set('pPos', (h.funnel.find((f) => f.level === 'posgrado').pctOfAdults).toFixed(1));
+      set('fUni', h.glassCeiling.pctFemaleUniversitario); set('fPos', h.glassCeiling.pctFemalePosgrado);
+      set('overRate', h.overeducation.rateOverall + '%');
+      set('posSS', h.spatial.concentration.pctPosgradoSanSalvador); set('posTop3', h.spatial.concentration.pctPosgradoTop3Dept);
+      set('topRate', h.spatial.concentration.topMuni.tertiaryRate); set('botRate', h.spatial.concentration.bottomMuni.tertiaryRate);
+
+      // Fig1 escalera (barras por nivel)
+      make(document.getElementById('fLadder')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (p) => `<b>${p[0].name}</b><br/>${fmt(p[0].value)} (${h.funnel[p[0].dataIndex].pctOfAdults}%)` },
+        grid: { left: 4, right: 20, top: 16, bottom: 4, containLabel: true },
+        xAxis: { type: 'category', data: h.funnel.map((f) => f.label), ...axisStyle, axisLabel: { ...axisStyle.axisLabel, interval: 0, rotate: 24 } },
+        yAxis: { type: 'value', ...axisStyle, axisLabel: { ...axisStyle.axisLabel, formatter: (v) => (v / 1000) + 'k' } },
+        series: [{ type: 'bar', data: h.funnel.map((f) => f.count), barWidth: '58%', itemStyle: { color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{ offset: 0, color: BLUE.p400 }, { offset: 1, color: BLUE.p700 }]), borderRadius: [5, 5, 0, 0] } }],
+      });
+
+      // Fig2 %female por nivel (línea con 50%)
+      make(document.getElementById('fGender')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'axis', valueFormatter: (v) => v + '% mujeres' },
+        grid: { left: 4, right: 20, top: 16, bottom: 4, containLabel: true },
+        xAxis: { type: 'category', data: h.funnel.map((f) => f.label), ...axisStyle, axisLabel: { ...axisStyle.axisLabel, interval: 0, rotate: 24 } },
+        yAxis: { type: 'value', min: 30, max: 70, ...axisStyle, axisLabel: { ...axisStyle.axisLabel, formatter: (v) => v + '%' } },
+        series: [{ type: 'line', smooth: true, symbolSize: 9, data: h.funnel.map((f) => f.pctFemale), lineStyle: { color: BLUE.p700, width: 3 }, itemStyle: { color: BLUE.p700 },
+          markLine: { silent: true, symbol: 'none', label: { formatter: 'paridad 50%', color: BLUE.muted }, lineStyle: { color: BLUE.teal, type: 'dashed' }, data: [{ yAxis: 50 }] } }],
+      });
+
+      // Fig3 sobreeducación por grupo
+      const ov = h.overeducation;
+      make(document.getElementById('fOver')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'axis', axisPointer: { type: 'shadow' }, valueFormatter: (v) => v + '%' },
+        grid: { left: 4, right: 44, top: 8, bottom: 4, containLabel: true },
+        xAxis: { type: 'value', max: 100, ...axisStyle, axisLabel: { ...axisStyle.axisLabel, formatter: (v) => v + '%' } },
+        yAxis: { type: 'category', data: ['Hombres', 'Mujeres', 'Rural', 'Urbano'], axisLine: { show: false }, axisTick: { show: false }, axisLabel: { color: BLUE.ink, fontFamily: FONT, fontSize: 12 } },
+        series: [{ type: 'bar', barWidth: '56%', data: [ov.bySex.Masculino, ov.bySex.Femenino, ov.byArea.rural, ov.byArea.urbano], itemStyle: { color: BLUE.p500, borderRadius: [0, 4, 4, 0] }, label: { show: true, position: 'right', formatter: (p) => p.value + '%', color: BLUE.muted, fontFamily: FONT, fontSize: 11 } }],
+      });
+
+      // Fig4 mapa tasa superior por municipio
+      const mm = h.spatial.muniTertiaryRate; const vals = mm.map((x) => x.tertiaryRate);
+      make(document.getElementById('fMap')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'item', formatter: (p) => p.data ? `<b>${p.name}</b><br/>${p.value}% con educación superior` : p.name },
+        visualMap: { min: Math.min(...vals), max: Math.max(...vals), calculable: true, left: 12, bottom: 14, text: ['alta', 'baja'], textStyle: { color: BLUE.muted, fontFamily: FONT }, inRange: { color: BLUE.seq }, itemHeight: 110 },
+        series: [{ type: 'map', map: 'SVmuni', nameProperty: 'municipality', roam: false, itemStyle: { borderColor: '#fff', borderWidth: 0.5 }, label: { show: false }, emphasis: { label: { show: false } }, data: mm.map((x) => ({ name: x.name, value: x.tertiaryRate })) }],
+      });
+
+      reveal();
+    })();
+  </script>
+</body>
+</html>

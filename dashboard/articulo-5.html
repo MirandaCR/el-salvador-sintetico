@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Qué estudiarás y en qué trabajarás? · El Salvador Sintético</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b3d91'/><rect x='6' y='6' width='20' height='20' rx='5' fill='%234a90e2'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="article.css" />
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="index.html" style="color:inherit"><span class="dot"></span> El Salvador <small>Sintético</small></a>
+      <div class="nav-links"><a href="index.html">Dashboard</a><a href="publicaciones.html">Publicaciones</a></div>
+    </div>
+  </nav>
+
+  <article>
+    <div class="article article-hero">
+      <span class="eyebrow">🎓 Elecciones de vida · Datos sintéticos</span>
+      <h1>¿Qué vas a estudiar y en qué vas a trabajar?</h1>
+      <p class="subtitle">Dos "máquinas de predicción" miran a una persona —su edad, su sexo, dónde vive— y adivinan
+        hasta dónde estudiará y en qué sector acabará trabajando. Lo que adivinan dice mucho… sobre nosotros.</p>
+      <div class="byline"><span class="who"><span class="av"></span> Análisis</span><span>· 7 min de lectura</span><span>· Modelos de elección</span></div>
+    </div>
+
+    <div class="article">
+      <div class="synthetic-badge">
+        <span class="ic">⚠️</span>
+        <span><b>Recuerda:</b> personas <b>inventadas por IA</b>. Vemos cómo funcionan los modelos y qué patrones
+          hay dentro del mundo simulado — no es la realidad medida del país.</span>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p class="lead-p dropcap">Hay un tipo de modelo que no responde "¿cuánto?" sino "¿cuál?". No dice cuántos años
+        estudiarás, sino <b>en qué escalón</b> caerás (primaria, bachillerato, universidad…). Los economistas lo usamos
+        para entender <b>decisiones</b>: qué carrera, qué oficio, qué opción.</p>
+
+      <h2>Máquina 1: ¿hasta dónde llegarás en los estudios?</h2>
+      <p>Le pedimos a la máquina que ordenara a las personas por nivel educativo y viera qué empuja hacia arriba.
+        El resultado se lee con una idea sencilla: <b>"cuántas veces más probable"</b>.</p>
+    </div>
+
+    <div class="statline reveal">
+      <div class="bigstat"><div class="n" id="orUrb">—</div><div class="l">Vivir en ciudad multiplica tus chances de subir de nivel</div></div>
+      <div class="bigstat"><div class="n" id="orFem">—</div><div class="l">Ser mujer, sobre el nivel educativo</div></div>
+    </div>
+
+    <div class="prose">
+      <p><b>Traducción:</b> vivir en la ciudad <b>multiplica por <span id="orUrb2">—</span></b> la probabilidad de estar
+        en un nivel educativo más alto (por ejemplo, pasar de bachillerato a universidad). El sexo, en cambio, casi no
+        mueve la aguja: <b><span id="orFemTxt">—</span></b>. En esta población simulada, <b>dónde naces pesa más que
+        quién eres</b>.</p>
+
+      <h2>Máquina 2: ¿en qué vas a trabajar?</h2>
+      <p>La segunda máquina reparte a cada persona en un <b>sector</b>: agro, comercio, comida y hogar, industria y
+        construcción, transporte, o servicios y Estado. Así se ve el reparto general del mundo laboral simulado:</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">¿En qué sector trabaja la gente?</div>
+        <div class="fsub">% de la población en cada sector (según el modelo)</div>
+        <div id="fBase" class="fig-chart"></div>
+      </div>
+      <figcaption>Fig. 1 — El país simulado vive de servicios, comida/hogar e industria/construcción.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <p>Pero lo revelador es <b>qué cambia si la persona es mujer</b>, manteniendo todo lo demás igual. La máquina
+        aprendió un reparto con mucho género:</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">Cómo cambia el sector si la persona es mujer</div>
+        <div class="fsub">Puntos porcentuales que sube (azul claro) o baja (azul oscuro) cada sector</div>
+        <div id="fFem" class="fig-chart"></div>
+      </div>
+      <figcaption>Fig. 2 — Ser mujer dispara "comida y hogar" y hunde agro, construcción y transporte.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <blockquote>La máquina no decidió esto: lo <b>copió</b> del mundo con el que la entrenaron. Es el mismo sesgo que
+        vimos en el artículo de la IA — ahora medido como una <b>decisión</b> económica.</blockquote>
+      <p>Y vivir en la ciudad también reordena el tablero: aleja del <b>agro</b> y acerca a <b>servicios y comercio</b>.
+        Es la economía cambiando de cara conforme el país se urbaniza.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">Cómo cambia el sector si la persona vive en la ciudad</div>
+        <div class="fsub">Puntos porcentuales por sector</div>
+        <div id="fUrb" class="fig-chart"></div>
+      </div>
+      <figcaption>Fig. 3 — La ciudad vacía el campo y llena los servicios.</figcaption>
+    </figure>
+
+    <div class="takeaway reveal">
+      <h4>En una frase</h4>
+      <ul>
+        <li>Para subir de nivel educativo, <b>el lugar pesa más que el sexo</b>.</li>
+        <li>El sector laboral está fuertemente marcado por el género (comida/hogar vs. construcción/agro).</li>
+        <li>Urbanizarse cambia la estructura del trabajo: menos campo, más servicios.</li>
+      </ul>
+    </div>
+
+    <div class="next"><a href="articulo-6.html"><div><div class="lbl">Siguiente</div><div class="t">El país por dentro: tribus y contagios →</div></div><div class="arrow">→</div></a></div>
+  </article>
+
+  <footer><div class="wrap"><div>Modelos de elección (logit ordenado y multinomial) en Node.js · <b>NVIDIA</b> CC-BY-4.0 · sintético.</div><div><a href="publicaciones.html">← Publicaciones</a></div></div></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script src="viz.js"></script>
+  <script>
+    const { BLUE, FONT, baseTooltip, axisStyle, make, reveal, progress, load } = VIZ;
+    const set = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v; };
+    (async () => {
+      progress();
+      const a = await load('data/advanced.json');
+      const orUrb = a.orderedLogit.coef.find((c) => c.name === 'urbano').oddsRatio;
+      const bFem = a.orderedLogit.coef.find((c) => c.name === 'mujer').beta;
+      set('orUrb', '×' + orUrb.toFixed(2)); set('orUrb2', orUrb.toFixed(2));
+      set('orFem', (bFem >= 0 ? '+' : '') + bFem.toFixed(2)); set('orFemTxt', Math.abs(bFem) < 0.12 ? 'prácticamente sin efecto' : (bFem < 0 ? 'ligeramente en contra' : 'ligeramente a favor'));
+
+      const m = a.multinomial;
+      const barBase = (id, values, diverging) => {
+        const data = m.sectors.map((s, i) => ({ name: s, v: values[i] }));
+        data.sort((x, y) => x.v - y.v);
+        make(document.getElementById(id)).setOption({
+          textStyle: { fontFamily: FONT },
+          tooltip: { ...baseTooltip, trigger: 'axis', axisPointer: { type: 'shadow' }, valueFormatter: (v) => (diverging && v > 0 ? '+' : '') + v + (diverging ? ' pp' : '%') },
+          grid: { left: 4, right: 48, top: 8, bottom: 20, containLabel: true },
+          xAxis: { type: 'value', ...axisStyle, axisLabel: { ...axisStyle.axisLabel, formatter: (v) => v + (diverging ? '' : '%') } },
+          yAxis: { type: 'category', data: data.map((d) => d.name), axisLine: { show: false }, axisTick: { show: false }, axisLabel: { color: BLUE.ink, fontFamily: FONT, fontSize: 12 } },
+          series: [{ type: 'bar', barWidth: '62%', data: data.map((d) => ({ value: d.v, itemStyle: { color: diverging ? (d.v >= 0 ? BLUE.p300 : BLUE.p700) : BLUE.p500, borderRadius: d.v >= 0 ? [0, 4, 4, 0] : [4, 0, 0, 4] } })), label: { show: true, position: 'right', formatter: (p) => (diverging && p.value > 0 ? '+' : '') + p.value + (diverging ? '' : '%'), color: BLUE.muted, fontFamily: FONT, fontSize: 11 } }],
+        });
+      };
+      barBase('fBase', m.baseProb, false);
+      barBase('fFem', m.femaleEffect, true);
+      barBase('fUrb', m.urbanEffect, true);
+      reveal();
+    })();
+  </script>
+</body>
+</html>

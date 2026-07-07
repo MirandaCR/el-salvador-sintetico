@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>148,000 salvadoreños que no existen · El Salvador Sintético</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b3d91'/><rect x='6' y='6' width='20' height='20' rx='5' fill='%234a90e2'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="article.css" />
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="index.html" style="color:inherit"><span class="dot"></span> El Salvador <small>Sintético</small></a>
+      <div class="nav-links"><a href="index.html">Dashboard</a><a href="publicaciones.html">Publicaciones</a></div>
+    </div>
+  </nav>
+
+  <article>
+    <div class="article article-hero">
+      <span class="eyebrow">🇸🇻 Retrato · Datos sintéticos</span>
+      <h1>Creé 148,000 salvadoreños que no existen</h1>
+      <p class="subtitle">Y aprendí a leerlos sin mentir. Un recorrido visual por un “gemelo digital” de El Salvador
+        hecho por inteligencia artificial — y por qué la honestidad metodológica es el verdadero superpoder del analista.</p>
+      <div class="byline">
+        <span class="who"><span class="av"></span> Análisis de datos</span>
+        <span>· 6 min de lectura</span>
+        <span>· Fuente: NVIDIA Nemotron-Personas</span>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="synthetic-badge">
+        <span class="ic">⚠️</span>
+        <span><b>Antes de empezar:</b> estas personas son <b>sintéticas</b> (creadas por IA), no individuos reales.
+          Todo lo que leerás describe a esta población simulada — es un <b>laboratorio</b>, no una encuesta oficial.</span>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p class="lead-p dropcap">Hay 148,000 salvadoreños en este artículo. Ninguno existe. No nacieron, no tienen DUI, no votan.
+        Los inventó, uno por uno, una inteligencia artificial de NVIDIA — con su edad, su municipio, su nivel de
+        estudios, su trabajo y hasta sus hobbies.</p>
+
+      <p>El dataset se llama <b>Nemotron-Personas-El-Salvador</b> y es abierto. Y plantea una pregunta que separa
+        al analista serio del que solo hace gráficos bonitos:</p>
+
+      <blockquote>Si los datos son inventados, ¿sirven para algo?</blockquote>
+
+      <p>Spoiler: sí, <b>muchísimo</b> — pero solo si eres honesto sobre qué puedes y qué no puedes concluir con ellos.
+        Ese será el hilo de todo lo que sigue.</p>
+
+      <h2>¿Qué es esto, en cristiano?</h2>
+      <p>Imagina el videojuego <i>SimCity</i>, pero en vez de una ciudad, la IA simuló <b>una población entera</b>.
+        Cada “persona” respeta cómo se reparte de verdad el país: más gente en San Salvador, mayoría urbana, la mezcla
+        correcta de edades. Es lo que se llama un <b>gemelo digital sintético</b>: un espejo estadístico de la realidad,
+        hecho de datos que no comprometen la privacidad de nadie.</p>
+    </div>
+
+    <div class="kpi-strip" id="kpis"></div>
+
+    <div class="prose">
+      <h2>El país es joven, urbano… y desigual</h2>
+      <p>La pirámide de población tiene forma de… pirámide de verdad: muy ancha abajo (un montón de gente joven)
+        y angosta arriba (poca gente mayor). En una frase: <b>este El Salvador simulado es un país joven</b>.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">Pirámide poblacional</div>
+        <div class="fsub">Personas por grupo de edad y sexo (población sintética)</div>
+        <div id="fPyramid" class="fig-chart tall"></div>
+      </div>
+      <figcaption>Fig. 1 — La base ancha revela una población joven. Pasa el cursor para ver los números.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <p>Pero el promedio aburre; lo jugoso es lo <b>disparejo</b> que está el país. Mira el mapa por población:
+        la capital, San Salvador, junta casi <b>40 mil de las 148 mil</b> personas — más de <b>1 de cada 4</b>.
+        Todo lo demás se reparte el resto.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">Población por departamento</div>
+        <div class="fsub">Color más oscuro = más población</div>
+        <div id="fMap" class="fig-chart tall"></div>
+      </div>
+      <figcaption>Fig. 2 — La concentración en el centro del país salta a la vista.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <h2>Una economía de pupusas, comercio y agricultura</h2>
+      <p>¿En qué trabaja el país sintético? Las ocupaciones más comunes dibujan una economía de <b>servicios de baja
+        productividad e informalidad alta</b> — justo lo que la teoría esperaría de esta estructura.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">Top 10 ocupaciones</div>
+        <div class="fsub">Número de personas</div>
+        <div id="fOcc" class="fig-chart"></div>
+      </div>
+      <figcaption>Fig. 3 — Comida, comercio, agricultura, trabajo doméstico y construcción encabezan.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <h2>La cultura se cuela en los datos</h2>
+      <p>Cada persona trae textos libres describiendo sus pasatiempos. Extraje las palabras más frecuentes
+        (un mini-ejercicio de <b>NLP</b>) y el resultado es entrañable: <b>pupusas, dominó, fútbol, cumbia, familia,
+        barrio, misa</b>. La IA no solo copió una demografía: absorbió un imaginario cultural.</p>
+    </div>
+
+    <figure class="figure">
+      <div class="card">
+        <div class="ftitle">Hobbies e intereses</div>
+        <div class="fsub">Palabras más frecuentes en los textos de las personas</div>
+        <div id="fWords" class="fig-chart"></div>
+      </div>
+      <figcaption>Fig. 4 — Un retrato cultural emergente… generado por una IA.</figcaption>
+    </figure>
+
+    <div class="takeaway reveal">
+      <h4>Para llevar</h4>
+      <ul>
+        <li>Un dato <b>sintético</b> es un laboratorio, no un espejo perfecto de la realidad.</li>
+        <li>Que coincida con lo que sabemos del país nos dice que es <b>plausible</b> — no que sea verdad oficial.</li>
+        <li>Saber usar el laboratorio <b>y decir dónde están sus paredes</b> es lo que hace creíble un análisis.</li>
+      </ul>
+    </div>
+
+    <div class="prose">
+      <p>En el próximo artículo dejamos la foto y pasamos a los <b>modelos</b>: una regresión de la escolaridad,
+        la brecha urbana que se desvanece al controlar, y estadística espacial entre departamentos. Con resultados reales.</p>
+    </div>
+
+    <div class="next">
+      <a href="articulo-2.html">
+        <div><div class="lbl">Siguiente</div><div class="t">¿Qué mueve el capital humano? →</div></div>
+        <div class="arrow">→</div>
+      </a>
+    </div>
+  </article>
+
+  <footer>
+    <div class="wrap">
+      <div>Fuente: <b>nvidia/Nemotron-Personas-El-Salvador</b> (CC-BY-4.0) · Datos sintéticos · ECharts.</div>
+      <div><a href="publicaciones.html">← Todas las publicaciones</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.1.0/dist/echarts-wordcloud.min.js"></script>
+  <script src="viz.js"></script>
+  <script>
+    const { BLUE, FONT, fmt, truncate, baseTooltip, axisStyle, make, reveal, progress, load } = VIZ;
+    (async () => {
+      progress(); reveal();
+      const [d, geo] = await Promise.all([load('data/data.json'), load('data/departments.geojson')]);
+      echarts.registerMap('SV', geo);
+
+      // KPIs
+      const k = d.kpis;
+      const items = [
+        { v: fmt(k.totalPersonas), l: 'Personas sintéticas' },
+        { v: k.pctUrbano + '%', l: 'Población urbana' },
+        { v: k.edadPromedio, l: 'Edad promedio' },
+        { v: k.eduYearsGlobal, l: 'Años de escolaridad' },
+      ];
+      document.getElementById('kpis').innerHTML = items.map((i) => `<div class="kpi"><div class="val">${i.v}</div><div class="lbl">${i.l}</div></div>`).join('');
+
+      // Pirámide
+      make(document.getElementById('fPyramid')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (p) => `<b>${p[0].axisValue} años</b><br/>Masculino: ${fmt(Math.abs(p[0].value))}<br/>Femenino: ${fmt(p[1].value)}` },
+        legend: { data: ['Masculino', 'Femenino'], top: 0, textStyle: { color: BLUE.muted, fontFamily: FONT } },
+        grid: { left: 8, right: 16, top: 34, bottom: 8, containLabel: true },
+        xAxis: { type: 'value', ...axisStyle, axisLabel: { ...axisStyle.axisLabel, formatter: (v) => fmt(Math.abs(v)) } },
+        yAxis: { type: 'category', data: d.pyramid.map((x) => x.bin), ...axisStyle, splitLine: { show: false } },
+        series: [
+          { name: 'Masculino', type: 'bar', stack: 't', data: d.pyramid.map((x) => -x.Masculino), itemStyle: { color: BLUE.p700, borderRadius: [0, 3, 3, 0] } },
+          { name: 'Femenino', type: 'bar', stack: 't', data: d.pyramid.map((x) => x.Femenino), itemStyle: { color: BLUE.teal, borderRadius: [0, 3, 3, 0] } },
+        ],
+      });
+
+      // Mapa
+      const vals = d.departments.map((x) => x.count);
+      make(document.getElementById('fMap')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'item', formatter: (p) => p.data ? `<b>${p.name}</b><br/>${fmt(p.value)} personas` : p.name },
+        visualMap: { min: Math.min(...vals), max: Math.max(...vals), calculable: true, left: 12, bottom: 14, text: ['+', '−'], textStyle: { color: BLUE.muted, fontFamily: FONT }, inRange: { color: BLUE.seq }, itemHeight: 120 },
+        series: [{ type: 'map', map: 'SV', nameProperty: 'department', roam: false, itemStyle: { borderColor: '#fff', borderWidth: 1 }, emphasis: { label: { show: true, color: BLUE.ink, fontWeight: 700 }, itemStyle: { areaColor: BLUE.p300 } }, data: d.departments.map((x) => ({ name: x.name, value: x.count })) }],
+      });
+
+      // Ocupaciones top 10
+      const top = d.occupations.top.slice(0, 10).reverse();
+      make(document.getElementById('fOcc')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (p) => `${p[0].name}<br/><b>${fmt(p[0].value)}</b> personas` },
+        grid: { left: 4, right: 60, top: 8, bottom: 4, containLabel: true },
+        xAxis: { type: 'value', show: false },
+        yAxis: { type: 'category', data: top.map((o) => truncate(o.name, 40)), axisLine: { show: false }, axisTick: { show: false }, axisLabel: { color: BLUE.ink, fontFamily: FONT, fontSize: 12 } },
+        series: [{ type: 'bar', data: top.map((o) => o.count), barWidth: '62%', itemStyle: { color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{ offset: 0, color: BLUE.p700 }, { offset: 1, color: BLUE.p400 }]), borderRadius: [0, 5, 5, 0] }, label: { show: true, position: 'right', formatter: (p) => fmt(p.value), color: BLUE.muted, fontFamily: FONT, fontSize: 11 } }],
+      });
+
+      // Wordcloud hobbies
+      make(document.getElementById('fWords')).setOption({
+        tooltip: { ...baseTooltip, formatter: (p) => `<b>${p.name}</b>: ${fmt(p.value)}` },
+        series: [{ type: 'wordCloud', shape: 'circle', width: '96%', height: '92%', left: 'center', top: 'center', sizeRange: [14, 60], rotationRange: [0, 0], gridSize: 8, textStyle: { fontFamily: FONT, fontWeight: 700, color: () => BLUE.seq[3 + Math.floor(Math.random() * 3)] }, emphasis: { textStyle: { color: BLUE.p700 } }, data: d.hobbies.words.map((w) => ({ name: w.name, value: w.count })) }],
+      });
+    })();
+  </script>
+</body>
+</html>

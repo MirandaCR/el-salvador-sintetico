@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Qué hace que unos estudien más? · El Salvador Sintético</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b3d91'/><rect x='6' y='6' width='20' height='20' rx='5' fill='%234a90e2'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="article.css" />
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="index.html" style="color:inherit"><span class="dot"></span> El Salvador <small>Sintético</small></a>
+      <div class="nav-links"><a href="index.html">Dashboard</a><a href="publicaciones.html">Publicaciones</a></div>
+    </div>
+  </nav>
+
+  <article>
+    <div class="article article-hero">
+      <span class="eyebrow">📐 Los números, en cristiano · Datos sintéticos</span>
+      <h1>¿Por qué unos estudian más que otros?</h1>
+      <p class="subtitle">Sin fórmulas raras. Vamos a preguntarle a los datos tres cosas —quién estudia más, si el campo
+        y la ciudad son tan distintos, y si la educación se "contagia" entre pueblos vecinos— y a traducir cada
+        respuesta a español sencillo.</p>
+      <div class="byline">
+        <span class="who"><span class="av"></span> Análisis</span>
+        <span>· 8 min de lectura</span>
+        <span>· <b id="nObs">—</b> personas analizadas</span>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="synthetic-badge">
+        <span class="ic">⚠️</span>
+        <span><b>Recuerda:</b> estas personas las inventó una IA. Los resultados muestran <b>cómo funciona el método</b>
+          y qué pasa dentro de este mundo simulado — <b>no</b> son la foto real de El Salvador. Es un simulador.</span>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p class="lead-p dropcap">Imagina que quieres saber por qué una persona engordó: ¿fue el postre o fue no hacer
+        ejercicio? Si solo miras el postre, te confundes, porque quien come postre a veces también se mueve poco.
+        Hace falta una forma de <b>separar cada causa</b>.</p>
+      <p>En economía usamos una herramienta que hace justo eso. Se llama <b>regresión</b>, pero olvida el nombre:
+        piénsala como una <b>máquina que aísla el efecto de cada ingrediente</b>. Le damos la edad, el sexo, si vive
+        en ciudad o campo, y el departamento de cada persona, y ella nos dice cuánto pesa cada cosa por separado
+        sobre los años de estudio. Vamos.</p>
+
+      <h2>Pregunta 1: ¿Quién estudia más?</h2>
+      <p>La máquina nos devolvió esta tabla. No te asustes: abajo te la traduzco número por número.</p>
+    </div>
+
+    <div class="tablewrap reveal">
+      <table class="coef" id="olsTable">
+        <thead><tr><th>Qué medimos</th><th>Efecto</th><th>¿Es de fiar?</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <div class="tablecap">El "efecto" está en <b>años de escuela</b>. "De fiar" = qué tan seguros estamos de que no
+        es casualidad (✔✔✔ = segurísimo).</div>
+    </div>
+
+    <div class="prose">
+      <p>Traducción, en palabras:</p>
+      <ul>
+        <li><b>Vivir en ciudad suma <span id="cUrb">—</span> años</b> de estudio. Medio año es, más o menos,
+          <b>un semestre extra</b> de clases. No suena épico… hasta que lo multiplicas por millones de personas.</li>
+        <li><b>Ser mujer resta <span id="cFem">—</span> años</b> (unos <span id="cFemMeses">—</span>). Es una brecha
+          <b>pequeña</b> en esta población simulada — ojo, en la realidad puede ser distinta.</li>
+        <li><b>Mientras más mayor, menos estudios.</b> Tiene todo el sentido: los abuelos tuvieron menos escuelas
+          disponibles que los nietos. La IA capturó que el país fue mejorando con el tiempo.</li>
+      </ul>
+      <blockquote>¿Y ese <b id="r2">—</b> del final? Significa que estas pocas cosas explican como
+        <b><span id="r2pct">—</span> de cada 100</b> de las diferencias en estudio. El resto —dinero, familia,
+        suerte, motivación— no lo medimos aquí. Es un recordatorio de humildad: ningún modelo lo explica todo.</blockquote>
+
+      <p>¿Y los 14 departamentos? Todos estudian <b>menos</b> que San Salvador (la capital, que usamos de referencia).
+        Esta gráfica muestra cuántos años "pierde" cada uno frente a la capital:</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">Cuánto estudian los departamentos vs. la capital</div>
+        <div class="fsub">Diferencia en años de escuela respecto a San Salvador (0 = igual que la capital)</div>
+        <div id="fCoef" class="fig-chart tall"></div>
+      </div>
+      <figcaption>Fig. 1 — Cuanto más larga la barra hacia la izquierda, más atrás quedó ese departamento.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <h2>Pregunta 2: ¿De verdad la ciudad es tan distinta del campo?</h2>
+      <p>Aquí hay una <b>trampa</b> clásica, y por eso este es mi hallazgo favorito. Si comparas la ciudad con el campo
+        <b>a lo bruto</b> (sin pensar más), la diferencia de estudios parece <b>enorme</b>. Pero cuando comparas
+        <b>de forma justa</b> —ciudad y campo dentro del mismo departamento— casi la mitad de esa diferencia
+        <b>se evapora</b>.</p>
+    </div>
+
+    <div class="statline reveal">
+      <div class="bigstat"><div class="n pos" id="gUrbRaw">—</div><div class="l">Diferencia ciudad–campo "a lo bruto"</div></div>
+      <div class="bigstat"><div class="n pos" id="gUrbCond">—</div><div class="l">…comparando de forma justa</div></div>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">La diferencia se encoge cuando comparas bien</div>
+        <div class="fsub">Años de escuela · barra clara = comparación "a lo bruto" · barra oscura = comparación justa</div>
+        <div id="fGaps" class="fig-chart" style="height:300px"></div>
+      </div>
+      <figcaption>Fig. 2 — La ventaja de la ciudad se reduce a más de la mitad. Sigue habiendo brecha, pero mucho menor.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <blockquote>Lo que parecía "ventaja de vivir en la ciudad" era, en buena parte, <b>ventaja de vivir cerca de
+        la capital</b>. No es lo mismo, y cambia por completo qué política tiene sentido.</blockquote>
+      <p>Y la brecha entre hombres y mujeres en llegar a la universidad es, en este mundo simulado, casi
+        <b>cero</b> — la ciudad pesa muchísimo más que el sexo para llegar a estudios superiores.</p>
+
+      <h2>Pregunta 3: ¿La educación se "contagia" entre pueblos vecinos?</h2>
+      <p>Piensa en los barrios de una ciudad: los barrios acomodados suelen estar <b>pegados</b> a otros barrios
+        acomodados, y los humildes junto a los humildes. ¿Pasa lo mismo con la educación entre los municipios de
+        El Salvador?</p>
+      <p>Hay un número que mide exactamente eso. Ponle un nombre elegante si quieres —<i>I de Moran</i>— pero lo que
+        hace es simple: <b>0</b> significa "repartido al azar, sin patrón"; <b>positivo</b> significa "los parecidos
+        se juntan"; negativo, "los opuestos se pegan". Lo calculamos sobre los <b>44 municipios</b>:</p>
+    </div>
+
+    <div class="statline reveal">
+      <div class="bigstat"><div class="n" id="moranI">—</div><div class="l">Qué tanto se agrupan (0 = azar)</div></div>
+      <div class="bigstat"><div class="n" id="moranP">—</div><div class="l">Probabilidad de que sea casualidad</div></div>
+      <div class="bigstat"><div class="n" id="moranN">—</div><div class="l">Municipios analizados</div></div>
+    </div>
+
+    <div class="prose">
+      <p>El número dio <b id="moranI2">—</b>, claramente positivo. ¿Podría ser casualidad? Para saberlo hicimos algo
+        divertido: <b>barajamos los datos 999 veces</b> al azar, como un mazo de cartas, y vimos si por suerte salía
+        un patrón así de agrupado. Casi nunca salió. La probabilidad de que sea casualidad es de apenas
+        <b id="moranP2">—</b> (menos de 1 entre 1000). Es decir: <b>el capital humano SÍ se agrupa en el territorio</b>,
+        y no por azar.</p>
+      <p>Curiosidad de método: cuando hicimos esta misma cuenta con solo 14 departamentos, el patrón <b>no</b> se veía
+        claro. Con 44 municipios sí. Más piezas = una foto más nítida. Por eso valió la pena bajar al detalle municipal.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">Mapa de "vecindarios" de capital humano</div>
+        <div class="fsub">Dónde se juntan los municipios de nivel alto y dónde los de nivel bajo</div>
+        <div id="fLisa" class="fig-chart tall"></div>
+        <div id="lisaLegend" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:8px;font-size:13px;color:var(--muted)"></div>
+      </div>
+      <figcaption>Fig. 3 — Azul oscuro: bloques de nivel <b>alto</b> pegados entre sí (centro del país).
+        Azul claro: bloques de nivel <b>bajo</b> juntos (oriente y periferia).</figcaption>
+    </figure>
+
+    <figure class="figure reveal">
+      <div class="card">
+        <div class="ftitle">La misma idea, en un diagrama</div>
+        <div class="fsub">Cada punto es un municipio. Derecha = él tiene nivel alto · Arriba = sus vecinos también</div>
+        <div id="fMoran" class="fig-chart tall"></div>
+      </div>
+      <figcaption>Fig. 4 — Que la nube "suba hacia la derecha" es la prueba visual de que los parecidos se agrupan.</figcaption>
+    </figure>
+
+    <div class="prose">
+      <h2>¿Y para qué sirve saber todo esto? (crítica, sin política de partido)</h2>
+      <p>Tres conclusiones que valen para <b>cualquier</b> gobierno, del color que sea:</p>
+      <ul>
+        <li><b>Repartir parejo no funciona.</b> Si el problema está concentrado en ciertas zonas, mandar lo mismo a
+          todo el país desperdicia recursos. Hay que <b>poner más donde más falta</b>.</li>
+        <li><b>Conviene crear "polos".</b> Como el buen nivel se contagia entre vecinos, invertir fuerte en un punto del
+          oriente puede arrastrar a los municipios de al lado. Concentrar rinde más que rociar.</li>
+        <li><b>El promedio miente.</b> "El salvadoreño promedio" no existe: hay un centro con estudios y un oriente
+          rezagado. Gobernar para el promedio deja atrás justo a quien más lo necesita.</li>
+      </ul>
+      <p>Insisto: esto no prueba nada del El Salvador real —es un laboratorio—. Pero enseña <b>exactamente el
+        procedimiento</b> que usarías con datos reales (los del censo o el Banco Central). Ese es el siguiente nivel.</p>
+    </div>
+
+    <div class="takeaway reveal">
+      <h4>En una frase</h4>
+      <ul>
+        <li>Vivir cerca de la capital pesa más que "vivir en la ciudad" para estudiar más.</li>
+        <li>La diferencia campo–ciudad "a lo bruto" <b>engaña</b>: bien medida, es la mitad.</li>
+        <li>El buen (y el mal) capital humano <b>se agrupa</b> en el mapa — y esta vez el dato lo confirma con fuerza.</li>
+      </ul>
+    </div>
+
+    <div class="next">
+      <a href="articulo-3.html">
+        <div><div class="lbl">Siguiente</div><div class="t">La IA mirando a mi país →</div></div>
+        <div class="arrow">→</div>
+      </a>
+    </div>
+  </article>
+
+  <footer>
+    <div class="wrap">
+      <div>Cuentas hechas en Node.js sobre 148k personas · Fuente: <b>NVIDIA</b> (CC-BY-4.0) · Datos sintéticos.</div>
+      <div><a href="articulo-1.html">← Artículo anterior</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script src="viz.js"></script>
+  <script>
+    const { BLUE, FONT, fmt, baseTooltip, axisStyle, make, reveal, progress, load } = VIZ;
+    const set = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v; };
+    const fiab = (sig) => sig === '***' ? '✔✔✔' : sig === '**' ? '✔✔' : sig === '*' ? '✔' : '≈';
+    (async () => {
+      progress();
+      const [m, geoMuni] = await Promise.all([load('data/models.json'), load('data/municipios.geojson')]);
+      echarts.registerMap('SVmuni', geoMuni);
+
+      // textos
+      set('nObs', fmt(m.meta.n));
+      const cFem = m.olsEducacion.coef.find((c) => c.name === 'mujer');
+      const cUrb = m.olsEducacion.coef.find((c) => c.name === 'urbano');
+      set('cUrb', '+' + cUrb.beta.toFixed(2)); set('cFem', Math.abs(cFem.beta).toFixed(2));
+      set('cFemMeses', Math.round(Math.abs(cFem.beta) * 12) + ' meses');
+      set('r2', 'R² = ' + m.olsEducacion.r2); set('r2pct', Math.round(m.olsEducacion.r2 * 100));
+      set('gUrbRaw', '+' + m.gaps.area.raw.toFixed(2) + ' años'); set('gUrbCond', '+' + m.gaps.area.conditional.toFixed(2) + ' años');
+      const mo = m.moranMuni;
+      set('moranI', mo.I.toFixed(2)); set('moranI2', mo.I.toFixed(2));
+      set('moranP', mo.pseudoP < 0.002 ? '<0.1%' : (mo.pseudoP * 100).toFixed(1) + '%');
+      set('moranP2', mo.pseudoP < 0.002 ? 'menos de 0.1%' : (mo.pseudoP * 100).toFixed(1) + '%');
+      set('moranN', mo.n);
+
+      // Tabla simple (efecto + fiabilidad)
+      const rowsWanted = { edad: 'Cada año más de edad', mujer: 'Ser mujer', urbano: 'Vivir en la ciudad' };
+      const tb = document.querySelector('#olsTable tbody');
+      tb.innerHTML = Object.entries(rowsWanted).map(([key, label]) => {
+        const c = m.olsEducacion.coef.find((x) => x.name === key);
+        const cls = c.beta > 0 ? 'pos' : 'neg';
+        const val = (c.beta > 0 ? '+' : '') + c.beta.toFixed(2) + ' años';
+        return `<tr><td>${label}</td><td class="${cls}">${val}</td><td class="sig">${fiab(c.sig)}</td></tr>`;
+      }).join('');
+
+      // Fig1 efectos departamentales
+      const dep = m.olsEducacion.coef.filter((c) => c.name.startsWith('dep:')).map((c) => ({ name: c.name.replace('dep:', ''), beta: c.beta })).sort((a, b) => a.beta - b.beta);
+      make(document.getElementById('fCoef')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (p) => `<b>${dep[p[0].dataIndex].name}</b><br/>${p[0].value.toFixed(2)} años vs. la capital` },
+        grid: { left: 4, right: 50, top: 8, bottom: 24, containLabel: true },
+        xAxis: { type: 'value', name: 'años vs. la capital', nameLocation: 'middle', nameGap: 30, nameTextStyle: { color: BLUE.muted, fontFamily: FONT }, ...axisStyle },
+        yAxis: { type: 'category', data: dep.map((d) => d.name), axisLine: { show: false }, axisTick: { show: false }, axisLabel: { color: BLUE.ink, fontFamily: FONT, fontSize: 12 } },
+        series: [{ type: 'bar', data: dep.map((d) => d.beta), barWidth: '62%', itemStyle: { color: BLUE.p500, borderRadius: [4, 0, 0, 4] }, label: { show: true, position: 'left', formatter: (p) => p.value.toFixed(1), color: BLUE.muted, fontFamily: FONT, fontSize: 11 } }],
+      });
+
+      // Fig2 brechas
+      make(document.getElementById('fGaps')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'axis', axisPointer: { type: 'shadow' }, valueFormatter: (v) => v.toFixed(2) + ' años' },
+        legend: { data: ['A lo bruto', 'Comparación justa'], top: 0, textStyle: { color: BLUE.muted, fontFamily: FONT } },
+        grid: { left: 4, right: 16, top: 34, bottom: 4, containLabel: true },
+        xAxis: { type: 'category', data: ['Ciudad vs. campo', 'Hombre vs. mujer'], ...axisStyle },
+        yAxis: { type: 'value', ...axisStyle, axisLabel: { ...axisStyle.axisLabel, formatter: (v) => v + ' a' } },
+        series: [
+          { name: 'A lo bruto', type: 'bar', data: [m.gaps.area.raw, m.gaps.gender.raw], itemStyle: { color: BLUE.p300, borderRadius: [4, 4, 0, 0] } },
+          { name: 'Comparación justa', type: 'bar', data: [m.gaps.area.conditional, m.gaps.gender.conditional], itemStyle: { color: BLUE.p700, borderRadius: [4, 4, 0, 0] } },
+        ],
+      });
+
+      // Fig3 LISA muni map
+      const QC = { 'Alto-Alto': BLUE.p700, 'Bajo-Bajo': BLUE.p200, 'Alto-Bajo': BLUE.teal, 'Bajo-Alto': '#9aa7b8' };
+      const QLABEL = { 'Alto-Alto': 'Alto rodeado de altos', 'Bajo-Bajo': 'Bajo rodeado de bajos', 'Alto-Bajo': 'Alto entre bajos', 'Bajo-Alto': 'Bajo entre altos' };
+      make(document.getElementById('fLisa')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'item', formatter: (p) => { const d = mo.local.find((x) => x.name === p.name); return d ? `<b>${p.name}</b><br/>${QLABEL[d.quadrant] || '—'}<br/><span style="color:${BLUE.muted}">ICH ${d.value}</span>` : p.name } },
+        series: [{ type: 'map', map: 'SVmuni', nameProperty: 'municipality', roam: false, itemStyle: { borderColor: '#fff', borderWidth: 0.5 }, label: { show: false }, emphasis: { label: { show: false }, itemStyle: { areaColor: null } }, data: mo.local.map((d) => ({ name: d.name, value: d.value, itemStyle: { areaColor: QC[d.quadrant] || BLUE.p300 } })) }],
+      });
+      document.getElementById('lisaLegend').innerHTML = Object.entries(QLABEL).map(([k, lab]) => `<span><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:${QC[k]};margin-right:5px;vertical-align:middle"></span>${lab}</span>`).join('');
+
+      // Fig4 Moran scatter (44 pts, sin etiquetas)
+      const ext = Math.ceil(Math.max(...mo.scatter.flatMap((d) => [Math.abs(d.z), Math.abs(d.lag)])) * 1.1 * 10) / 10;
+      const axLbl = { color: BLUE.muted, fontFamily: FONT, fontSize: 12, formatter: (v) => v.toFixed(1) };
+      const sc = mo.local.map((d) => ({ name: d.name, value: [d.z, d.lag], itemStyle: { color: QC[d.quadrant] || BLUE.p500, opacity: .85 } }));
+      make(document.getElementById('fMoran')).setOption({
+        textStyle: { fontFamily: FONT },
+        tooltip: { ...baseTooltip, trigger: 'item', formatter: (p) => `<b>${p.data.name}</b><br/>su nivel: ${p.value[0].toFixed(2)}<br/>nivel de vecinos: ${p.value[1].toFixed(2)}` },
+        grid: { left: 10, right: 20, top: 20, bottom: 34, containLabel: true },
+        xAxis: { type: 'value', min: -ext, max: ext, name: 'nivel del municipio →', nameLocation: 'middle', nameGap: 28, nameTextStyle: { color: BLUE.muted, fontFamily: FONT }, ...axisStyle, axisLabel: axLbl },
+        yAxis: { type: 'value', min: -ext, max: ext, name: 'nivel de sus vecinos →', nameTextStyle: { color: BLUE.muted, fontFamily: FONT }, ...axisStyle, axisLabel: axLbl },
+        series: [
+          { type: 'scatter', data: sc, symbolSize: 13, markLine: { silent: true, symbol: 'none', lineStyle: { color: BLUE.line }, data: [{ xAxis: 0 }, { yAxis: 0 }] } },
+          { type: 'line', symbol: 'none', silent: true, lineStyle: { color: BLUE.p600, width: 2, type: 'dashed' }, data: [[-ext, -ext * mo.I], [ext, ext * mo.I]] },
+        ],
+      });
+
+      reveal();
+    })();
+  </script>
+</body>
+</html>
