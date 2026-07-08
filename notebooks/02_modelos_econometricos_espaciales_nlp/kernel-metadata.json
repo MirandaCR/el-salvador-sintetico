@@ -1,0 +1,13 @@
+{
+  "id": "cristianmiranda/el-salvador-sintetico-modelos-espaciales",
+  "title": "El Salvador Sintetico - Modelos Econometricos, Espaciales y NLP",
+  "code_file": "02_modelos_econometricos_espaciales_nlp.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

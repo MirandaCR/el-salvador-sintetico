@@ -1,0 +1,13 @@
+{
+  "id": "cristianmiranda/el-salvador-sintetico-eda-descriptiva",
+  "title": "El Salvador Sintetico EDA Descriptiva",
+  "code_file": "01_eda_estadistica_descriptiva.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}
